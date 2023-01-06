@@ -131,7 +131,7 @@ export default {
         width: 32px;
         height: 32px;
         position: absolute;
-        background-color: $gray-primary;
+        background-color: #46436a;
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
