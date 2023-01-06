@@ -1,14 +1,14 @@
 <template>
-    <section class="Chat" id="Chat">
+    <section class="Community" id="Community">
         <div class="Container">
             <h2 class="Title">Join <span>Community</span> telegram groups</h2>
-            <div class="ChatItemCol row">
-                    <div class="ChatItem"
-                         v-for="(chat, index) in chats"
+            <div class="CommunityItemCol row">
+                    <div class="CommunityItem"
+                         v-for="(community, index) in communities"
                          :key="index">
-                        <a :href="chat.url" target="_blank" class="Name">
-                            <div class="Img" :style="{ backgroundImage: `url(${chat.img})` }"></div>
-                            <h3>{{chat.name}}</h3>
+                        <a :href="community.url" target="_blank" class="Name">
+                            <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
+                            <h3>{{community.name}}</h3>
                         </a>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ import { serverUri } from '../variables';
 
 export default {
 	data: () => ({
-		chats: [
+		communities: [
             {
                 img: `${serverUri}/chats/js.png`,
                 name: 'JavaScript Armenia',
@@ -50,7 +50,7 @@ export default {
 <style scoped lang="scss">
     @import './../_styles/colors';
 
-    .Chat {
+    .Community {
         padding: 50px 0;
     }
 
@@ -60,7 +60,7 @@ export default {
 		}
 	}
 
-    .ChatItemCol {
+    .CommunityItemCol {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -72,7 +72,7 @@ export default {
         margin-bottom: 50px;
     }
 
-    .ChatItem {
+    .CommunityItem {
         width: 15%;
         text-align: center;
         margin-bottom: 25px;
@@ -93,7 +93,7 @@ export default {
         display: inline;
     }
 
-    .ChatItem:hover {
+    .CommunityItem:hover {
         .Img {
             transform: scale(1.1);
         }
@@ -128,7 +128,7 @@ export default {
     }
 
     @media (max-width: 1000px) {
-        .ChatItem {
+        .CommunityItem {
             width: 15%;
         }
     }
@@ -140,11 +140,11 @@ export default {
     }
 
     @media (max-width: 600px) {
-        .ChatItemCol {
+        .CommunityItemCol {
             justify-content: center;
         }
 
-        .ChatItem {
+        .CommunityItem {
             width: 80%;
             padding: 0 30px;
         }
@@ -153,7 +153,7 @@ export default {
             background-size: 50%;
         }
 
-        .ChatTitle {
+        .CommunityTitle {
             text-align: center;
             padding: 0;
         }

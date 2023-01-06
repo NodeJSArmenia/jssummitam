@@ -30,22 +30,22 @@ export default {
 					{
 						img: `${serverUri}/team/nairi.png`,
 						name: 'Nairi Harutyunyan',
-						position: 'Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
+						position: 'Senior Backend Engineer, Co-Founder at Node.js Armenia',
 					},
 					{
 						img: `${serverUri}/team/varik.png`,
 						name: 'Varik Matevosyan',
-						position: 'Project Manager at Node.js Armenia',
+						position: 'Senior Backend Engineer, Co-Founder at Node.js Armenia',
 					},
 					{
 						img: `${serverUri}/team/gor.png`,
 						name: 'Gor Karagyozyan',
-						position: 'Project Manager at Node.js Armenia',
+						position: 'Software Engineer',
 					},
 					{
 						img: `${serverUri}/team/vahagn.png`,
 						name: 'Vahagn Melkonyan',
-						position: 'Project Manager at Node.js Armenia',
+						position: 'AI/ML Engineer-Researcher',
 					},
 				],
 			},
@@ -124,7 +124,7 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #e8e8e8;
+        color: #3d3c51;
     }
 
     @media (max-width: 700px) {

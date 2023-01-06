@@ -6,7 +6,7 @@
 		<Speakers/>
 		<Sponsors/>
 		<Team/>
-		<Chat/>
+		<Community/>
 		<!-- <Location/> -->
 		<!-- <Faq/> -->
 		<AppFooter/>
@@ -41,8 +41,8 @@ export default {
 			componentFactory: () => import('./Team/Team.vue'),
 			loading: Dummy,
 		}),
-		Chat: lazyLoadComponent({
-			componentFactory: () => import('./Chat/Chat.vue'),
+		Community: lazyLoadComponent({
+			componentFactory: () => import('./Community/Community.vue'),
 			loading: Dummy,
 		}),
 		Sponsors: lazyLoadComponent({
