@@ -17,7 +17,7 @@
 import Welcome from './Welcome/Welcome.vue';
 import AppHeader from './Header/Header.vue';
 import Intro from './Intro/Intro.vue';
-import Faq from './Faq/Faq.vue';
+import Speakers from './Speakers/Speakers.vue';
 import Dummy from './Dummy/Dummy.vue';
 import lazyLoadComponent from './utils/lazy-load-component';
 
@@ -27,7 +27,7 @@ export default {
 		Welcome,
 		AppHeader,
 		Intro,
-		Faq,
+		Speakers,
 		Dummy,
 		AppFooter: lazyLoadComponent({
 			componentFactory: () => import('./Footer/Footer.vue'),
@@ -37,20 +37,16 @@ export default {
 			componentFactory: () => import('./Location/Location.vue'),
 			loading: Dummy,
 		}),
-		Team: lazyLoadComponent({
-			componentFactory: () => import('./Team/Team.vue'),
-			loading: Dummy,
-		}),
 		Community: lazyLoadComponent({
 			componentFactory: () => import('./Community/Community.vue'),
 			loading: Dummy,
 		}),
-		Sponsors: lazyLoadComponent({
-			componentFactory: () => import('./Sponsors/Sponsors.vue'),
+		Team: lazyLoadComponent({
+			componentFactory: () => import('./Team/Team.vue'),
 			loading: Dummy,
 		}),
-		Speakers: lazyLoadComponent({
-			componentFactory: () => import('./Speakers/Speakers.vue'),
+		Sponsors: lazyLoadComponent({
+			componentFactory: () => import('./Sponsors/Sponsors.vue'),
 			loading: Dummy,
 		}),
 	},
