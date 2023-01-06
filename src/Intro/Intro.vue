@@ -3,11 +3,11 @@
 		<div class="Container">
 			<div id="Titles">
 				<h1 class="Title HeadTitle"><span>JavaScript Summit</span> Armenia</h1>
-				<span class="Title Subtitle Simple">January 19, 10:30   -   AUA, Yerevan</span>
+				<span class="Title Subtitle Simple">January 19, 10:30   -   Place info (soon)</span>
 			</div>
 		</div>
 		<Banner title="A one-day event for JavaScript enthusiasts."
-				text="Node Conf Armenia is a conference, gathering backend and full-stack Node.js developers in one place to share knowledge, skills with starter or master Node.js developers, have new connections, friends and fun."
+				text="JavaScript Summit Armenia is a one-day event related to the JavaScript programming language. It gathers all the community enthusiasts and professionals in one place to have valuable and helpful discussions."
 				:image-source="imageSource"
 				:image-right="false"
 		></Banner>

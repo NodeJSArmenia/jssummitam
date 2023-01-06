@@ -37,12 +37,12 @@ export default {
 						name: 'Varik Matevosyan',
 						position: 'Project Manager at Node.js Armenia',
 					},
-                    					{
+					{
 						img: `${serverUri}/team/gor.png`,
-                        name: 'Gor Karagyozyan',
+						name: 'Gor Karagyozyan',
 						position: 'Project Manager at Node.js Armenia',
 					},
-                    {
+					{
 						img: `${serverUri}/team/vahagn.png`,
 						name: 'Vahagn Melkonyan',
 						position: 'Project Manager at Node.js Armenia',

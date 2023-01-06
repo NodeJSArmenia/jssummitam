@@ -9,7 +9,6 @@
 					:button-link="bannerData.buttonLink"
 					:button-text="bannerData.buttonText"
 					:image-right="false"
-					:is-bold-text="true"
 				></Banner>
 			</section>
 		</div>
