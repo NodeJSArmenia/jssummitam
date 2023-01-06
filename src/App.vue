@@ -6,7 +6,7 @@
 		<Speakers/>
 		<Sponsors/>
 		<Team/>
-		<Location/>
+		<!-- <Location/> -->
 		<!-- <Faq/> -->
 		<AppFooter/>
 	</div>

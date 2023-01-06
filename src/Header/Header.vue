@@ -15,7 +15,7 @@
 				<a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
 				<a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
 				<a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
-				<a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
+				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
 				<div class="RequestInvite">
 					<Button title="Register" link="http://bit.ly/joinNodeConfAM20"></Button>
