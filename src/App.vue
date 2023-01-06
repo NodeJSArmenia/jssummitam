@@ -6,6 +6,7 @@
 		<Speakers/>
 		<Sponsors/>
 		<Team/>
+		<Chat/>
 		<!-- <Location/> -->
 		<!-- <Faq/> -->
 		<AppFooter/>
@@ -38,6 +39,10 @@ export default {
 		}),
 		Team: lazyLoadComponent({
 			componentFactory: () => import('./Team/Team.vue'),
+			loading: Dummy,
+		}),
+		Chat: lazyLoadComponent({
+			componentFactory: () => import('./Chat/Chat.vue'),
 			loading: Dummy,
 		}),
 		Sponsors: lazyLoadComponent({
