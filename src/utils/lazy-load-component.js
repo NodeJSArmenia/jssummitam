@@ -20,7 +20,7 @@ export default function lazyLoadComponent({
 					return;
 				}
 
-				const observer = new IntersectionObserver((entries) => {
+				const observer = new IntersectionObserver(() => {
 					// Use `intersectionRatio` because of Edge 15's
 					// lack of support for `isIntersecting`.
 					// See: https://github.com/w3c/IntersectionObserver/issues/211

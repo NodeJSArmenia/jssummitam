@@ -18,9 +18,9 @@
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
 				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
-				<div class="RequestInvite">
-					<Button title="Register" link="http://bit.ly/joinNodeConfAM20"></Button>
-				</div>
+				<!-- <div class="RequestInvite">
+					<Button title="Register" link=""></Button>
+				</div> -->
 			</nav>
 		</div>
 	</div>
