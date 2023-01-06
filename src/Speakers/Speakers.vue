@@ -1,7 +1,7 @@
 <template>
 	<section class="Speakers" id="Speakers">
 		<div class="Container">
-			<h2 class="Title">Call for Enthusiastic <span>Speakers</span></h2>
+			<h2 class="Title">Join us as a Enthusiastic <span>Speaker</span></h2>
 			<Banner
 				:text="bannerData.BannerText"
 				:image-source="bannerData.imageSource"

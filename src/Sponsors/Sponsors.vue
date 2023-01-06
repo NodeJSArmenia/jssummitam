@@ -2,7 +2,7 @@
 	<section class="Sponsors" id="Sponsors">
 		<div class="Container">
 			<section class="Section">
-				<h2 class="Title">Call for <span>Sponsors</span></h2>
+				<h2 class="Title">Join us as a <span>Sponsor</span></h2>
 				<Banner
 					:text="bannerData.BannerText"
 					:image-source="bannerData.imageSource"
