@@ -1,17 +1,20 @@
 <template>
-    <section class="Community" id="Community">
+    <section class="Ninjas" id="Ninjas">
         <div class="Container">
-            <h2 class="Title">Join <span>Community</span> telegram groups</h2>
-            <div class="CommunityItemCol row">
-                    <div class="CommunityItem"
-                         v-for="(community, index) in communities"
+            <h2 class="Title">The powerfull <span>Ninjas</span></h2>
+            <div class="row"
+                 v-for="(ninja, ninjaIndex) in ninjas"
+                 :key="ninjaIndex">
+                <div class="MemberCol">
+                    <div class="Member"
+                         v-for="(member, index) in ninja.members"
                          :key="index">
-                        <a :href="community.url" target="_blank" class="Name">
-                            <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
-                            <h3>{{community.name}}</h3>
-                        </a>
+                        <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
+                        <h3 class="Name">{{member.name}}</h3>
+                        <h5 class="Position">{{member.position}}</h5>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 </template>
@@ -21,26 +24,25 @@ import { serverUri } from '../variables';
 
 export default {
 	data: () => ({
-		communities: [
+		ninjas: [
 			{
-				img: `${serverUri}/chats/js.png`,
-				name: 'JavaScript Armenia',
-				url: 'https://t.me/javascriptarmenia',
-			},
-			{
-				img: `${serverUri}/chats/node.png`,
-				name: 'Node.js Armenia',
-				url: 'https://t.me/nodejsarmenia',
-			},
-			{
-				img: `${serverUri}/chats/react.png`,
-				url: 'https://t.me/reactarmenia',
-				name: 'React Armenia',
-			},
-			{
-				img: `${serverUri}/chats/vue.png`,
-				name: 'Vue.js Armenia',
-				url: 'https://t.me/vuejsarmenia',
+				members: [
+					{
+						img: `${serverUri}/speakers/gagik.png`,
+						name: 'Gagik Arustamyan',
+						position: 'Lead JavaScript Developer at DataArt',
+					},
+					{
+						img: `${serverUri}/speakers/hovo.png`,
+						name: 'Hovo Gasparyan',
+						position: 'Head of JavaScript Unit at EPAM Armenia',
+					},
+					{
+						img: `${serverUri}/speakers/anushavan.png`,
+						name: 'Anushavan Yeghiazaryan',
+						position: 'Frontend Engineer at Fidem, React Tutor',
+					},
+				],
 			},
 		],
 	}),
@@ -50,7 +52,7 @@ export default {
 <style scoped lang="scss">
     @import './../_styles/colors';
 
-    .Community {
+    .Ninja {
         padding: 50px 0;
     }
 
@@ -60,7 +62,7 @@ export default {
 		}
 	}
 
-    .CommunityItemCol {
+    .MemberCol {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -72,8 +74,8 @@ export default {
         margin-bottom: 50px;
     }
 
-    .CommunityItem {
-        width: 15%;
+    .Member {
+        width: 20%;
         text-align: center;
         margin-bottom: 25px;
         padding: 0 10px;
@@ -93,27 +95,20 @@ export default {
         display: inline;
     }
 
-    .CommunityItem:hover {
+    .Member:hover {
         .Img {
             transform: scale(1.1);
         }
-
-        cursor: pointer;
     }
 
     .Name {
         font-family: Barlow;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.25;
         letter-spacing: 0.5px;
-        color: #3d3c51;
-    }
-
-    .Name:hover {
-        text-decoration: none;
     }
 
     .Position {
@@ -124,30 +119,30 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #e8e8e8;
+        color: #3d3c51;
     }
 
-    @media (max-width: 1000px) {
-        .CommunityItem {
-            width: 15%;
+    @media (max-width: 700px) {
+        .Name {
+            font-size: 20px;
         }
     }
 
     @media (max-width: 600px) {
-        .CommunityItemCol {
+        .MemberCol {
             justify-content: center;
         }
 
-        .CommunityItem {
-            width: 80%;
+        .Member {
+            width: 100%;
             padding: 0 30px;
         }
 
         .Img {
-            background-size: 50%;
+            background-size: 80%;
         }
 
-        .CommunityTitle {
+        .NinjaTitle {
             text-align: center;
             padding: 0;
         }
