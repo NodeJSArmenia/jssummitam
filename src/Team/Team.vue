@@ -39,7 +39,7 @@ export default {
 					},
 					{
 						img: `${serverUri}/team/gor.png`,
-						name: 'Gor Karagyozyan',
+						name: 'Gor Gharagyozyan',
 						position: 'Software Engineer',
 					},
 					{
