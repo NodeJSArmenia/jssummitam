@@ -7,7 +7,7 @@
 		<Sponsors/>
 		<Team/>
 		<Community/>
-		<!-- <Location/> -->
+		<Location/>
 		<!-- <Faq/> -->
 		<AppFooter/>
 	</div>
