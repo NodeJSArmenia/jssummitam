@@ -112,7 +112,7 @@ export default {
 
     @media (max-width: 600px) {
         .ExclusiveSponsor {
-            top: 20%;
+            top: 23.5%;
             width: 30%;
         }
     }
