@@ -4,7 +4,8 @@
 		<AppHeader/>
 		<Intro/>
 		<Speakers/>
-		<Sponsors/>
+		<!-- <Sponsors/> -->
+		<!-- <Ninjas /> -->
 		<Team/>
 		<Community/>
 		<Location/>
@@ -43,6 +44,10 @@ export default {
 		}),
 		Team: lazyLoadComponent({
 			componentFactory: () => import('./Team/Team.vue'),
+			loading: Dummy,
+		}),
+		Ninjas: lazyLoadComponent({
+			componentFactory: () => import('./Ninjas/Ninjas.vue'),
 			loading: Dummy,
 		}),
 		Sponsors: lazyLoadComponent({

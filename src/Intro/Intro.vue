@@ -3,7 +3,7 @@
 		<div class="Container">
 			<div id="Titles">
 				<h1 class="Title HeadTitle"><span>JavaScript Summit</span> Armenia</h1>
-				<span class="Title Subtitle Simple">February 18, 11:00 AUA!</span>
+				<span class="Title Subtitle Simple">February 18, 10:00 AUA!</span>
 			</div>
 		</div>
 		<Banner title="A one-day event for JavaScript enthusiasts."

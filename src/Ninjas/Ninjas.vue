@@ -26,23 +26,7 @@ export default {
 	data: () => ({
 		ninjas: [
 			{
-				members: [
-					{
-						img: `${serverUri}/speakers/gagik.png`,
-						name: 'Gagik Arustamyan',
-						position: 'Lead JavaScript Developer at DataArt',
-					},
-					{
-						img: `${serverUri}/speakers/hovo.png`,
-						name: 'Hovo Gasparyan',
-						position: 'Head of JavaScript Unit at EPAM Armenia',
-					},
-					{
-						img: `${serverUri}/speakers/anushavan.png`,
-						name: 'Anushavan Yeghiazaryan',
-						position: 'Frontend Engineer at Fidem, React Tutor',
-					},
-				],
+				members: [],
 			},
 		],
 	}),

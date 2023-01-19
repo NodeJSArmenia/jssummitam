@@ -7,6 +7,9 @@
         </div>
         <div class="SocialLinks">
             <span class="SocialIcon">
+                <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
+            </span>
+            <span class="SocialIcon">
                 <a class="Icon Icon-Github" href="https://github.com/NodeJSArmenia" target="_blank"></a>
             </span>
             <span class="SocialIcon">
@@ -21,9 +24,6 @@
             <span class="SocialIcon">
                 <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w"
                    target="_blank"></a>
-            </span>
-            <span class="SocialIcon">
-                <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
             </span>
         </div>
         <p class="Credits">
