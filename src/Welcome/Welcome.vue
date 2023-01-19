@@ -80,7 +80,7 @@ export default {
     .ExclusiveSponsor {
         position: relative;
         float: right;
-        width: 12%;
+        width: 16%;
         margin-right: 5%;
         top: 25%;
         height: 10%;
@@ -100,19 +100,19 @@ export default {
 
     @media (max-width: 1000px) {
         .ExclusiveSponsor {
-            width: 16%;
+            width: 20%;
         }
     }
 
     @media (max-width: 800px) {
         .ExclusiveSponsor {
-            width: 20%;
+            width: 25%;
         }
     }
 
     @media (max-width: 600px) {
         .ExclusiveSponsor {
-            width: 25%;
+            width: 35%;
         }
     }
 
