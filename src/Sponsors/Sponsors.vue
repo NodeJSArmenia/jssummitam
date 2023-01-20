@@ -45,7 +45,7 @@ export default {
 	}
 
 	.Sponsors {
-		padding: 50px 0 0 0;
+		padding: 50px;
 	}
 
 	.Title {

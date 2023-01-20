@@ -19,9 +19,9 @@
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
 				<a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
-				<!-- <div class="RequestInvite">
-					<Button title="Register" link=""></Button>
-				</div> -->
+				<div class="RequestInvite">
+					<Button title="Register" link="https://www.eventbrite.com/e/javascript-summit-2023-armenia-tickets-516736331277"></Button>
+				</div>
 			</nav>
 		</div>
 	</div>

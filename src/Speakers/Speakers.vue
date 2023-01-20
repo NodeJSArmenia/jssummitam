@@ -42,7 +42,7 @@ export default {
 
 <style scoped lang="scss">
 	.Speakers {
-		padding: 50px 0 0 0;
+		padding: 50px;
 		position: relative;
 	}
 

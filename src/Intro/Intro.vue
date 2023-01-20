@@ -32,7 +32,7 @@ export default {
 
 <style scoped lang="scss">
 	.Intro {
-		padding: 50px 0 0 0;
+		padding: 50px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;

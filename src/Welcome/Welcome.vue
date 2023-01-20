@@ -66,7 +66,7 @@ export default {
 
     .Logo {
         position: relative;
-        top: 20%;
+        top: 15%;
         width: 100%;
         height: 60%;
         background-position: center;
@@ -79,9 +79,8 @@ export default {
 
     .ExclusiveSponsor {
         position: relative;
-        float: right;
         width: 12%;
-        margin-right: 5%;
+        margin: 0 auto;
         top: 25%;
         height: 10%;
         background-position: center;
