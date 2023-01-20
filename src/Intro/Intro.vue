@@ -10,6 +10,8 @@
 				text="JavaScript Summit Armenia is a one-day event related to the JavaScript programming language. It gathers all the community enthusiasts and professionals in one place to have valuable and helpful discussions."
 				:image-source="imageSource"
 				:image-right="false"
+				:button-link="buttonLink"
+				:button-text="buttonText"
 		></Banner>
 	</section>
 
@@ -26,6 +28,8 @@ export default {
 	},
 	data: () => ({
 		imageSource: `${serverUri}/banners/polygons.png`,
+		buttonText: 'REGISTER',
+		buttonLink: 'https://www.eventbrite.com/e/javascript-summit-2023-armenia-tickets-516736331277',
 	}),
 };
 </script>
