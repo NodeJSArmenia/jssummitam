@@ -3,9 +3,8 @@
 		<Welcome/>
 		<AppHeader/>
 		<Intro/>
-		<Speakers/>
 		<!-- <Sponsors/> -->
-		<!-- <Ninjas /> -->
+		<Ninjas />
 		<Team/>
 		<Community/>
 		<Location/>

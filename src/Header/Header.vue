@@ -12,7 +12,7 @@
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
-				<a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speaker</a>
+				<!-- <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speaker</a> -->
 				<!-- <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsor</a> -->
 				<a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
