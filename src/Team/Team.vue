@@ -30,22 +30,22 @@ export default {
 					{
 						img: `${serverUri}/team/nairi.png`,
 						name: 'Nairi Harutyunyan',
-						position: 'Senior Backend Engineer, Co-Founder at Node.js Armenia',
+						position: 'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
 					},
 					{
 						img: `${serverUri}/team/varik.png`,
 						name: 'Varik Matevosyan',
-						position: 'Senior Backend Engineer, Co-Founder at Node.js Armenia',
+						position: 'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
 					},
 					{
 						img: `${serverUri}/team/gor.png`,
 						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer',
+						position: 'Software Engineer at SoftConstruct',
 					},
 					{
 						img: `${serverUri}/team/vahagn.png`,
 						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Engineer-Researcher',
+						position: 'AI/ML Engineer-Researcher at CAST',
 					},
 				],
 			},
@@ -80,7 +80,7 @@ export default {
     }
 
     .Member {
-        width: 20%;
+        width: 21%;
         text-align: center;
         margin-bottom: 25px;
         padding: 0 10px;

@@ -26,7 +26,53 @@ export default {
 	data: () => ({
 		ninjas: [
 			{
-				members: [],
+				members: [
+					{
+						img: `${serverUri}/speakers/arsen.png`,
+						name: 'Arsen Mazmanyan',
+						position: 'Sr. Marketing Creatives Developer at Playrix',
+					},
+					{
+						img: `${serverUri}/speakers/anushavan.png`,
+						name: 'Anushavan Yeghiazaryan',
+						position: 'Sr. Marketing Creatives Developer at Fidem',
+					},
+					{
+						img: `${serverUri}/team/varik.png`,
+						name: 'Varik Matevosyan ',
+						position: 'Sr. Software Engineer at CoinStats',
+					},
+					{
+						img: `${serverUri}/speakers/vardges.png`,
+						name: 'Vardges Musheghyan',
+						position: 'Software Engineer at Picsart',
+					},
+					{
+						img: `${serverUri}/speakers/elmira.png`,
+						name: 'Elmira Avagyan',
+						position: 'Front End Practice Lead at Picsart',
+					},
+					{
+						img: `${serverUri}/speakers/levon.png`,
+						name: 'Levon Khachatryan',
+						position: 'Software Engineer at inted.ai',
+					},
+					{
+						img: `${serverUri}/speakers/davit.png`,
+						name: 'Davit Karapetyan',
+						position: 'Product Security Engineer at Krisp',
+					},
+					{
+						img: `${serverUri}/speakers/armen.png`,
+						name: 'Armen Vardanyan',
+						position: 'Front End Team Lead at VOLO LLC',
+					},
+					{
+						img: `${serverUri}/speakers/alen.png`,
+						name: 'Alen Abrahamyan',
+						position: 'Software Engineer at SoftConstruct',
+					},
+				],
 			},
 		],
 	}),
@@ -36,7 +82,7 @@ export default {
 <style scoped lang="scss">
     @import './../_styles/colors';
 
-    .Ninja {
+    .Ninjas {
         padding: 50px 0;
     }
 
@@ -48,9 +94,9 @@ export default {
 
     .MemberCol {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -59,9 +105,9 @@ export default {
     }
 
     .Member {
-        width: 20%;
+        width: 19%;
+        margin: 0 2% 25px 2%;
         text-align: center;
-        margin-bottom: 25px;
         padding: 0 10px;
     }
 
