@@ -58,6 +58,11 @@ export default {
 						position: 'Software Engineer at inted.ai',
 					},
 					{
+						img: `${serverUri}/speakers/ashot.png`,
+						name: 'Ashot Hovhannisyan',
+						position: 'Frontend Engineer at SoftConstruct',
+					},
+					{
 						img: `${serverUri}/speakers/davit.png`,
 						name: 'Davit Karapetyan',
 						position: 'Product Security Engineer at Krisp',
