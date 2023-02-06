@@ -48,9 +48,9 @@ export default {
 						position: 'Software Engineer at Picsart',
 					},
 					{
-						img: `${serverUri}/speakers/elmira.png`,
-						name: 'Elmira Avagyan',
-						position: 'Front End Practice Lead at Picsart',
+						img: `${serverUri}/speakers/albert.png`,
+						name: 'Albert Hovhannisian',
+						position: 'Co-Founder & CTO at SharpIdea',
 					},
 					{
 						img: `${serverUri}/speakers/levon.png`,
@@ -76,6 +76,11 @@ export default {
 						img: `${serverUri}/speakers/alen.png`,
 						name: 'Alen Abrahamyan',
 						position: 'Software Engineer at SoftConstruct',
+					},
+                    {
+						img: `${serverUri}/speakers/rudolf.png`,
+						name: 'Rudolf Gabrielyan',
+						position: 'Sr. Software Engineer at Prelaunch',
 					},
 				],
 			},
