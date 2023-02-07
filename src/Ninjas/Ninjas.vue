@@ -48,7 +48,7 @@ export default {
 						position: 'Software Engineer at Picsart',
 					},
 					{
-						img: `${serverUri}/speakers/albert.png`,
+						img: `${serverUri}/speakers/albert_.png`,
 						name: 'Albert Hovhannisian',
 						position: 'Co-Founder & CTO at SharpIdea',
 					},
