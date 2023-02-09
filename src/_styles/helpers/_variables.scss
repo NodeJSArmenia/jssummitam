@@ -1,0 +1,25 @@
+:root {
+  --ff-primary: 'Poppins', sans-serif;
+  --fs-primary: 16px;
+
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --schedule-item-bg-rgb: 248, 248, 248;
+
+  --timeline-bg: rgb(var(--white-rgb));
+  --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), .95);
+  --schedule-item-divider: rgba(var(--black-rgb), .2);
+  --schedule-text: rgb(70, 67, 106);
+  --grid-border: #46436aab;
+  --js-summit-yellow-rgb: 253, 223, 89;
+
+  --am: lightcoral;
+  --en: mediumseagreen;
+  --beginner: orange;
+  --intermediate: darkcyan;
+  --advanced: indigo;
+  --all-level: darkred;
+  --schedule-item-bg-hex: rgb(230, 230, 230); 
+}
+
+$fs-primary: 16;
