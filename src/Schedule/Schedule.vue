@@ -1,19 +1,19 @@
 <template>
   <section class="Schedule" id="Schedule">
     <div class="Container">
-      <h2 class="Title">This is fucking <span>Schedule</span></h2>
+      <h2 class="Title">Summit <span>Schedule</span></h2>
       <div class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
               <li>
-                <span>09:00</span>
+                <span>10:00</span>
               </li>
               <li>
-                <span>09:15</span>
+                <span>10:30</span>
               </li>
               <li>
-                <span>09:30</span>
+                <span>11:00</span>
               </li>
             </ul>
           </div>
@@ -43,10 +43,10 @@
           <div class="schedule-timeline">
             <ul>
               <li>
-                <span>09:45</span>
+                <span>10:00</span>
               </li>
               <li>
-                <span>10:00</span>
+                <span>11:00</span>
               </li>
               <li>
                 <span>10:15</span>
@@ -65,7 +65,7 @@
           <div class="schedule-content">
             <div class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">3rd Hall</h4>
+                <h4 class="schedule-header-in">Manoogian Hall</h4>
               </div>
               <div class="schedule-body">
                 <div
@@ -101,7 +101,7 @@
             </div>
             <div class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">3rd Hall</h4>
+                <h4 class="schedule-header-in">112W PAB</h4>
               </div>
               <div class="schedule-body">
                 <div
@@ -139,7 +139,45 @@
             </div>
             <div class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">3rd Hall</h4>
+                <h4 class="schedule-header-in">113W PAB</h4>
+              </div>
+              <div class="schedule-body">
+                <div
+                  class="schedule-item"
+                  :style="{
+                    height: (eventDuration * quarterHour) / 16 + 'rem',
+                  }"
+                >
+                  <div class="schedule-item-in">
+                    <div class="schedule-item-title">
+                      <h6 class="schedule-item-title-in">Topic 4</h6>
+                    </div>
+                    <div class="schedule-item-info">
+                      <ul class="schedule-item-info-in">
+                        <li>
+                          <span class="language en">en</span>
+                        </li>
+                        <li>
+                          <span class="level beginner" />
+                        </li>
+                      </ul>
+                      <div class="schedule-item-speaker">
+                        <span class="schedule-item-speaker-name"
+                          >Davit Matevosyan</span
+                        >
+                        <img
+                          class="schedule-item-speaker-image"
+                          src="https://via.placeholder.com/22x22"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="schedule-column">
+              <div class="schedule-header">
+                <h4 class="schedule-header-in">Adobe challanges</h4>
               </div>
               <div class="schedule-body">
                 <div
@@ -188,6 +226,166 @@ export default {
     data: () => ({
         quarterHour: 40,
         eventDuration: 2,
+        rooms: [
+          {
+            name: 'Manoogian hall',
+            talks: [
+              {
+                start: '11:00',
+                end: '11:10',
+                topic_title: 'Opening',
+              },
+              {
+                start: '11:10',
+                end: '11:40',
+                topic_title: 'Let\'s make games with JavaScript',
+                speaker: 'Arsen Mazmanyan',
+              },
+              {
+                start: '11:50',
+                end: '12:20',
+                topic_title: 'React with Web3 and Smart contracts',
+                speaker: 'Anushavan Yeghiazaryan',
+              },
+              {
+                start: '12:30',
+                end: '13:00',
+                topic_title: 'The Journey to Microservice Adoption',
+                speaker: 'Tigran Avetisyan',
+              },
+              {
+                start: '13:00',
+                end: '13:30',
+                topic_title: 'BREAK',
+              },
+              {
+                start: '13:30',
+                end: '14:00',
+                topic_title: 'The Future of Angular',
+                speaker: 'Armen Vardanyan',
+              },
+              {
+                start: '14:10',
+                end: '14:40',
+                topic_title: 'Software design',
+                speaker: 'Vardges Musheghyan',
+              },
+              {
+                start: '14:40',
+                end: '14:50',
+                empty: true,
+              },
+            ]
+          },
+          {
+            name: '113W PAB',
+            talks: [
+              {
+                start: '11:00',
+                end: '11:10',
+                empty: true,
+              },
+              {
+                start: '11:10',
+                end: '11:40',
+                topic_title: 'JavaScript attack surface',
+                speaker: 'Davit Karapetyan',
+              },
+              {
+                start: '11:50',
+                end: '12:20',
+                topic_title: 'ML/AI models in JavaScript environment',
+                speaker: 'Levon Khachatryan',
+              },
+              {
+                start: '12:30',
+                end: '13:00',
+                topic_title: 'Be prepared for production incidents',
+                speaker: 'Varik Matevosyan',
+              },
+              {
+                start: '13:00',
+                end: '13:30',
+                topic_title: 'BREAK',
+              },
+              {
+                start: '13:30',
+                end: '14:00',
+                topic_title: 'The Power of Mathematics in JavaScript',
+                speaker: 'Alen Abrahamyan',
+              },
+              {
+                start: '14:10',
+                end: '14:40',
+                topic_title: 'Cracking the JavaScript Interviews',
+                speaker: 'Albert Hovhannisyan',
+              },
+              {
+                start: '14:40',
+                end: '14:50',
+                empty: true,
+              },
+            ]
+          },
+          {
+            name: '112W PAB',
+            talks: [
+              {
+                start: '11:00',
+                end: '11:10',
+                empty: true,
+              },
+              {
+                start: '11:10',
+                end: '11:40',
+                empty: true,
+              },
+              {
+                start: '11:50',
+                end: '12:20',
+                topic_title: 'Building Fullstack applications on AWS',
+                speaker: 'Rudolf Gabrielyan',
+              },
+              {
+                start: '12:30',
+                end: '13:00',
+                topic_title: 'Stop using Redux',
+                speaker: 'Ashot Hovhannisyan',
+              },
+              {
+                start: '13:00',
+                end: '13:30',
+                topic_title: 'BREAK',
+              },
+              {
+                start: '13:30',
+                end: '14:40',
+                topic_title: '?',
+                speaker: 'Vahe Adobe',
+              },
+              {
+                start: '14:40',
+                end: '14:50',
+                topic_title: 'CLOSING',
+              },
+            ]
+          },
+                    {
+            name: '112W PAB',
+            talks: [
+              {
+                start: '11:00',
+                end: '11:10',
+                empty: true,
+              },
+              {
+                start: '11:50',
+                end: '15:30',
+                topic_title: 'Adobe challanges',
+              },
+            ]
+          },
+        ],
         teams: [
             {
                 members: [

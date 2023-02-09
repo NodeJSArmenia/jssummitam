@@ -4,9 +4,9 @@
 		<AppHeader/>
 		<Intro/>
 		<!-- <Sponsors/> -->
+        <Schedule/>
 		<Ninjas />
 		<Team/>
-		<Schedule/>
 		<Community/>
 		<Location/>
 		<!-- <Faq/> -->
