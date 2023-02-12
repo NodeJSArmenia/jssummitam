@@ -42,56 +42,38 @@
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
-              <li>
-                <span>10:00</span>
-              </li>
-              <li>
-                <span>11:00</span>
-              </li>
-              <li>
-                <span>10:15</span>
-              </li>
-              <li>
-                <span>10:30</span>
-              </li>
-              <li>
-                <span>10:45</span>
-              </li>
-              <li>
-                <span>11:00</span>
-              </li>
+                <li v-for="i in timeline" :key="i">
+                  <span>{{i}}</span>
+                </li>
             </ul>
           </div>
           <div class="schedule-content">
-            <div class="schedule-column">
+            <div
+            v-for="room in rooms"
+            :key="room.name"
+            class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">Manoogian Hall</h4>
+                <h4 class="schedule-header-in">{{room.name}}</h4>
               </div>
               <div class="schedule-body">
                 <div
                   class="schedule-item"
-                  :style="{ height: (4 * quarterHour) / 16 + 'rem' }"
+                  v-for="topic in room.talks"
+                  :key="topic.topic_title + topic.end"
+                  :style="{ height: ((topic.speaker == 'Vahe Adobe' ? 3 : topic.topic_title == 'Adobe challanges' ? 11 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Topic 4</h6>
+                      <h6 class="schedule-item-title-in">{{topic.topic_title}}</h6>
                     </div>
-                    <div class="schedule-item-info">
-                      <ul class="schedule-item-info-in">
-                        <li>
-                          <span class="language en">en</span>
-                        </li>
-                        <li>
-                          <span class="level beginner" />
-                        </li>
-                      </ul>
+                    <div class="schedule-item-info" v-if="topic.speaker">
                       <div class="schedule-item-speaker">
                         <span class="schedule-item-speaker-name"
-                          >Davit Matevosyan</span
+                          >{{topic.speaker}}</span
                         >
                         <img
                           class="schedule-item-speaker-image"
-                          src="https://via.placeholder.com/22x22"
+                          :src="topic.img"
                         />
                       </div>
                     </div>
@@ -99,120 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="schedule-column">
-              <div class="schedule-header">
-                <h4 class="schedule-header-in">112W PAB</h4>
-              </div>
-              <div class="schedule-body">
-                <div
-                  class="schedule-item"
-                  :style="{
-                    height: (eventDuration * quarterHour) / 16 + 'rem',
-                  }"
-                >
-                  <div class="schedule-item-in">
-                    <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Topic 4</h6>
-                    </div>
-                    <div class="schedule-item-info">
-                      <ul class="schedule-item-info-in">
-                        <li>
-                          <span class="language en">en</span>
-                        </li>
-                        <li>
-                          <span class="level beginner" />
-                        </li>
-                      </ul>
-                      <div class="schedule-item-speaker">
-                        <span class="schedule-item-speaker-name"
-                          >Davit Matevosyan</span
-                        >
-                        <img
-                          class="schedule-item-speaker-image"
-                          src="https://via.placeholder.com/22x22"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-column">
-              <div class="schedule-header">
-                <h4 class="schedule-header-in">113W PAB</h4>
-              </div>
-              <div class="schedule-body">
-                <div
-                  class="schedule-item"
-                  :style="{
-                    height: (eventDuration * quarterHour) / 16 + 'rem',
-                  }"
-                >
-                  <div class="schedule-item-in">
-                    <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Topic 4</h6>
-                    </div>
-                    <div class="schedule-item-info">
-                      <ul class="schedule-item-info-in">
-                        <li>
-                          <span class="language en">en</span>
-                        </li>
-                        <li>
-                          <span class="level beginner" />
-                        </li>
-                      </ul>
-                      <div class="schedule-item-speaker">
-                        <span class="schedule-item-speaker-name"
-                          >Davit Matevosyan</span
-                        >
-                        <img
-                          class="schedule-item-speaker-image"
-                          src="https://via.placeholder.com/22x22"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="schedule-column">
-              <div class="schedule-header">
-                <h4 class="schedule-header-in">Adobe challanges</h4>
-              </div>
-              <div class="schedule-body">
-                <div
-                  class="schedule-item"
-                  :style="{
-                    height: (eventDuration * quarterHour) / 16 + 'rem',
-                  }"
-                >
-                  <div class="schedule-item-in">
-                    <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Topic 4</h6>
-                    </div>
-                    <div class="schedule-item-info">
-                      <ul class="schedule-item-info-in">
-                        <li>
-                          <span class="language en">en</span>
-                        </li>
-                        <li>
-                          <span class="level beginner" />
-                        </li>
-                      </ul>
-                      <div class="schedule-item-speaker">
-                        <span class="schedule-item-speaker-name"
-                          >Davit Matevosyan</span
-                        >
-                        <img
-                          class="schedule-item-speaker-image"
-                          src="https://via.placeholder.com/22x22"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -224,167 +93,220 @@
 import { serverUri } from "../variables";
 export default {
     data: () => ({
-        quarterHour: 40,
+        quarterHour: 100,
         eventDuration: 2,
         rooms: [
-          {
-            name: 'Manoogian hall',
-            talks: [
-              {
-                start: '11:00',
-                end: '11:10',
-                topic_title: 'Opening',
-              },
-              {
-                start: '11:10',
-                end: '11:40',
-                topic_title: 'Let\'s make games with JavaScript',
-                speaker: 'Arsen Mazmanyan',
-              },
-              {
-                start: '11:50',
-                end: '12:20',
-                topic_title: 'React with Web3 and Smart contracts',
-                speaker: 'Anushavan Yeghiazaryan',
-              },
-              {
-                start: '12:30',
-                end: '13:00',
-                topic_title: 'The Journey to Microservice Adoption',
-                speaker: 'Tigran Avetisyan',
-              },
-              {
-                start: '13:00',
-                end: '13:30',
-                topic_title: 'BREAK',
-              },
-              {
-                start: '13:30',
-                end: '14:00',
-                topic_title: 'The Future of Angular',
-                speaker: 'Armen Vardanyan',
-              },
-              {
-                start: '14:10',
-                end: '14:40',
-                topic_title: 'Software design',
-                speaker: 'Vardges Musheghyan',
-              },
-              {
-                start: '14:40',
-                end: '14:50',
-                empty: true,
-              },
-            ]
-          },
-          {
-            name: '113W PAB',
-            talks: [
-              {
-                start: '11:00',
-                end: '11:10',
-                empty: true,
-              },
-              {
-                start: '11:10',
-                end: '11:40',
-                topic_title: 'JavaScript attack surface',
-                speaker: 'Davit Karapetyan',
-              },
-              {
-                start: '11:50',
-                end: '12:20',
-                topic_title: 'ML/AI models in JavaScript environment',
-                speaker: 'Levon Khachatryan',
-              },
-              {
-                start: '12:30',
-                end: '13:00',
-                topic_title: 'Be prepared for production incidents',
-                speaker: 'Varik Matevosyan',
-              },
-              {
-                start: '13:00',
-                end: '13:30',
-                topic_title: 'BREAK',
-              },
-              {
-                start: '13:30',
-                end: '14:00',
-                topic_title: 'The Power of Mathematics in JavaScript',
-                speaker: 'Alen Abrahamyan',
-              },
-              {
-                start: '14:10',
-                end: '14:40',
-                topic_title: 'Cracking the JavaScript Interviews',
-                speaker: 'Albert Hovhannisyan',
-              },
-              {
-                start: '14:40',
-                end: '14:50',
-                empty: true,
-              },
-            ]
-          },
-          {
-            name: '112W PAB',
-            talks: [
-              {
-                start: '11:00',
-                end: '11:10',
-                empty: true,
-              },
-              {
-                start: '11:10',
-                end: '11:40',
-                empty: true,
-              },
-              {
-                start: '11:50',
-                end: '12:20',
-                topic_title: 'Building Fullstack applications on AWS',
-                speaker: 'Rudolf Gabrielyan',
-              },
-              {
-                start: '12:30',
-                end: '13:00',
-                topic_title: 'Stop using Redux',
-                speaker: 'Ashot Hovhannisyan',
-              },
-              {
-                start: '13:00',
-                end: '13:30',
-                topic_title: 'BREAK',
-              },
-              {
-                start: '13:30',
-                end: '14:40',
-                topic_title: '?',
-                speaker: 'Vahe Adobe',
-              },
-              {
-                start: '14:40',
-                end: '14:50',
-                topic_title: 'CLOSING',
-              },
-            ]
-          },
+            {
+                name: "Manoogian hall",
+                talks: [
                     {
-            name: '112W PAB',
-            talks: [
-              {
-                start: '11:00',
-                end: '11:10',
-                empty: true,
-              },
-              {
-                start: '11:50',
-                end: '15:30',
-                topic_title: 'Adobe challanges',
-              },
-            ]
-          },
+                        start: "11:00",
+                        end: "11:10",
+                        topic_title: "Opening"
+                    },
+                    {
+                        start: "11:10",
+                        end: "11:40",
+                        topic_title: "Let's make games with JavaScript",
+                        speaker: "Arsen Mazmanyan",
+                        img: `${serverUri}/speakers/arsen.png`
+                    },
+                    {
+                        start: "11:40",
+                        end: "11:50",
+                        empty: true
+                    },
+                    {
+                        start: "11:50",
+                        end: "12:20",
+                        topic_title: "React with Web3 and Smart contracts",
+                        speaker: "Anushavan Yeghiazaryan",
+                        img: `${serverUri}/speakers/anushavan.png`
+                    },
+                    {
+                        start: "12:20",
+                        end: "12:30",
+                        empty: true
+                    },
+                    {
+                        start: "12:30",
+                        end: "13:00",
+                        topic_title: "The Journey to Microservice Adoption",
+                        speaker: "Tigran Avetisyan",
+                        img: `${serverUri}/speakers/tigran.png`
+                    },
+                    {
+                        start: "13:00",
+                        end: "13:30",
+                        topic_title: "BREAK"
+                    },
+                    {
+                        start: "13:30",
+                        end: "14:00",
+                        topic_title: "The Future of Angular",
+                        speaker: "Armen Vardanyan",
+                        img: `${serverUri}/speakers/armen.png`
+                    },
+                    {
+                        start: "14:00",
+                        end: "14:10",
+                        empty: true
+                    },
+                    {
+                        start: "14:10",
+                        end: "14:40",
+                        topic_title: "Software design",
+                        speaker: "Vardges Musheghyan",
+                        img: `${serverUri}/speakers/vardges.png`
+                    },
+                    {
+                        start: "14:40",
+                        end: "14:50",
+                        empty: true
+                    }
+                ]
+            },
+            {
+                name: "113W PAB",
+                talks: [
+                    {
+                        start: "11:00",
+                        end: "11:10",
+                        empty: true
+                    },
+                    {
+                        start: "11:10",
+                        end: "11:40",
+                        topic_title: "JavaScript attack surface",
+                        speaker: "Davit Karapetyan",
+                        img: `${serverUri}/speakers/davit.png`
+                    },
+                    {
+                        start: "11:40",
+                        end: "11:50",
+                        empty: true
+                    },
+                    {
+                        start: "11:50",
+                        end: "12:20",
+                        topic_title: "ML/AI models in JavaScript environment",
+                        speaker: "Levon Khachatryan",
+                        img: `${serverUri}/speakers/levon.png`
+                    },
+                    {
+                        start: "12:20",
+                        end: "12:30",
+                        empty: true
+                    },
+                    {
+                        start: "12:30",
+                        end: "13:00",
+                        topic_title: "Be prepared for production incidents",
+                        speaker: "Varik Matevosyan",
+                        img: `${serverUri}/team/varik.png`
+                    },
+                    {
+                        start: "13:00",
+                        end: "13:30",
+                        topic_title: "BREAK"
+                    },
+                    {
+                        start: "13:30",
+                        end: "14:00",
+                        topic_title: "The Power of Mathematics in JavaScript",
+                        speaker: "Alen Abrahamyan",
+                        img: `${serverUri}/speakers/alen.png`
+                    },
+                    {
+                        start: "14:00",
+                        end: "14:10",
+                        empty: true
+                    },
+                    {
+                        start: "14:10",
+                        end: "14:40",
+                        topic_title: "Cracking the JavaScript Interviews",
+                        speaker: "Albert Hovhannisyan",
+                        img: `${serverUri}/speakers/albert_.png`
+                    },
+                    {
+                        start: "14:40",
+                        end: "14:50",
+                        empty: true
+                    }
+                ]
+            },
+            {
+                name: "112W PAB",
+                talks: [
+                    {
+                        start: "11:00",
+                        end: "11:10",
+                        empty: true
+                    },
+                    {
+                        start: "11:10",
+                        end: "11:40",
+                        empty: true
+                    },
+                    {
+                        start: "11:40",
+                        end: "11:50",
+                        empty: true
+                    },
+                    {
+                        start: "11:50",
+                        end: "12:20",
+                        topic_title: "Building Fullstack applications on AWS",
+                        speaker: "Rudolf Gabrielyan",
+                        img: `${serverUri}/speakers/rudolf.png`
+                    },
+                    {
+                        start: "12:20",
+                        end: "12:30",
+                        empty: true
+                    },
+                    {
+                        start: "12:30",
+                        end: "13:00",
+                        topic_title: "Stop using Redux",
+                        speaker: "Ashot Hovhannisyan",
+                        img: `${serverUri}/speakers/ashot.png`
+                    },
+                    {
+                        start: "13:00",
+                        end: "13:30",
+                        topic_title: "BREAK"
+                    },
+                    {
+                        start: "13:30",
+                        end: "14:40",
+                        topic_title: "?",
+                        speaker: "Vahe Adobe",
+                        img: `${serverUri}/speakers/vahe.png`
+                    },
+                    {
+                        start: "14:40",
+                        end: "14:50",
+                        topic_title: "CLOSING"
+                    }
+                ]
+            },
+            {
+                name: "Adobe Quest",
+                talks: [
+                    {
+                        start: "11:00",
+                        end: "11:10",
+                        empty: true
+                    },
+                    {
+                        start: "11:50",
+                        end: "15:30",
+                        topic_title: "Adobe challanges"
+                    }
+                ]
+            }
         ],
         teams: [
             {
@@ -413,6 +335,21 @@ export default {
                     }
                 ]
             }
+        ],
+        timeline: [
+            "11:00",
+            "11:10",
+            "11:40",
+            "11:50",
+            "12:20",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:10",
+            "14:40",
+            "14:50",
+            "15:30"
         ]
     })
 };
@@ -712,7 +649,7 @@ button {
         position: sticky;
         top: 0;
         left: 0;
-        padding-top: toRem(40);
+        padding-top: toRem(100);
         // background-color: var(--timeline-bg);
         z-index: 2;
 
@@ -721,7 +658,7 @@ button {
         }
 
         li {
-            height: toRem(40);
+            height: toRem(100);
             display: flex;
             align-items: flex-start;
 
@@ -778,7 +715,7 @@ button {
             ),
             linear-gradient(to top, var(--grid-border) 0, transparent 1px);
         background-position: center top, center center, center bottom;
-        background-size: 100% toRem(40), 100% 100%, 100% toRem(40);
+        background-size: 100% toRem(100), 100% 100%, 100% toRem(100);
         background-repeat: repeat-y, no-repeat, no-repeat;
         overflow-x: auto;
         overflow-y: hidden;
@@ -790,7 +727,7 @@ button {
     }
 
     &-header {
-        height: toRem(40);
+        height: toRem(100);
         padding: 2px 4px;
         display: flex;
         justify-content: center;
@@ -812,7 +749,7 @@ button {
     &-item {
         width: 100%;
         padding: 4px;
-
+        position: relative;
         &-in {
             width: 100%;
             height: 100%;
@@ -838,7 +775,7 @@ button {
             }
 
             &-in {
-                font-size: toRem(14);
+                font-size: toRem(13);
                 font-weight: 600;
                 color: var(--schedule-text);
                 text-align: center;
@@ -848,7 +785,7 @@ button {
         &-info {
             height: 50%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
 
             &-in {
