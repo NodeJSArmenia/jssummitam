@@ -114,7 +114,8 @@ export default {
                     {
                         start: "11:40",
                         end: "11:50",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "11:50",
@@ -126,7 +127,8 @@ export default {
                     {
                         start: "12:20",
                         end: "12:30",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "12:30",
@@ -150,7 +152,8 @@ export default {
                     {
                         start: "14:00",
                         end: "14:10",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "14:10",
@@ -162,7 +165,7 @@ export default {
                     {
                         start: "14:40",
                         end: "14:50",
-                        empty: true
+                        topic_title: "CLOSING"
                     }
                 ]
             },
@@ -184,7 +187,8 @@ export default {
                     {
                         start: "11:40",
                         end: "11:50",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "11:50",
@@ -196,7 +200,8 @@ export default {
                     {
                         start: "12:20",
                         end: "12:30",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "12:30",
@@ -220,7 +225,8 @@ export default {
                     {
                         start: "14:00",
                         end: "14:10",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "14:10",
@@ -252,7 +258,8 @@ export default {
                     {
                         start: "11:40",
                         end: "11:50",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "11:50",
@@ -264,7 +271,8 @@ export default {
                     {
                         start: "12:20",
                         end: "12:30",
-                        empty: true
+                        // empty: true
+                        topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "12:30",
@@ -284,16 +292,11 @@ export default {
                         topic_title: "?",
                         speaker: "Vahe Adobe",
                         img: `${serverUri}/speakers/vahe.png`
-                    },
-                    {
-                        start: "14:40",
-                        end: "14:50",
-                        topic_title: "CLOSING"
                     }
                 ]
             },
             {
-                name: "Adobe Quest",
+                name: "Faculty Lounge",
                 talks: [
                     {
                         start: "11:00",
