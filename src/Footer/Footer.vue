@@ -7,6 +7,9 @@
         </div>
         <div class="SocialLinks">
             <span class="SocialIcon">
+                <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
+            </span>
+            <span class="SocialIcon">
                 <a class="Icon Icon-Github" href="https://github.com/NodeJSArmenia" target="_blank"></a>
             </span>
             <span class="SocialIcon">
@@ -21,9 +24,6 @@
             <span class="SocialIcon">
                 <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w"
                    target="_blank"></a>
-            </span>
-            <span class="SocialIcon">
-                <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
             </span>
         </div>
         <p class="Credits">
@@ -102,13 +102,14 @@ export default {
         position: relative;
         overflow: hidden;
         background-color: #fff;
+        border-radius: 10px;
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
 
-        -webkit-mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
-        -ms-mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
-        mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
+        // -webkit-mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
+        // -ms-mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
+        // mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
 
         &:hover {
             background-color: $green-primary;
@@ -130,7 +131,7 @@ export default {
         width: 32px;
         height: 32px;
         position: absolute;
-        background-color: $gray-primary;
+        background-color: #46436a;
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;

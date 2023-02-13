@@ -2,14 +2,13 @@
 	<section class="Sponsors" id="Sponsors">
 		<div class="Container">
 			<section class="Section">
-				<h2 class="Title">Call for <span>Sponsors</span></h2>
+				<h2 class="Title">Join as a <span>Sponsor</span></h2>
 				<Banner
 					:text="bannerData.BannerText"
 					:image-source="bannerData.imageSource"
 					:button-link="bannerData.buttonLink"
 					:button-text="bannerData.buttonText"
 					:image-right="false"
-					:is-bold-text="true"
 				></Banner>
 			</section>
 		</div>
@@ -46,7 +45,7 @@ export default {
 	}
 
 	.Sponsors {
-		padding: 50px 0 0 0;
+		padding: 50px;
 	}
 
 	.Title {

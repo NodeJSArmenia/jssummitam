@@ -1,20 +1,17 @@
 <template>
-    <section class="Team" id="Team">
+    <section class="Community" id="Community">
         <div class="Container">
-            <h2 class="Title">The Enthusiastic <span>Team</span></h2>
-            <div class="row"
-                 v-for="(team, teamIndex) in teams"
-                 :key="teamIndex">
-                <div class="MemberCol">
-                    <div class="Member"
-                         v-for="(member, index) in team.members"
+            <h2 class="Title">Join <span>Community</span> telegram groups</h2>
+            <div class="CommunityItemCol row">
+                    <div class="CommunityItem"
+                         v-for="(community, index) in communities"
                          :key="index">
-                        <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
-                        <h3 class="Name">{{member.name}}</h3>
-                        <h5 class="Position">{{member.position}}</h5>
+                        <a :href="community.url" target="_blank" class="Name">
+                            <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
+                            <h3>{{community.name}}</h3>
+                        </a>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 </template>
@@ -24,30 +21,26 @@ import { serverUri } from '../variables';
 
 export default {
 	data: () => ({
-		teams: [
+		communities: [
 			{
-				members: [
-					{
-						img: `${serverUri}/team/nairi.png`,
-						name: 'Nairi Harutyunyan',
-						position: 'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/varik.png`,
-						name: 'Varik Matevosyan',
-						position: 'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/gor.png`,
-						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/team/vahagn.png`,
-						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Engineer-Researcher at CAST',
-					},
-				],
+				img: `${serverUri}/chats/js.png`,
+				name: 'JavaScript Armenia',
+				url: 'https://t.me/javascriptarmenia',
+			},
+			{
+				img: `${serverUri}/chats/node.png`,
+				name: 'Node.js Armenia',
+				url: 'https://t.me/nodejsarmenia',
+			},
+			{
+				img: `${serverUri}/chats/react.png`,
+				url: 'https://t.me/reactarmenia',
+				name: 'React Armenia',
+			},
+			{
+				img: `${serverUri}/chats/vue.png`,
+				name: 'Vue.js Armenia',
+				url: 'https://t.me/vuejsarmenia',
 			},
 		],
 	}),
@@ -57,7 +50,7 @@ export default {
 <style scoped lang="scss">
     @import './../_styles/colors';
 
-    .Team {
+    .Community {
         padding: 50px 0;
     }
 
@@ -67,7 +60,7 @@ export default {
 		}
 	}
 
-    .MemberCol {
+    .CommunityItemCol {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -79,8 +72,8 @@ export default {
         margin-bottom: 50px;
     }
 
-    .Member {
-        width: 21%;
+    .CommunityItem {
+        width: 15%;
         text-align: center;
         margin-bottom: 25px;
         padding: 0 10px;
@@ -100,20 +93,27 @@ export default {
         display: inline;
     }
 
-    .Member:hover {
+    .CommunityItem:hover {
         .Img {
             transform: scale(1.1);
         }
+
+        cursor: pointer;
     }
 
     .Name {
         font-family: Barlow;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.25;
         letter-spacing: 0.5px;
+        color: #3d3c51;
+    }
+
+    .Name:hover {
+        text-decoration: none;
     }
 
     .Position {
@@ -124,30 +124,30 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #3d3c51;
+        color: #e8e8e8;
     }
 
-    @media (max-width: 700px) {
-        .Name {
-            font-size: 20px;
+    @media (max-width: 1000px) {
+        .CommunityItem {
+            width: 15%;
         }
     }
 
     @media (max-width: 600px) {
-        .MemberCol {
+        .CommunityItemCol {
             justify-content: center;
         }
 
-        .Member {
-            width: 100%;
+        .CommunityItem {
+            width: 80%;
             padding: 0 30px;
         }
 
         .Img {
-            background-size: 80%;
+            background-size: 50%;
         }
 
-        .TeamTitle {
+        .CommunityTitle {
             text-align: center;
             padding: 0;
         }

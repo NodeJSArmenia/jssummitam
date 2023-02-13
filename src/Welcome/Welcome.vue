@@ -2,6 +2,7 @@
     <section class="Welcome" id="Welcome">
         <div class="Network" :class="{ '-visible': netoworkVisible }"></div>
         <div class="Logo" :class="{ '-visible': logoVisible }"></div>
+        <div class="ExclusiveSponsor" :class="{ '-visible': logoVisible }"></div>
     </section>
 </template>
 
@@ -65,9 +66,8 @@ export default {
 
     .Logo {
         position: relative;
-        left: 20%;
-        top: 20%;
-        width: 60%;
+        top: 15%;
+        width: 100%;
         height: 60%;
         background-position: center;
         background-size: contain;
@@ -77,9 +77,43 @@ export default {
         opacity: 0;
     }
 
-    .Logo, .Network {
+    .ExclusiveSponsor {
+        position: relative;
+        width: 12%;
+        margin: 0 auto;
+        top: 25%;
+        height: 10%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(https://topentol.sirv.com/jssummit/sponsors/adobe.svg);
+        transition: opacity 1s cubic-bezier(0.4, 0, 1, 1);
+        opacity: 0;
+    }
+
+    .Logo, .Network, .ExclusiveSponsor {
         &.-visible {
             opacity: 1;
         }
     }
+
+    @media (max-width: 1000px) {
+        .ExclusiveSponsor {
+            width: 18%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .ExclusiveSponsor {
+            width: 24%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ExclusiveSponsor {
+            top: 23.5%;
+            width: 30%;
+        }
+    }
+
 </style>

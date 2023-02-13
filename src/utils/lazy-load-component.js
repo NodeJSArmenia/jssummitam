@@ -20,11 +20,11 @@ export default function lazyLoadComponent({
 					return;
 				}
 
-				const observer = new IntersectionObserver((entries) => {
+				const observer = new IntersectionObserver(() => {
 					// Use `intersectionRatio` because of Edge 15's
 					// lack of support for `isIntersecting`.
 					// See: https://github.com/w3c/IntersectionObserver/issues/211
-					if (entries[0].intersectionRatio <= 0) return;
+					// if (entries[0].intersectionRatio <= 0) return;
 
 					// Cleanup the observer when it's not
 					// needed anymore.
@@ -38,6 +38,7 @@ export default function lazyLoadComponent({
 				// We observe the root `$el` of the
 				// mounted loading component to detect
 				// when it becomes visible.
+
 				observer.observe(this.$el);
 			},
 			// Here we render the the component passed
