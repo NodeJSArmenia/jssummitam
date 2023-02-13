@@ -60,7 +60,7 @@
                   class="schedule-item"
                   v-for="topic in room.talks"
                   :key="topic.topic_title + topic.end"
-                  :style="{ height: ((topic.speaker == 'Vahe Adobe' ? 3 : topic.topic_title == 'Adobe challanges' ? 11 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
+                  :style="{ height: ((topic.speaker == 'Vahe Mkrtchyan' ? 3 : topic.topic_title == 'Adobe challanges' ? 11 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
