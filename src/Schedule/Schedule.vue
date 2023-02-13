@@ -289,7 +289,7 @@ export default {
                     {
                         start: "13:30",
                         end: "14:40",
-                        topic_title: "From scratch to production in 1 hour",
+                        topic_title: "Terminal session: From scratch to Production",
                         speaker: "Vahe Mkrtchyan",
                         img: `${serverUri}/speakers/vahe.png`
                     }
