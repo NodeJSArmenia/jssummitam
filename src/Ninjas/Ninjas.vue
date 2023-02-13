@@ -81,6 +81,16 @@ export default {
                         img: `${serverUri}/speakers/rudolf.png`,
                         name: "Rudolf Gabrielyan",
                         position: "Sr. Software Engineer at Prelaunch"
+                    },
+                    {
+                        img: `${serverUri}/speakers/vahe.png`,
+                        name: "Vahe Mkrtchyan",
+                        position: "Senior Computer Scientist at Adobe"
+                    },
+                    {
+                        img: `${serverUri}/speakers/tigran.png`,
+                        name: "Tigran Avetisyan",
+                        position: "Senior Software Engineer"
                     }
                 ]
             }

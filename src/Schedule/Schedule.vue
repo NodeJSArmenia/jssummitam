@@ -253,7 +253,9 @@ export default {
                     {
                         start: "11:10",
                         end: "11:40",
-                        empty: true
+                        topic_title: "?",
+                        speaker: "Tigran Avetisyan",
+                        img: `${serverUri}/speakers/tigran.png`
                     },
                     {
                         start: "11:40",
@@ -289,7 +291,8 @@ export default {
                     {
                         start: "13:30",
                         end: "14:40",
-                        topic_title: "Terminal session: From scratch to Production",
+                        topic_title:
+                            "Terminal session: From scratch to Production",
                         speaker: "Vahe Mkrtchyan",
                         img: `${serverUri}/speakers/vahe.png`
                     }
