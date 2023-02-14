@@ -85,12 +85,12 @@ export default {
                     {
                         img: `${serverUri}/speakers/vahe.png`,
                         name: "Vahe Mkrtchyan",
-                        position: "Senior Computer Scientist at Adobe"
+                        position: "Sr. Computer Scientist at Adobe"
                     },
                     {
                         img: `${serverUri}/speakers/tigran.png`,
                         name: "Tigran Avetisyan",
-                        position: "Senior Software Engineer"
+                        position: "Sr. Software Engineer"
                     }
                 ]
             }
