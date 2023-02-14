@@ -633,7 +633,7 @@ button {
     }
 }
 .schedule {
-    padding: 16px;
+    padding: 50px 0;
     overflow: hidden;
     background-color: #fff;
     background-image: radial-gradient(#46436a 1px, #e6e6e6 0);
