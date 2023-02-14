@@ -12,11 +12,11 @@
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
+                <a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Schedule</a>
 				<!-- <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speaker</a> -->
 				<!-- <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsor</a> -->
 				<a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
-				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Schedule</a>
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
 				<a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
