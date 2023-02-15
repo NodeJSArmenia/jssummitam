@@ -254,14 +254,15 @@ export default {
                     {
                         start: "11:10",
                         end: "11:40",
-                        topic_title: "",
-                        speaker: ""
+                        empty: true,
+                        // topic_title: "",
+                        // speaker: ""
                     },
                     {
                         start: "11:40",
                         end: "11:50",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
+                        empty: true
+                        // topic_title: "BREAK 10 MIN"
                     },
                     {
                         start: "11:50",
