@@ -244,7 +244,7 @@ export default {
                 ]
             },
             {
-                name: "112W PAB",
+                name: "114W PAB",
                 talks: [
                     {
                         start: "11:00",
