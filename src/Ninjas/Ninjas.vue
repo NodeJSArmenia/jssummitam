@@ -35,7 +35,7 @@ export default {
                     {
                         img: `${serverUri}/speakers/anushavan.png`,
                         name: "Anushavan Yeghiazaryan",
-                        position: "Sr. Marketing Creatives Developer at Fidem"
+                        position: "Sr. Software Engineer at Fidem"
                     },
                     {
                         img: `${serverUri}/team/varik.png`,
