@@ -28,24 +28,24 @@ export default {
 			{
 				members: [
 					{
-						img: `${serverUri}/team/nairi.png`,
+						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
-						position: 'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
+						position: 'Sr. Backend Engineer at Screenful, Co-Founder at JavaScript Armenia',
 					},
 					{
-						img: `${serverUri}/team/varik.png`,
+						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
+						position: 'Software Engineer at Lantern, Co-Founder at JavaScript Armenia',
 					},
 					{
-						img: `${serverUri}/team/gor.png`,
-						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/team/vahagn.png`,
+						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan',
 						position: 'AI/ML Engineer-Researcher at CAST',
+					},
+					{
+						img: `${serverUri}/team/3.jpg`,
+						name: 'Gor Gharagyozyan',
+						position: 'Software Engineer at SoftConstruct',
 					},
 				],
 			},
@@ -94,6 +94,7 @@ export default {
         background-repeat: no-repeat;
         background-size: contain;
         transition: .3s ease all;
+        border-radius: 40px 10px;
     }
 
     .Position {

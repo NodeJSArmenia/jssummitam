@@ -77,7 +77,7 @@ export default {
         opacity: 0;
     }
 
-    .ExclusiveSponsor {
+    /* .ExclusiveSponsor {
         position: relative;
         width: 12%;
         margin: 0 auto;
@@ -89,7 +89,7 @@ export default {
         background-image: url(https://topentol.sirv.com/jssummit/sponsors/adobe.svg);
         transition: opacity 1s cubic-bezier(0.4, 0, 1, 1);
         opacity: 0;
-    }
+    } */
 
     .Logo, .Network, .ExclusiveSponsor {
         &.-visible {

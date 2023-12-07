@@ -20,82 +20,82 @@
 </template>
 
 <script>
-import { serverUri } from "../variables";
+import { serverUri } from '../variables';
 
 export default {
-    data: () => ({
-        ninjas: [
-            {
-                members: [
-                    {
-                        img: `${serverUri}/speakers/arsen.png`,
-                        name: "Arsen Mazmanyan",
-                        position: "Sr. Marketing Creatives Developer at Playrix"
-                    },
-                    {
-                        img: `${serverUri}/speakers/anushavan.png`,
-                        name: "Anushavan Yeghiazaryan",
-                        position: "Sr. Marketing Creatives Developer at Fidem"
-                    },
-                    {
-                        img: `${serverUri}/team/varik.png`,
-                        name: "Varik Matevosyan ",
-                        position: "Sr. Software Engineer at CoinStats"
-                    },
-                    {
-                        img: `${serverUri}/speakers/vardges.png`,
-                        name: "Vardges Musheghyan",
-                        position: "Software Engineer at Picsart"
-                    },
-                    {
-                        img: `${serverUri}/speakers/albert_.png`,
-                        name: "Albert Hovhannisian",
-                        position: "Co-Founder & CTO at SharpIdea"
-                    },
-                    {
-                        img: `${serverUri}/speakers/levon.png`,
-                        name: "Levon Khachatryan",
-                        position: "Software Engineer at inted.ai"
-                    },
-                    {
-                        img: `${serverUri}/speakers/ashot.png`,
-                        name: "Ashot Hovhannisyan",
-                        position: "Frontend Engineer at SoftConstruct"
-                    },
-                    {
-                        img: `${serverUri}/speakers/davit.png`,
-                        name: "Davit Karapetyan",
-                        position: "Product Security Engineer at Krisp"
-                    },
-                    {
-                        img: `${serverUri}/speakers/armen.png`,
-                        name: "Armen Vardanyan",
-                        position: "Front End Team Lead at VOLO LLC"
-                    },
-                    {
-                        img: `${serverUri}/speakers/alen.png`,
-                        name: "Alen Abrahamyan",
-                        position: "Software Engineer at SoftConstruct"
-                    },
-                    {
-                        img: `${serverUri}/speakers/rudolf.png`,
-                        name: "Rudolf Gabrielyan",
-                        position: "Sr. Software Engineer at Prelaunch"
-                    },
-                    {
-                        img: `${serverUri}/speakers/vahe.png`,
-                        name: "Vahe Mkrtchyan",
-                        position: "Senior Computer Scientist at Adobe"
-                    },
-                    {
-                        img: `${serverUri}/speakers/tigran.png`,
-                        name: "Tigran Avetisyan",
-                        position: "Senior Software Engineer"
-                    }
-                ]
-            }
-        ]
-    })
+	data: () => ({
+		ninjas: [
+			{
+				members: [
+					{
+						img: `${serverUri}/speakers/arsen.png`,
+						name: 'Arsen Mazmanyan',
+						position: 'Sr. Marketing Creatives Developer at Playrix',
+					},
+					{
+						img: `${serverUri}/speakers/anushavan.png`,
+						name: 'Anushavan Yeghiazaryan',
+						position: 'Sr. Marketing Creatives Developer at Fidem',
+					},
+					{
+						img: `${serverUri}/team/varik.png`,
+						name: 'Varik Matevosyan ',
+						position: 'Sr. Software Engineer at CoinStats',
+					},
+					{
+						img: `${serverUri}/speakers/vardges.png`,
+						name: 'Vardges Musheghyan',
+						position: 'Software Engineer at Picsart',
+					},
+					{
+						img: `${serverUri}/speakers/albert_.png`,
+						name: 'Albert Hovhannisian',
+						position: 'Co-Founder & CTO at SharpIdea',
+					},
+					{
+						img: `${serverUri}/speakers/levon.png`,
+						name: 'Levon Khachatryan',
+						position: 'Software Engineer at inted.ai',
+					},
+					{
+						img: `${serverUri}/speakers/ashot.png`,
+						name: 'Ashot Hovhannisyan',
+						position: 'Frontend Engineer at SoftConstruct',
+					},
+					{
+						img: `${serverUri}/speakers/davit.png`,
+						name: 'Davit Karapetyan',
+						position: 'Product Security Engineer at Krisp',
+					},
+					{
+						img: `${serverUri}/speakers/armen.png`,
+						name: 'Armen Vardanyan',
+						position: 'Front End Team Lead at VOLO LLC',
+					},
+					{
+						img: `${serverUri}/speakers/alen.png`,
+						name: 'Alen Abrahamyan',
+						position: 'Software Engineer at SoftConstruct',
+					},
+					{
+						img: `${serverUri}/speakers/rudolf.png`,
+						name: 'Rudolf Gabrielyan',
+						position: 'Sr. Software Engineer at Prelaunch',
+					},
+					{
+						img: `${serverUri}/speakers/vahe.png`,
+						name: 'Vahe Mkrtchyan',
+						position: 'Senior Computer Scientist at Adobe',
+					},
+					{
+						img: `${serverUri}/speakers/tigran.png`,
+						name: 'Tigran Avetisyan',
+						position: 'Senior Software Engineer',
+					},
+				],
+			},
+		],
+	}),
 };
 </script>
 

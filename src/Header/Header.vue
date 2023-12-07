@@ -14,64 +14,64 @@
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
 				<!-- <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speaker</a> -->
 				<!-- <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsor</a> -->
-				<a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
+				<!-- <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a> -->
 				<a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
-				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Schedule</a>
+				<!-- <a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Schedule</a> -->
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
-				<a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
+				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
-				<div class="RequestInvite">
+				<!-- <div class="RequestInvite">
 					<Button title="Register" link="https://www.eventbrite.com/e/javascript-summit-2023-armenia-tickets-516736331277"></Button>
-				</div>
+				</div> -->
 			</nav>
 		</div>
 	</div>
 </template>
 
 <script>
-import _throttle from "lodash/throttle";
-import Logo from "../_common/Logo/Logo.vue";
-import Button from "../_common/Button/Button.vue";
+import _throttle from 'lodash/throttle';
+import Logo from '../_common/Logo/Logo.vue';
+import Button from '../_common/Button/Button.vue';
 
 export default {
-    components: {
-        Logo,
-        Button
-    },
-    data() {
-        return {
-            scrollPos: window.scrollY,
-            isOpen: false,
-            navConfig: {
-                duration: 2000,
-                offset: -66
-            }
-        };
-    },
-    methods: {
-        handleScroll() {
-            this.scrollPos = window.scrollY;
-        },
-        toggle(event) {
-            event.preventDefault();
+	components: {
+		Logo,
+		Button,
+	},
+	data() {
+		return {
+			scrollPos: window.scrollY,
+			isOpen: false,
+			navConfig: {
+				duration: 2000,
+				offset: -66,
+			},
+		};
+	},
+	methods: {
+		handleScroll() {
+			this.scrollPos = window.scrollY;
+		},
+		toggle(event) {
+			event.preventDefault();
 
-            this.isOpen = !this.isOpen;
-        },
-        close() {
-            this.isOpen = false;
-        }
-    },
-    computed: {
-        isSticked() {
-            return this.scrollPos > window.innerHeight * 0.8;
-        }
-    },
-    created() {
-        window.addEventListener("scroll", _throttle(this.handleScroll, 100));
-    },
-    destroyed() {
-        window.removeEventListener("scroll", this.handleScroll);
-    }
+			this.isOpen = !this.isOpen;
+		},
+		close() {
+			this.isOpen = false;
+		},
+	},
+	computed: {
+		isSticked() {
+			return this.scrollPos > window.innerHeight * 0.8;
+		},
+	},
+	created() {
+		window.addEventListener('scroll', _throttle(this.handleScroll, 100));
+	},
+	destroyed() {
+		window.removeEventListener('scroll', this.handleScroll);
+	},
 };
 </script>
 

@@ -23,22 +23,22 @@ export default {
 	data: () => ({
 		communities: [
 			{
-				img: `${serverUri}/chats/js.png`,
+				img: `${serverUri}/chats/5.jpg`,
 				name: 'JavaScript Armenia',
 				url: 'https://t.me/javascriptarmenia',
 			},
 			{
-				img: `${serverUri}/chats/node.png`,
+				img: `${serverUri}/chats/4.jpg`,
 				name: 'Node.js Armenia',
 				url: 'https://t.me/nodejsarmenia',
 			},
 			{
-				img: `${serverUri}/chats/react.png`,
+				img: `${serverUri}/chats/3.jpg`,
 				url: 'https://t.me/reactarmenia',
 				name: 'React Armenia',
 			},
 			{
-				img: `${serverUri}/chats/vue.png`,
+				img: `${serverUri}/chats/2.jpg`,
 				name: 'Vue.js Armenia',
 				url: 'https://t.me/vuejsarmenia',
 			},
@@ -87,6 +87,7 @@ export default {
         background-repeat: no-repeat;
         background-size: contain;
         transition: .3s ease all;
+        border-radius: 10px 10px;
     }
 
     .Position {

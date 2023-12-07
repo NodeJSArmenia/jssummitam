@@ -10,13 +10,10 @@
                 <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
             </span>
             <span class="SocialIcon">
-                <a class="Icon Icon-Github" href="https://github.com/NodeJSArmenia" target="_blank"></a>
-            </span>
-            <span class="SocialIcon">
                 <a class="Icon Icon-Facebook" href="https://www.facebook.com/groups/JavaScriptArmenia" target="_blank"></a>
             </span>
             <!-- <span class="SocialIcon">
-                <a class="Icon Icon-Twitter" href="https://twitter.com/nodeconfam" target="_blank"></a>
+                <a class="Icon Icon-Twitter" href="https://twitter.com/jssummitam" target="_blank"></a>
             </span> -->
             <!-- <span class="SocialIcon">
                 <a class="Icon Icon-Instagram" href="https://www.instagram.com/nodejsarmenia/" target="_blank"></a>
@@ -24,6 +21,9 @@
             <span class="SocialIcon">
                 <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w"
                    target="_blank"></a>
+            </span>
+            <span class="SocialIcon">
+                <a class="Icon Icon-Github" href="https://github.com/NodeJSArmenia" target="_blank"></a>
             </span>
         </div>
         <p class="Credits">

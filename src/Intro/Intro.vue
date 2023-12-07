@@ -3,11 +3,11 @@
 		<div class="Container">
 			<div id="Titles">
 				<h1 class="Title HeadTitle"><span>JavaScript Summit</span> Armenia</h1>
-				<span class="Title Subtitle Simple">February 18, 10:00 AUA!</span>
+				<span class="Title Subtitle Simple">Coming soon!</span>
 			</div>
 		</div>
-		<Banner title="A one-day event for JavaScript enthusiasts."
-				text="JavaScript Summit Armenia is a one-day event related to the JavaScript programming language. It gathers all the community enthusiasts and professionals in one place to have valuable and helpful discussions."
+		<Banner title="Single-day conference for JavaScript ninjas."
+				text="Welcome to JavaScript Summit Armenia—a day where JavaScript enthusiasts and pros unite for insightful talks and community bonding. Join us for a coding celebration filled with valuable discussions and shared passion. Get ready for a day of JavaScript joy and meaningful connections!"
 				:image-source="imageSource"
 				:image-right="false"
 				:button-link="buttonLink"
@@ -28,8 +28,8 @@ export default {
 	},
 	data: () => ({
 		imageSource: `${serverUri}/banners/polygons.png`,
-		buttonText: 'REGISTER',
-		buttonLink: 'https://www.eventbrite.com/e/javascript-summit-2023-armenia-tickets-516736331277',
+		buttonText: '',
+		buttonLink: '#',
 	}),
 };
 </script>
