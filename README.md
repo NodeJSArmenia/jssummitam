@@ -1,4 +1,4 @@
-# JSSummitAM-23
+# JavaScript Summit Armenia
 
 ## Project setup
 ```
