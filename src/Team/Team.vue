@@ -30,22 +30,22 @@ export default {
 					{
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
-						position: 'Sr. Backend Engineer at Screenful, Co-Founder at JavaScript Armenia',
+						position: 'Community Creator',
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Software Engineer at Lantern, Co-Founder at JavaScript Armenia',
+						position: 'Database Engineer',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Engineer-Researcher at CAST',
+						position: 'AI/ML Researcher',
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
 						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer at SoftConstruct',
+						position: 'Software Engineer',
 					},
 				],
 			},
