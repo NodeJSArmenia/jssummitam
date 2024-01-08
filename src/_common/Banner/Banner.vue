@@ -2,7 +2,16 @@
 	<div class="Banner" :style="{
     flexDirection: `row${imageRight ? '-reverse' : ''}`,
   }">
-		<div class="Banner BannerImage">
+		<div v-if="iframe">
+			<iframe
+			src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1&mute=1&loop=1"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen
+			></iframe>
+		</div>
+  		<div v-else class="Banner BannerImage">
 			<div
 				class="Img"
 				:style="{
@@ -10,6 +19,7 @@
       }">
 			</div>
 		</div>
+  		
 		<div class="BannerText" v-bind:class="{ 'left': !imageRight, 'right': imageRight }" :style="{
         fontWeight: `${isBoldText ? 'bold' : ''}`}">
 			<div v-if="title" class="BannerTitle">
@@ -34,6 +44,7 @@ export default {
 	props: {
 		imageRight: Boolean,
 		imageSource: String,
+		iframe: Boolean,
 		title: String,
 		text: String,
 		buttonText: String,
@@ -57,7 +68,7 @@ export default {
 			text-align: left;
 
 			.BannerButton {
-				flex-direction: row-reverse;
+				flex-direction: row;
 			}
 		}
 
@@ -67,6 +78,11 @@ export default {
 			.BannerButton {
 				flex-direction: row-reverse;
 			}
+		}
+
+		iframe {
+			width: 500px;
+    		height: 282px;
 		}
 	}
 
@@ -84,13 +100,13 @@ export default {
 	}
 
 	.BannerText {
-		width: 300px;
+		width: 282px;
 		font-weight: normal;
-		margin: 0 50px;
+		margin: 0 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: 20px;
+		padding-top: 0px;
 	}
 
 	.BannerTitle {
@@ -105,6 +121,16 @@ export default {
 		display: inline-flex;
 	}
 
+	@media (max-width: 940px) {
+		.Banner .left {
+			width: 70%;
+		}
+
+		.BannerText {
+			padding-top: 20px;
+		}
+	}
+
 	@media (max-width: 700px) {
 		.BannerText {
 			width: 100%;
@@ -116,6 +142,9 @@ export default {
 			.Img {
 				height: 200px;
 			}
+		}
+		.Banner iframe {
+			width: 100%;
 		}
 	}
 </style>
