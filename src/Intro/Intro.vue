@@ -6,8 +6,8 @@
 				<span class="Title Subtitle Simple">2024 - coming soon!</span>
 			</div>
 		</div>
-		<Banner title="Single-day conference for JavaScript ninjas."
-				text="Welcome to JavaScript Summit Armenia—a day where JavaScript enthusiasts and pros unite for insightful talks and community bonding. Join us for a coding celebration filled with valuable discussions and shared passion. Get ready for a day of JavaScript joy and meaningful connections!"
+		<Banner title="Single-day conference for JavaScript developers"
+				text="Welcome to JavaScript Summit Armenia—a day where enthusiasts and pros unite for insightful talks and community bonding. Join us for a coding celebration filled with valuable discussions and shared passion. Get ready for a day of JavaScript joy and meaningful connections!"
 				:iframe="true"
 				:image-right="false"
 				:button-link="buttonLink"
