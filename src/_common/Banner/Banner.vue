@@ -82,7 +82,7 @@ export default {
 
 		iframe {
 			width: 500px;
-    		height: 282px;
+    		height: 281px;
 		}
 	}
 
