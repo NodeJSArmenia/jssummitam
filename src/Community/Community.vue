@@ -1,7 +1,7 @@
 <template>
     <section class="Community" id="Community">
         <div class="Container">
-            <h2 class="Title">Join <span>Community</span> telegram groups</h2>
+            <h2 class="Title">Be part of our fantastic <span>Community</span></h2>
             <div class="CommunityItemCol row">
                     <div class="CommunityItem"
                          v-for="(community, index) in communities"
