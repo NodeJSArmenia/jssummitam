@@ -89,7 +89,6 @@ export default {
 }
 
 .Title {
-	text-transform: uppercase;
     font-family: Barlow;
     color: #2b2c53;
     font-weight: initial;
