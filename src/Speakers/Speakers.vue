@@ -48,7 +48,7 @@ export default {
 
 	.Title {
 		span {
-			text-shadow: 3px 3px 9px black;
+			text-shadow: 3px 3px 9px #91a6d0;
 		}
 	}
 

@@ -2,14 +2,7 @@
 	<div class="Banner" :style="{
     flexDirection: `row${imageRight ? '-reverse' : ''}`,
   }">
-		<div class="Banner BannerImage">
-			<div
-				class="Img"
-				:style="{
-        backgroundImage: `url(${imageSource})`,
-      }">
-			</div>
-		</div>
+  		<iframe src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		<div class="BannerText" v-bind:class="{ 'left': !imageRight, 'right': imageRight }" :style="{
         fontWeight: `${isBoldText ? 'bold' : ''}`}">
 			<div v-if="title" class="BannerTitle">
@@ -68,6 +61,11 @@ export default {
 				flex-direction: row-reverse;
 			}
 		}
+
+		iframe {
+			width: 500px;
+    		height: 300px;
+		}
 	}
 
 	.BannerImage {
@@ -86,7 +84,7 @@ export default {
 	.BannerText {
 		width: 300px;
 		font-weight: normal;
-		margin: 0 50px;
+		margin: 0 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -116,6 +114,9 @@ export default {
 			.Img {
 				height: 200px;
 			}
+		}
+		.Banner iframe {
+			width: 100%;
 		}
 	}
 </style>

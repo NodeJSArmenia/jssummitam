@@ -58,10 +58,10 @@ export default {
 		letter-spacing: normal;
 		text-align: center;
 
-		text-shadow: 3px 3px 9px #807b9a;
+		text-shadow: 3px 3px 9px #91a6d0;
 
 		span {
-			text-shadow: 3px 3px 9px black;
+			text-shadow: 3px 3px 9px #91a6d0;
 		}
 	}
 
