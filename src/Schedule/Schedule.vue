@@ -380,7 +380,7 @@ export default {
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
     --schedule-text: rgb(70, 67, 106);
-    --grid-border: #46436aab;
+    --grid-border: #46436a;
     --js-summit-yellow-rgb: 253, 223, 89;
 
     --am: lightcoral;
