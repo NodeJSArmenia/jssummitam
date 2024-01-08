@@ -13,6 +13,8 @@
 				:button-link="buttonLink"
 				:button-text="buttonText"
 		></Banner>
+
+		<iframe src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</section>
 
 </template>
