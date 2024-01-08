@@ -88,6 +88,7 @@ export default {
         background-size: contain;
         transition: .3s ease all;
         border-radius: 10px 10px;
+        border-radius: 20px 5px;
     }
 
     .Position {
