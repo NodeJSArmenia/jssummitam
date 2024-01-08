@@ -145,7 +145,8 @@ export default {
         }
 
         .Img {
-            background-size: 80%;
+            background-size: 100%;
+            border-radius: 40px 10px;
         }
 
         .TeamTitle {
