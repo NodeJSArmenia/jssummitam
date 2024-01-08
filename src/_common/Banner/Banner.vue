@@ -2,7 +2,7 @@
 	<div class="Banner" :style="{
     flexDirection: `row${imageRight ? '-reverse' : ''}`,
   }">
-  		<iframe src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  		<iframe src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		<div class="BannerText" v-bind:class="{ 'left': !imageRight, 'right': imageRight }" :style="{
         fontWeight: `${isBoldText ? 'bold' : ''}`}">
 			<div v-if="title" class="BannerTitle">
@@ -109,7 +109,7 @@ export default {
 		}
 
 		#Titles {
-			display: grid;
+			display: grid !important;
 		}
 	}
 
