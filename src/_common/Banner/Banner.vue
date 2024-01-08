@@ -66,10 +66,6 @@ export default {
 
 		.left {
 			text-align: left;
-
-			.BannerButton {
-				flex-direction: row;
-			}
 		}
 
 		.right {
