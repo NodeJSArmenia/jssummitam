@@ -1,7 +1,7 @@
 <template>
 	<section class="Speakers" id="Speakers">
 		<div class="Container">
-			<h2 class="Title">Join as a <span>Speaker</span></h2>
+			<h2 class="Title">Speakers</span></h2>
 			<Banner
 				:text="bannerData.BannerText"
 				:image-source="bannerData.imageSource"
@@ -29,7 +29,7 @@ export default {
 			BannerText: 'Share your experience, knowledge and skills with the Armenian JavaScript community. Join to the enthusiastic speakers team!',
 			imageSource: `${serverUri}/banners/speaker.png`,
 			buttonLink: 'https://forms.gle/kQBNAJ75o2Dh2yvM6',
-			buttonText: "Join",
+			buttonText: "Join now",
 		},
 	}),
 	methods: {

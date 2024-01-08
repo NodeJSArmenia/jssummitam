@@ -1,7 +1,7 @@
 <template>
     <section class="Team" id="Organizers">
         <div class="Container">
-            <h2 class="Title">The Enthusiastic <span>Team</span></h2>
+            <h2 class="Title">Organizers</h2>
             <div class="row"
                  v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
