@@ -64,7 +64,7 @@ export default {
 
 		iframe {
 			width: 500px;
-    		height: 300px;
+    		height: 282px;
 		}
 	}
 
@@ -82,7 +82,7 @@ export default {
 	}
 
 	.BannerText {
-		width: 300px;
+		width: 282px;
 		font-weight: normal;
 		margin: 0 20px;
 		display: flex;
@@ -101,6 +101,16 @@ export default {
 		z-index: 2;
 		margin: 10px 0px 0;
 		display: inline-flex;
+	}
+
+	@media (max-width: 940px) {
+		.Banner .left {
+			width: 70%;
+		}
+
+		#Titles {
+			display: grid;
+		}
 	}
 
 	@media (max-width: 700px) {
