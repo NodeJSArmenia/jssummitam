@@ -79,6 +79,16 @@ export default {
 		text-shadow: none;
 	}
 
+	@media (max-width: 940px) {
+		#Titles {
+			display: grid;
+		}
+
+		.Subtitle {
+			float: right;
+		}
+	}
+
 	@media (max-width: 900px) {
 		.Subtitle {
 			margin: 0 50px;

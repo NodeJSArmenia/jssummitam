@@ -107,10 +107,6 @@ export default {
 		.Banner .left {
 			width: 70%;
 		}
-
-		#Titles {
-			display: grid !important;
-		}
 	}
 
 	@media (max-width: 700px) {
