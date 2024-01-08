@@ -71,7 +71,7 @@ export default {
 
 	.Subtitle {
 		font-size: 24px;
-		float: left;
+		float: right;
 		text-shadow: none;
 	}
 
@@ -79,13 +79,17 @@ export default {
 		text-shadow: none;
 	}
 
+	.BannerText {
+		padding-top: 0px;
+	}
+
 	@media (max-width: 940px) {
 		#Titles {
 			display: grid;
 		}
 
-		.Subtitle {
-			float: right;
+		.BannerText {
+			padding-top: 20px;
 		}
 	}
 
