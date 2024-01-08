@@ -3,7 +3,7 @@
 		<Welcome/>
 		<AppHeader/>
 		<Intro/>
-		<!-- <Sponsors/> -->
+		<Sponsors/>
         <!-- <Schedule/> -->
 		<!-- <Ninjas /> -->
 		<Team/>

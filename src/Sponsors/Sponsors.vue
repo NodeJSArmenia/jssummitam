@@ -27,8 +27,8 @@ export default {
 		bannerData: {
 			BannerText: 'Let\'s develop the JavaScript Armenian community together, by providing an opportunity to get knowledge and skills from high-class and enthusiastic engineers.',
 			imageSource: `${serverUri}/banners/sponsor.png`,
-			buttonLink: 'https://forms.gle/NsGuwreN6bjzCGtp8',
-			buttonText: 'Sponsor us',
+			buttonLink: 'https://forms.gle/dFq39Rx8aYfPU3Vu5',
+			buttonText: 'Support us',
 		},
 	}),
 };

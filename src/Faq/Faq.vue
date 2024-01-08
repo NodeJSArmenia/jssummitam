@@ -84,8 +84,8 @@
 
                 <h3 class="Question">Who are behind the Node Conference Armenia? </h3>
                 <p class="Answer">
-                    To see the Node Conference Armenia team, please,
-                    <a href="#Team" v-smooth-scroll="navConfig">click here</a>.
+                    To see the JS Summit Armenia team, please,
+                    <a href="#Organizers" v-smooth-scroll="navConfig">click here</a>.
                 </p>
             </div>
         </div>
