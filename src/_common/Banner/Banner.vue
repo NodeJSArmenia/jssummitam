@@ -88,7 +88,7 @@ export default {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: 20px;
+		padding-top: 0px;
 	}
 
 	.BannerTitle {
@@ -106,6 +106,10 @@ export default {
 	@media (max-width: 940px) {
 		.Banner .left {
 			width: 70%;
+		}
+
+		.BannerText {
+			padding-top: 20px;
 		}
 	}
 

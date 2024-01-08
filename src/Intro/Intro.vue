@@ -79,17 +79,9 @@ export default {
 		text-shadow: none;
 	}
 
-	.BannerText {
-		padding-top: 0px;
-	}
-
 	@media (max-width: 940px) {
 		#Titles {
 			display: grid;
-		}
-
-		.BannerText {
-			padding-top: 20px;
 		}
 	}
 
