@@ -143,7 +143,7 @@ export default {
 			width: 100%;
 		}
 		#iframe {
-			width: 75%;
+			width: 80%;
 		}
 	}
 </style>

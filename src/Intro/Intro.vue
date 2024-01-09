@@ -103,15 +103,11 @@ export default {
 
 	@media (max-width: 700px) {
 		.Title {
-			font-size: 45px;
+			font-size: 50px;
 		}
 
 		.Subtitle {
 			font-size: 20px;
-		}
-
-		.Intro {
-			padding: 0px;
 		}
 	}
 
