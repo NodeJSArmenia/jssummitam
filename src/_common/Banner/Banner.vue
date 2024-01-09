@@ -2,7 +2,7 @@
 	<div class="Banner" :style="{
     flexDirection: `row${imageRight ? '-reverse' : ''}`,
   }">
-		<div v-if="iframe">
+		<div v-if="iframe" id="iframe">
 			<iframe
 			src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1&mute=1&loop=1"
 			title="YouTube video player"
@@ -122,11 +122,8 @@ export default {
 	}
 
 	@media (max-width: 940px) {
-		.Banner .left {
-			width: 70%;
-		}
-
 		.BannerText {
+			width: 70%;
 			padding-top: 20px;
 		}
 	}
@@ -134,7 +131,6 @@ export default {
 	@media (max-width: 700px) {
 		.BannerText {
 			width: 100%;
-			text-align: center;
 		}
 		.BannerImage {
 			width: 100%;
@@ -145,6 +141,9 @@ export default {
 		}
 		.Banner iframe {
 			width: 100%;
+		}
+		#iframe {
+			width: 75%;
 		}
 	}
 </style>

@@ -109,6 +109,10 @@ export default {
 		.Subtitle {
 			font-size: 20px;
 		}
+
+		.Intro {
+			padding: 0px;
+		}
 	}
 
 	@media (max-width: 600px) {
