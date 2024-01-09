@@ -141,7 +141,6 @@ export default {
 		}
 		.Banner iframe {
 			width: 100%;
-			height: 38vw;
 		}
 		#iframe {
 			width: 100%;
