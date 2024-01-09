@@ -140,7 +140,10 @@ export default {
 			}
 		}
 		.Banner iframe {
-			width: 100%;
+			height: 281px;
+			width: 500px;
+			margin: auto;
+			display: grid;
 		}
 		#iframe {
 			width: 100%;
