@@ -106,4 +106,10 @@ export default {
     font-size: 24px;
     font-weight: 600;
 }
+
+@media (max-width: 600px) {
+	.Section {
+		padding: 50px 0;
+	}
+}
 </style>

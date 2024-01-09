@@ -51,10 +51,4 @@ export default {
 			text-shadow: 3px 3px 9px #91a6d0;
 		}
 	}
-
-	@media (max-width: 600px) {
-		.Speakers {
-			padding: 50px 0 50px;
-		}
-	}
 </style>
