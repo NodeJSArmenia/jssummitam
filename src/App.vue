@@ -85,7 +85,6 @@ export default {
     margin: 0 auto;
     max-width: 1180px;
     width: 100%;
-    padding: 0 15px;
 }
 
 .Title {
@@ -109,7 +108,7 @@ export default {
 
 @media (max-width: 600px) {
 	.Section {
-		padding: 50px 0;
+		padding: 50px 15px;
 	}
 }
 </style>
