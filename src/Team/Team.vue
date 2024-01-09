@@ -128,6 +128,12 @@ export default {
         color: #3d3c51;
     }
 
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     @media (max-width: 700px) {
         .Name {
             font-size: 20px;
@@ -137,6 +143,14 @@ export default {
     @media (max-width: 600px) {
         .MemberCol {
             justify-content: center;
+        }
+
+        .Name {
+            font-size: 18px;
+        }
+
+        .Position {
+            font-size: 12px;
         }
 
         .Member {

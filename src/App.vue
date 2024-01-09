@@ -108,7 +108,7 @@ export default {
 
 @media (max-width: 600px) {
 	.Section {
-		padding: 50px 15px;
+		padding: 50px 15px !important;
 	}
 }
 </style>
