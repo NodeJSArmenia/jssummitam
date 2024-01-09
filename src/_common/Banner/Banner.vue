@@ -130,7 +130,7 @@ export default {
 
 	@media (max-width: 700px) {
 		.BannerText {
-			width: 100%;
+			width: 70%;
 		}
 		.BannerImage {
 			width: 100%;

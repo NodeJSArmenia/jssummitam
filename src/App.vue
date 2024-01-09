@@ -109,6 +109,7 @@ export default {
 @media (max-width: 600px) {
 	#app > section {
 		padding: 0px 15px !important;
+		margin-bottom: 50px;
 	}
 }
 </style>
