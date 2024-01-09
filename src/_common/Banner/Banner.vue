@@ -141,9 +141,10 @@ export default {
 		}
 		.Banner iframe {
 			width: 100%;
+			height: 38vw;
 		}
 		#iframe {
-			width: 80%;
+			width: 100%;
 		}
 	}
 </style>
