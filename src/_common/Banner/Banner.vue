@@ -141,7 +141,7 @@ export default {
 		}
 		.Banner iframe {
 			height: 281px;
-			width: 500px;
+			width: 100vw;
 			margin: auto;
 			display: grid;
 		}
