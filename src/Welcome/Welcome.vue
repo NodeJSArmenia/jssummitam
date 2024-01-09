@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .Welcome, .Network {
+    .Welcome {
         width: 100%;
         height: 100%;
     }
