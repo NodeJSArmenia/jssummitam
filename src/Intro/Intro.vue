@@ -2,7 +2,7 @@
 	<section class="Intro" id="Intro">
 		<div class="Container">
 			<div id="Titles">
-				<h1 class="Title HeadTitle"><span>JavaScript Summit</span> Armenia</h1>
+				<h1 class="Title HeadTitle"><span></span>JavaScript Summit Armenia</h1>
 				<span class="Title Subtitle Simple">2024 - coming soon!</span>
 			</div>
 		</div>
