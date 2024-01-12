@@ -52,7 +52,7 @@ export default {
 
     .CommunityItemCol {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 80%;
         margin: 0 auto;
@@ -77,8 +77,7 @@ export default {
         background-repeat: no-repeat;
         background-size: contain;
         transition: .3s ease all;
-        border-radius: 10px 10px;
-        border-radius: 20px 5px;
+        border-radius: 10px;
     }
 
     .Position {
@@ -95,13 +94,12 @@ export default {
 
     .Name {
         font-family: Barlow;
-        font-size: 18px;
-        font-weight: bold;
+        font-weight: 400;
+        font-size: 14px;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.25;
-        letter-spacing: 0.5px;
-        color: #3d3c51;
+        color: black;
     }
 
     .Name:hover {

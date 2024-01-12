@@ -380,7 +380,7 @@ export default {
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
     --schedule-text: rgb(70, 67, 106);
-    --grid-border: #46436a;
+    --grid-border: #8C52FF;
     --js-summit-yellow-rgb: 253, 223, 89;
 
     --am: lightcoral;
@@ -637,7 +637,7 @@ button {
     padding: 16px;
     overflow: hidden;
     background-color: #fff;
-    background-image: radial-gradient(#46436a 1px, #e6e6e6 0);
+    background-image: radial-gradient(#8C52FF 1px, #e6e6e6 0);
     background-size: 75px 75px;
 
     &-in {

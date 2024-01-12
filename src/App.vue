@@ -76,7 +76,7 @@ export default {
     // background: url(https://topentol.sirv.com/jssummit/bg.jpg) $bg-primary repeat;
 
     background-color: #ffffff;
-    background-image: radial-gradient(#46436a 1px, #e6e6e6 1px);
+    background-image: radial-gradient(#8C52FF 1px, #e6e6e6 1px);
     background-size: 75px 75px;
     color: #3d3c51;
 }
