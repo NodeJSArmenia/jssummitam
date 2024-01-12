@@ -215,7 +215,7 @@ export default {
         top: 0;
         position: absolute;
         right: 0;
-        color: #ffde59 !important;
+        color: #e6e6e6 !important;
         margin: 15px 25px;
         font-size: 30px;
     }
