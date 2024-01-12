@@ -72,13 +72,13 @@ export default {
 #app {
     font-family: "Barlow", "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: $text-primary;
+
     // background: url(https://topentol.sirv.com/jssummit/bg.jpg) $bg-primary repeat;
 
-    background-color: #ffffff;
-    background-image: radial-gradient(#8C52FF 1px, #e6e6e6 1px);
-    background-size: 75px 75px;
-    color: #3d3c51;
+    background-color: #fff;
+    background-image: radial-gradient(#000000 1px,#ffffff 0);
+    background-size: 50px 50px;
+    color: #1b1c32;
 }
 
 .Container {
