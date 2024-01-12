@@ -163,8 +163,8 @@ export default {
 
         &.active,
         &:hover {
-            color: #8C52FF;
-            font-weight: bold;
+            color: #1c1d34;
+            font-weight: 700;
         }
     }
 

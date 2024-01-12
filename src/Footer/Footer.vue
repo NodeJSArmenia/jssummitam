@@ -176,7 +176,7 @@ export default {
     .Credits {
         margin: 20px;
         font-family: Barlow;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;

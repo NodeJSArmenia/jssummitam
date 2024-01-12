@@ -1,7 +1,7 @@
 <template>
     <section class="Community" id="Community">
         <div class="Container">
-            <h2 class="Title">Community</h2>
+            <h2 class="Title">Telegram groups</h2>
             <div class="CommunityItemCol row">
                     <div class="CommunityItem"
                          v-for="(community, index) in communities"
