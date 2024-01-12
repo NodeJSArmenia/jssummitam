@@ -22,25 +22,15 @@ import { serverUri } from '../variables';
 export default {
 	data: () => ({
 		communities: [
+            {
+				img: `${serverUri}/chats/8.jpg`,
+				name: 'JavaScript',
+				url: 'https://t.me/javascript',
+			},
 			{
-				img: `${serverUri}/chats/5.jpg`,
+				img: `${serverUri}/chats/7.jpg`,
 				name: 'JavaScript Armenia',
 				url: 'https://t.me/javascriptarmenia',
-			},
-			{
-				img: `${serverUri}/chats/4.jpg`,
-				name: 'Node.js Armenia',
-				url: 'https://t.me/nodejsarmenia',
-			},
-			{
-				img: `${serverUri}/chats/3.jpg`,
-				url: 'https://t.me/reactarmenia',
-				name: 'React Armenia',
-			},
-			{
-				img: `${serverUri}/chats/2.jpg`,
-				name: 'Vue.js Armenia',
-				url: 'https://t.me/vuejsarmenia',
 			},
 		],
 	}),
