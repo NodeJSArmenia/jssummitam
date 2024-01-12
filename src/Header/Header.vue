@@ -90,7 +90,6 @@ export default {
     z-index: 100;
     background: $bg-primary;
     transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
-    border-bottom: 1px solid $green-primary;
 
     &.-sticked {
         display: flex;
