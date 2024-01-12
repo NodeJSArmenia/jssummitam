@@ -8,7 +8,7 @@
                          :key="index">
                         <a :href="community.url" target="_blank" class="Name">
                             <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
-                            <h3>{{community.name}}</h3>
+                            <p>{{community.name}}</p>
                         </a>
                     </div>
                 </div>
