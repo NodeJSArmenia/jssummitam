@@ -108,8 +108,9 @@ export default {
     }
 
     .Name {
+        background: white;
         font-family: Barlow;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -118,7 +119,8 @@ export default {
     }
 
     .Position {
-        font-size: 14px;
+        background: white;
+        font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
