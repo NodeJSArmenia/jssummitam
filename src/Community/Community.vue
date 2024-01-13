@@ -100,6 +100,7 @@ export default {
         font-style: normal;
         line-height: 1.25;
         color: black;
+        background: white;
     }
 
     .Name:hover {
