@@ -102,7 +102,7 @@ export default {
         position: relative;
         overflow: hidden;
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 50%;
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
