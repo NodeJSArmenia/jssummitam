@@ -6,7 +6,7 @@
 		<Sponsors/>
 		<Speakers/>
         <!-- <Schedule/> -->
-		<!-- <Ninjas /> -->
+		<Ninjas />
 		<Team/>
 		<Community/>
 		<!-- <Location/> -->

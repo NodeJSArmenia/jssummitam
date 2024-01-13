@@ -1,7 +1,6 @@
 <template>
     <section class="Ninjas" id="Ninjas">
         <div class="Container">
-            <h2 class="Title">The powerfull <span>Ninjas</span></h2>
             <div class="row"
                  v-for="(ninja, ninjaIndex) in ninjas"
                  :key="ninjaIndex">
@@ -28,69 +27,39 @@ export default {
 			{
 				members: [
 					{
-						img: `${serverUri}/speakers/arsen.png`,
+						img: `${serverUri}/speakers/arsen.jpg`,
 						name: 'Arsen Mazmanyan',
-						position: 'Sr. Marketing Creatives Developer at Playrix',
+						position: 'Game Developer at PoggiPlay',
 					},
 					{
-						img: `${serverUri}/speakers/anushavan.png`,
-						name: 'Anushavan Yeghiazaryan',
-						position: 'Sr. Marketing Creatives Developer at Fidem',
+						img: `${serverUri}/speakers/narek.jpg`,
+						name: 'Narek Hakobyan',
+						position: 'Co-Founder & CTO of HR Drone',
 					},
 					{
-						img: `${serverUri}/team/varik.png`,
-						name: 'Varik Matevosyan ',
-						position: 'Sr. Software Engineer at CoinStats',
+						img: `${serverUri}/team/lilit.jpg`,
+						name: 'Lilit Tadevosyan',
+						position: 'Sr. Computer Scientist at Adobe',
 					},
 					{
-						img: `${serverUri}/speakers/vardges.png`,
-						name: 'Vardges Musheghyan',
-						position: 'Software Engineer at Picsart',
+						img: `${serverUri}/speakers/armen.jpg`,
+						name: 'Armen Vardanyan',
+						position: 'Google Developer Expert for Angular',
+					},
+                    {
+						img: `${serverUri}/speakers/tigran.jpg`,
+						name: 'Tigran Bayburtsyan',
+						position: 'Founder & CTO at TreeScale',
 					},
 					{
-						img: `${serverUri}/speakers/albert_.png`,
+						img: `${serverUri}/speakers/alber.jpg`,
 						name: 'Albert Hovhannisian',
 						position: 'Co-Founder & CTO at SharpIdea',
 					},
 					{
-						img: `${serverUri}/speakers/levon.png`,
-						name: 'Levon Khachatryan',
-						position: 'Software Engineer at inted.ai',
-					},
-					{
-						img: `${serverUri}/speakers/ashot.png`,
-						name: 'Ashot Hovhannisyan',
-						position: 'Frontend Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/speakers/davit.png`,
-						name: 'Davit Karapetyan',
-						position: 'Product Security Engineer at Krisp',
-					},
-					{
-						img: `${serverUri}/speakers/armen.png`,
-						name: 'Armen Vardanyan',
-						position: 'Front End Team Lead at VOLO LLC',
-					},
-					{
-						img: `${serverUri}/speakers/alen.png`,
-						name: 'Alen Abrahamyan',
-						position: 'Software Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/speakers/rudolf.png`,
-						name: 'Rudolf Gabrielyan',
-						position: 'Sr. Software Engineer at Prelaunch',
-					},
-					{
-						img: `${serverUri}/speakers/vahe.png`,
-						name: 'Vahe Mkrtchyan',
-						position: 'Senior Computer Scientist at Adobe',
-					},
-					{
-						img: `${serverUri}/speakers/tigran.png`,
-						name: 'Tigran Avetisyan',
-						position: 'Senior Software Engineer',
+						img: `${serverUri}/speakers/elmira.jpg`,
+						name: 'Elmira Avagyan',
+						position: 'Sr. Software Engineer at Acumen',
 					},
 				],
 			},
