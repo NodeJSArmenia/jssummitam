@@ -38,12 +38,12 @@ export default {
 						position: 'Co-Founder & CTO of HR Drone',
 					},
 					{
-						img: `${serverUri}/team/lilit.jpg`,
+						img: `${serverUri}/speakers/lilit.jpg`,
 						name: 'Lilit Tadevosyan',
 						position: 'Sr. Computer Scientist at Adobe',
 					},
                     {
-						img: `${serverUri}/team/lilit.jpg`,
+						img: `${serverUri}/speakers/gevorg.jpg`,
 						name: 'Gevorg Martirosyan',
 						position: 'CTO at Blackmar (PhD, MBA)',
 					},
@@ -114,6 +114,8 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     transition: 0.3s ease all;
+    border-radius: 100px;
+    filter: grayscale(0.5);
 }
 
 .Position {
@@ -123,6 +125,7 @@ export default {
 .Member:hover {
     .Img {
         transform: scale(1.1);
+        filter: none;
     }
 }
 
