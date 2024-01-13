@@ -88,6 +88,7 @@ export default {
 }
 
 .Title {
+	background: white;
     font-family: Barlow;
     color: #2b2c53;
     font-weight: initial;

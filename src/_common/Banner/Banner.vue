@@ -100,6 +100,7 @@ export default {
 	}
 
 	.BannerText {
+		background: white;
 		width: 282px;
 		font-weight: normal;
 		margin: 0 20px;
