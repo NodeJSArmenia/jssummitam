@@ -53,14 +53,14 @@ export default {
 						position: 'Google DevExpert for Angular',
 					},
 					{
-						img: `${serverUri}/speakers/albert.jpg`,
-						name: 'Albert Hovhannisian',
-						position: 'Co-Founder & CTO at SharpIdea',
-					},
-					{
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
 						position: 'Sr. Software Engineer at Acumen',
+					},
+                    {
+						img: `${serverUri}/speakers/albert.jpg`,
+						name: 'Albert Hovhannisian',
+						position: 'Co-Founder & CTO at SharpIdea',
 					},
                     {
 						img: `${serverUri}/speakers/arsen.jpg`,
