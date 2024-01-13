@@ -31,7 +31,11 @@ export default {
 						name: 'Tigran Bayburtsyan',
 						position: 'Founder & CTO at TreeScale',
 					},
-
+                    {
+						img: `${serverUri}/speakers/gevorg.jpg`,
+						name: 'Gevorg Martirosyan',
+						position: 'CTO at Blackmar (PhD, MBA)',
+					},
 					{
 						img: `${serverUri}/speakers/narek.jpg`,
 						name: 'Narek Hakobyan',
@@ -42,25 +46,20 @@ export default {
 						name: 'Lilit Tadevosyan',
 						position: 'Sr. Computer Scientist at Adobe',
 					},
-                    {
-						img: `${serverUri}/speakers/gevorg.jpg`,
-						name: 'Gevorg Martirosyan',
-						position: 'CTO at Blackmar (PhD, MBA)',
-					},
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
 						name: 'Armen Vardanyan',
 						position: 'Google DevExpert for Angular',
 					},
-					{
+                    {
+						img: `${serverUri}/speakers/tigran-2.jpg`,
+						name: 'Tigran Hayrapteyan',
+						position: 'Lecturer & Vedio Creator',
+					},
+                    {
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
 						position: 'Sr. Software Engineer at Acumen',
-					},
-                    {
-						img: `${serverUri}/speakers/tigran.jpg`,
-						name: 'Tigran Hayrapteyan',
-						position: 'Lecturer & Vedio Creator',
 					},
                     {
 						img: `${serverUri}/speakers/albert.jpg`,
