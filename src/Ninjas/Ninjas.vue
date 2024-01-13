@@ -50,7 +50,7 @@ export default {
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
 						name: 'Armen Vardanyan',
-						position: 'Google Developer Expert for Angular',
+						position: 'Google DevExpert for Angular',
 					},
 					{
 						img: `${serverUri}/speakers/albert.jpg`,
@@ -140,7 +140,7 @@ export default {
 }
 
 .Position {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
