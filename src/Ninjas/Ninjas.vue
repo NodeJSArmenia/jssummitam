@@ -58,6 +58,11 @@ export default {
 						position: 'Sr. Software Engineer at Acumen',
 					},
                     {
+						img: `${serverUri}/speakers/tigran.jpg`,
+						name: 'Tigran Hayrapteyan',
+						position: 'Lecturer & Vedio Creator',
+					},
+                    {
 						img: `${serverUri}/speakers/albert.jpg`,
 						name: 'Albert Hovhannisian',
 						position: 'Co-Founder & CTO at SharpIdea',
@@ -107,14 +112,14 @@ export default {
 }
 
 .Img {
-    width: 100%;
-    padding-bottom: 100%;
+    width: 180px;
+    height: 180px;
     margin-bottom: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     transition: 0.3s ease all;
-    border-radius: 100px;
+    border-radius: 50%;
     filter: grayscale(0.5);
 }
 
@@ -152,6 +157,13 @@ export default {
     color: #3d3c51;
 }
 
+@media (max-width: 900px) {
+    .Img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 @media (max-width: 700px) {
     .Name {
         font-size: 20px;
@@ -170,6 +182,9 @@ export default {
 
     .Img {
         background-size: 80%;
+        margin: auto;
+        width: 200px;
+        height: 200px;
     }
 
     .NinjaTitle {
