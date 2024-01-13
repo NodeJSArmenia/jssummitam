@@ -26,11 +26,12 @@ export default {
 		ninjas: [
 			{
 				members: [
-					{
-						img: `${serverUri}/speakers/arsen.jpg`,
-						name: 'Arsen Mazmanyan',
-						position: 'Game Developer at PoggiPlay',
+                    {
+						img: `${serverUri}/speakers/tigran.jpg`,
+						name: 'Tigran Bayburtsyan',
+						position: 'Founder & CTO at TreeScale',
 					},
+
 					{
 						img: `${serverUri}/speakers/narek.jpg`,
 						name: 'Narek Hakobyan',
@@ -41,15 +42,15 @@ export default {
 						name: 'Lilit Tadevosyan',
 						position: 'Sr. Computer Scientist at Adobe',
 					},
+                    {
+						img: `${serverUri}/team/lilit.jpg`,
+						name: 'Gevorg Martirosyan',
+						position: 'CTO at Blackmar (PhD, MBA)',
+					},
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
 						name: 'Armen Vardanyan',
 						position: 'Google Developer Expert for Angular',
-					},
-                    {
-						img: `${serverUri}/speakers/tigran.jpg`,
-						name: 'Tigran Bayburtsyan',
-						position: 'Founder & CTO at TreeScale',
 					},
 					{
 						img: `${serverUri}/speakers/alber.jpg`,
@@ -60,6 +61,11 @@ export default {
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
 						position: 'Sr. Software Engineer at Acumen',
+					},
+                    {
+						img: `${serverUri}/speakers/arsen.jpg`,
+						name: 'Arsen Mazmanyan',
+						position: 'Game Developer at PoggiPlay',
 					},
 				],
 			},
