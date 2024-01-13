@@ -53,7 +53,7 @@ export default {
 						position: 'Google Developer Expert for Angular',
 					},
 					{
-						img: `${serverUri}/speakers/alber.jpg`,
+						img: `${serverUri}/speakers/albert.jpg`,
 						name: 'Albert Hovhannisian',
 						position: 'Co-Founder & CTO at SharpIdea',
 					},
