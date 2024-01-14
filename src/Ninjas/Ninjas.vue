@@ -180,7 +180,6 @@ export default {
     }
 
     .Img {
-        background-size: 80%;
         margin: auto;
         width: 200px;
         height: 200px;
