@@ -54,7 +54,7 @@ export default {
                     {
 						img: `${serverUri}/speakers/tigran-2.jpg`,
 						name: 'Tigran Hayrapteyan',
-						position: 'Lecturer & Vidio Creator',
+						position: 'Lecturer & Video Creator',
 					},
                     {
 						img: `${serverUri}/speakers/elmira.jpg`,
