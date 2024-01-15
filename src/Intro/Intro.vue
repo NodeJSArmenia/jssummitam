@@ -3,7 +3,7 @@
 		<div class="Container">
 			<div id="Titles">
 				<h1 class="Title HeadTitle"><span></span>JavaScript Summit Armenia</h1>
-				<span class="Title Subtitle Simple">2024 - coming soon!</span>
+				<span class="Title Subtitle Simple">April 13 2024, 2 PM</span>
 			</div>
 		</div>
 		<Banner title="Single-day conference for JavaScript developers"
