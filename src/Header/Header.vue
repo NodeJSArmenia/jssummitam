@@ -128,7 +128,7 @@ export default {
 
     &:hover {
         background-color: #ffffff !important;
-        border: none !important;
+        border-color: #fff !important;
     }
 }
 
