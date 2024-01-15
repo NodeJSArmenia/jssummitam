@@ -35,7 +35,7 @@ export default {
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Database Engineer',
+						position: 'Software Engineer',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
