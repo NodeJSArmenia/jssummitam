@@ -122,6 +122,16 @@ export default {
     z-index: 2;
 }
 
+.RequestInvite .Button {
+    color: #8c52ff !important;
+    background-color: #ffffff !important;
+
+    &:hover {
+        background-color: #ffffff !important;
+        border: none !important;
+    }
+}
+
 .Navigation {
     display: flex;
     flex-direction: row;
