@@ -3,15 +3,15 @@
 		<div class="Container">
 			<div id="Titles">
 				<h1 class="Title HeadTitle"><span></span>JavaScript Summit Armenia</h1>
-				<span class="Title Subtitle Simple">April 13 2024, 2 PM</span>
+				<span class="Title Subtitle Simple">April 1</span>
 			</div>
 		</div>
 		<Banner title="Single-day conference for JavaScript developers"
 				text="Welcome to JavaScript Summit Armenia—a day where enthusiasts and pros unite for insightful talks and community bonding. Join us for a coding celebration filled with valuable discussions and shared passion. Get ready for a day of JavaScript joy and meaningful connections!"
 				:iframe="true"
 				:image-right="false"
-				:button-link="https://www.eventbrite.com/e/javascript-summit-2024-tickets-798904844897"
-				:button-text="Register Now"
+				:button-link="buttonLink"
+				:button-text="buttonText"
 		></Banner>
 	</section>
 
@@ -28,8 +28,8 @@ export default {
 	},
 	data: () => ({
 		imageSource: `${serverUri}/banners/polygons.png`,
-		buttonText: '',
-		buttonLink: '#',
+		buttonText: 'Register Now',
+		buttonLink: 'https://www.eventbrite.com/e/javascript-summit-2024-tickets-798904844897',
 	}),
 };
 </script>
