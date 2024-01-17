@@ -46,6 +46,11 @@ export default {
 						name: 'Lilit Tadevosyan',
 						position: 'Sr. Computer Scientist at Adobe',
 					},
+                    {
+						img: `${serverUri}/team/4.jpg`,
+						name: 'Varik Matevosyan',
+						position: 'Software Engineer',
+					},
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
 						name: 'Armen Vardanyan',
@@ -60,6 +65,11 @@ export default {
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
 						position: 'Sr. Software Engineer at Acumen',
+					},
+                    {
+						img: `${serverUri}/team/1.jpg`,
+						name: 'Nairi Harutyunyan',
+						position: 'Tech Writer, Podcaster',
 					},
                     {
 						img: `${serverUri}/speakers/albert.jpg`,
