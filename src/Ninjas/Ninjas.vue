@@ -51,25 +51,25 @@ export default {
 						name: 'Varik Matevosyan',
 						position: 'Software Engineer',
 					},
+                    {
+						img: `${serverUri}/speakers/elmira.jpg`,
+						name: 'Elmira Avagyan',
+						position: 'Sr. Software Engineer at Acumen',
+					},
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
 						name: 'Armen Vardanyan',
 						position: 'Google DevExpert for Angular',
 					},
                     {
-						img: `${serverUri}/speakers/tigran-2.jpg`,
-						name: 'Tigran Hayrapteyan',
-						position: 'Lecturer & Video Creator',
-					},
-                    {
-						img: `${serverUri}/speakers/elmira.jpg`,
-						name: 'Elmira Avagyan',
-						position: 'Sr. Software Engineer at Acumen',
-					},
-                    {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Writer, Podcaster',
+					},
+                    {
+						img: `${serverUri}/speakers/tigran-2.jpg`,
+						name: 'Tigran Hayrapteyan',
+						position: 'Lecturer & Video Creator',
 					},
                     {
 						img: `${serverUri}/speakers/albert.jpg`,
