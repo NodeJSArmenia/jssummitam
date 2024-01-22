@@ -110,7 +110,7 @@ export default {
     .Name {
         background: white;
         font-family: Barlow;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
