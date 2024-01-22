@@ -44,12 +44,12 @@ export default {
 					{
 						img: `${serverUri}/speakers/lilit.jpg`,
 						name: 'Lilit Tadevosyan',
-						position: 'Sr. Computer Scientist at Adobe',
+						position: 'Computer Scientist at Adobe',
 					},
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Software Engineer',
+						position: 'Software Engineer at LanternDB',
 					},
                     {
 						img: `${serverUri}/speakers/svetlana.jpg`,
@@ -79,7 +79,7 @@ export default {
                     {
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
-						position: 'Sr. Software Engineer at Acumen',
+						position: 'Software Engineer at Acumen',
 					},
                     {
 						img: `${serverUri}/speakers/arsen.jpg`,
