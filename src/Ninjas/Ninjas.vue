@@ -52,9 +52,9 @@ export default {
 						position: 'Software Engineer',
 					},
                     {
-						img: `${serverUri}/speakers/elmira.jpg`,
-						name: 'Elmira Avagyan',
-						position: 'Sr. Software Engineer at Acumen',
+						img: `${serverUri}/speakers/svetlana.jpg`,
+						name: 'Svetlana Hovhannisyan',
+						position: 'Tech Sourcer at InConcept Labs',
 					},
 					{
 						img: `${serverUri}/speakers/armen.jpg`,
@@ -75,6 +75,11 @@ export default {
 						img: `${serverUri}/speakers/albert.jpg`,
 						name: 'Albert Hovhannisian',
 						position: 'Co-Founder & CTO at SharpIdea',
+					},
+                    {
+						img: `${serverUri}/speakers/elmira.jpg`,
+						name: 'Elmira Avagyan',
+						position: 'Sr. Software Engineer at Acumen',
 					},
                     {
 						img: `${serverUri}/speakers/arsen.jpg`,
