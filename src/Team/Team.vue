@@ -85,7 +85,7 @@ export default {
     }
 
     .Member {
-        width: 21%;
+        width: 18%;
         text-align: center;
         margin-bottom: 25px;
         padding: 0 10px;
