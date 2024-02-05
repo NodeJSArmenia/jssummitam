@@ -47,6 +47,11 @@ export default {
 						name: 'Gor Gharagyozyan',
 						position: 'Software Engineer',
 					},
+                    {
+						img: `${serverUri}/team/5.jpg`,
+						name: 'Hrach Avagyan',
+						position: 'CEO at HydraLab',
+					},
 				],
 			},
 		],
