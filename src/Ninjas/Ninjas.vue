@@ -129,11 +129,11 @@ export default {
     width: 180px;
     height: 180px;
     margin-bottom: 10px;
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 50%;
     transition: 0.3s ease all;
+    border-radius: 50%;
     filter: grayscale(0.5);
 }
 

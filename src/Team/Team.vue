@@ -95,11 +95,11 @@ export default {
         width: 100%;
         padding-bottom: 100%;
         margin-bottom: 10px;
-        background-position: center;
+        background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 50%;
         transition: .3s ease all;
-        border-radius: 40px 10px;
     }
 
     .Position {
@@ -163,11 +163,6 @@ export default {
         .Member {
             width: 100%;
             padding: 0 30px;
-        }
-
-        .Img {
-            background-size: 100%;
-            border-radius: 40px 10px;
         }
 
         .TeamTitle {
