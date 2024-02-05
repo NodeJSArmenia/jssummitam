@@ -13,10 +13,10 @@
 			</section>
 			<section class="Section">
 				<h3 class="Title SubTitle">Media partners</h3>
-				<div class="MediaPartner"
+				<div class="MediaPartners"
 							v-for="(partner, index) in mediaPartners"
 							:key="index">
-						<div class="Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+						<div class="MediaPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
 				</div>
 			</section>
 		</div>
@@ -71,7 +71,16 @@ export default {
 		font-size: 25px;
 	}
 
+	.MediaPartners {
+		display: flex;
+    justify-content: center;
+	}
+
 	.MediaPartner {
-		width: 250px;
+		width: 150px;
+    height: 100px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 	}
 </style>
