@@ -11,6 +11,14 @@
 					:image-right="false"
 				></Banner>
 			</section>
+			<section class="Section">
+				<h3 class="Title SubTitle">Media partners</h3>
+				<div class="MediaPartner"
+							v-for="(partner, index) in mediaPartners"
+							:key="index">
+						<div class="Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+				</div>
+			</section>
 		</div>
 	</section>
 </template>
@@ -24,6 +32,11 @@ export default {
 		Banner,
 	},
 	data: () => ({
+		mediaPartners: [
+			{
+				img: `${serverUri}/sponsors/how2b.png`,
+			},
+		],
 		bannerData: {
 			BannerText: 'Let\'s build up the JavaScript Armenian community together, giving everyone a chance to learn from skilled and excited engineers.',
 			imageSource: `${serverUri}/banners/sponsor.png`,
@@ -52,5 +65,13 @@ export default {
 		span {
 			text-shadow: 3px 3px 9px #91a6d0;
 		}
+	}
+
+	.SubTitle {
+		font-size: 25px;
+	}
+
+	.MediaPartner {
+		width: 250px;
 	}
 </style>
