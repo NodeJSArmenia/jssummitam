@@ -64,7 +64,11 @@
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">{{topic.topic_title}}</h6>
+                        <a v-if="topic.videoUrl" class="schedule-item-title-in" :href="topic.videoUrl" target="_blank">
+                            <i class="icon-youtube"></i>
+                            {{topic.topic_title}}
+                        </a>
+                        <h6 v-else class="schedule-item-title-in">{{topic.topic_title}}</h6>
                     </div>
                     <div class="schedule-item-info" v-if="topic.speaker">
                       <div class="schedule-item-speaker">
@@ -81,7 +85,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -90,275 +94,288 @@
 </template>
 
 <script>
-import { serverUri } from "../variables";
+import { serverUri } from '../variables';
+
 export default {
-    data: () => ({
-        quarterHour: 100,
-        eventDuration: 2,
-        rooms: [
-            {
-                name: "Manoogian hall",
-                talks: [
-                    {
-                        start: "11:00",
-                        end: "11:10",
-                        topic_title: "Opening"
-                    },
-                    {
-                        start: "11:10",
-                        end: "11:40",
-                        topic_title: "Let's make games with JavaScript",
-                        speaker: "Arsen Mazmanyan",
-                        img: `${serverUri}/speakers/arsen.png`
-                    },
-                    {
-                        start: "11:40",
-                        end: "11:50",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "11:50",
-                        end: "12:20",
-                        topic_title: "React with Web3 and Smart contracts",
-                        speaker: "Anushavan Yeghiazaryan",
-                        img: `${serverUri}/speakers/anushavan.png`
-                    },
-                    {
-                        start: "12:20",
-                        end: "12:30",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "12:30",
-                        end: "13:00",
-                        topic_title: "The Journey to Microservice Adoption",
-                        speaker: "Tigran Avetisyan",
-                        img: `${serverUri}/speakers/tigran.png`
-                    },
-                    {
-                        start: "13:00",
-                        end: "13:30",
-                        topic_title: "BREAK"
-                    },
-                    {
-                        start: "13:30",
-                        end: "14:00",
-                        topic_title: "The Future of Angular",
-                        speaker: "Armen Vardanyan",
-                        img: `${serverUri}/speakers/armen.png`
-                    },
-                    {
-                        start: "14:00",
-                        end: "14:10",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "14:10",
-                        end: "14:40",
-                        topic_title: "Software design",
-                        speaker: "Vardges Musheghyan",
-                        img: `${serverUri}/speakers/vardges.png`
-                    },
-                    {
-                        start: "14:40",
-                        end: "14:50",
-                        topic_title: "CLOSING"
-                    }
-                ]
-            },
-            {
-                name: "113W PAB",
-                talks: [
-                    {
-                        start: "11:00",
-                        end: "11:10",
-                        empty: true
-                    },
-                    {
-                        start: "11:10",
-                        end: "11:40",
-                        topic_title: "JavaScript attack surface",
-                        speaker: "Davit Karapetyan",
-                        img: `${serverUri}/speakers/davit.png`
-                    },
-                    {
-                        start: "11:40",
-                        end: "11:50",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "11:50",
-                        end: "12:20",
-                        topic_title: "ML/AI models in JavaScript environment",
-                        speaker: "Levon Khachatryan",
-                        img: `${serverUri}/speakers/levon.png`
-                    },
-                    {
-                        start: "12:20",
-                        end: "12:30",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "12:30",
-                        end: "13:00",
-                        topic_title: "Be prepared for production incidents",
-                        speaker: "Varik Matevosyan",
-                        img: `${serverUri}/team/varik.png`
-                    },
-                    {
-                        start: "13:00",
-                        end: "13:30",
-                        topic_title: "BREAK"
-                    },
-                    {
-                        start: "13:30",
-                        end: "14:00",
-                        topic_title: "The Power of Mathematics in JavaScript",
-                        speaker: "Alen Abrahamyan",
-                        img: `${serverUri}/speakers/alen.png`
-                    },
-                    {
-                        start: "14:00",
-                        end: "14:10",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "14:10",
-                        end: "14:40",
-                        topic_title: "Cracking the JavaScript Interviews",
-                        speaker: "Albert Hovhannisyan",
-                        img: `${serverUri}/speakers/albert_.png`
-                    },
-                    {
-                        start: "14:40",
-                        end: "14:50",
-                        empty: true
-                    }
-                ]
-            },
-            {
-                name: "112W PAB",
-                talks: [
-                    {
-                        start: "11:00",
-                        end: "11:10",
-                        empty: true
-                    },
-                    {
-                        start: "11:10",
-                        end: "11:40",
-                        topic_title:
-                            "From Denial to Acceptance: The Journey to Microservice Adoption",
-                        speaker: "Tigran Avetisyan",
-                        img: `${serverUri}/speakers/tigran.png`
-                    },
-                    {
-                        start: "11:40",
-                        end: "11:50",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "11:50",
-                        end: "12:20",
-                        topic_title: "Building Fullstack applications on AWS",
-                        speaker: "Rudolf Gabrielyan",
-                        img: `${serverUri}/speakers/rudolf.png`
-                    },
-                    {
-                        start: "12:20",
-                        end: "12:30",
-                        // empty: true
-                        topic_title: "BREAK 10 MIN"
-                    },
-                    {
-                        start: "12:30",
-                        end: "13:00",
-                        topic_title: "Stop using Redux",
-                        speaker: "Ashot Hovhannisyan",
-                        img: `${serverUri}/speakers/ashot.png`
-                    },
-                    {
-                        start: "13:00",
-                        end: "13:30",
-                        topic_title: "BREAK"
-                    },
-                    {
-                        start: "13:30",
-                        end: "14:40",
-                        topic_title:
-                            "Terminal session: From scratch to Production",
-                        speaker: "Vahe Mkrtchyan",
-                        img: `${serverUri}/speakers/vahe.png`
-                    }
-                ]
-            },
-            {
-                name: "Faculty Lounge",
-                talks: [
-                    {
-                        start: "11:00",
-                        end: "11:10",
-                        empty: true
-                    },
-                    {
-                        start: "11:50",
-                        end: "15:30",
-                        topic_title: "Adobe challenges"
-                    }
-                ]
-            }
-        ],
-        teams: [
-            {
-                members: [
-                    {
-                        img: `${serverUri}/team/nairi.png`,
-                        name: "Nairi Harutyunyan",
-                        position:
-                            "Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia"
-                    },
-                    {
-                        img: `${serverUri}/team/varik.png`,
-                        name: "Varik Matevosyan",
-                        position:
-                            "Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia"
-                    },
-                    {
-                        img: `${serverUri}/team/gor.png`,
-                        name: "Gor Gharagyozyan",
-                        position: "Software Engineer at SoftConstruct"
-                    },
-                    {
-                        img: `${serverUri}/team/vahagn.png`,
-                        name: "Vahagn Melkonyan",
-                        position: "AI/ML Engineer-Researcher at CAST"
-                    }
-                ]
-            }
-        ],
-        timeline: [
-            "11:00",
-            "11:10",
-            "11:40",
-            "11:50",
-            "12:20",
-            "12:30",
-            "13:00",
-            "13:30",
-            "14:00",
-            "14:10",
-            "14:40",
-            "14:50",
-            "15:30"
-        ]
-    })
+	data: () => ({
+		quarterHour: 100,
+		eventDuration: 2,
+		rooms: [
+			{
+				name: 'Manoogian hall',
+				talks: [
+					{
+						start: '11:00',
+						end: '11:10',
+						topic_title: 'Opening',
+					},
+					{
+						start: '11:10',
+						end: '11:40',
+						topic_title: "Let's make games with JavaScript",
+						speaker: 'Arsen Mazmanyan',
+						img: `${serverUri}/speakers/arsen.png`,
+						videoUrl: 'https://youtu.be/7lUwN_wSeJ8?si=IvciOJujtMWRkeB1',
+					},
+					{
+						start: '11:40',
+						end: '11:50',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '11:50',
+						end: '12:20',
+						topic_title: 'React with Web3 and Smart contracts',
+						speaker: 'Anushavan Yeghiazaryan',
+						img: `${serverUri}/speakers/anushavan.png`,
+						videoUrl: 'https://youtu.be/_qA1tmIyohA?si=uFY636FFL4tU4Fpa',
+					},
+					{
+						start: '12:20',
+						end: '12:30',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '12:30',
+						end: '13:00',
+						topic_title: 'The Journey to Microservice Adoption',
+						speaker: 'Tigran Avetisyan',
+						img: `${serverUri}/speakers/tigran.png`,
+						videoUrl: 'https://youtu.be/M4d8s2IKPl0?si=6eqP-JQLCTdMycON',
+					},
+					{
+						start: '13:00',
+						end: '13:30',
+						topic_title: 'BREAK',
+					},
+					{
+						start: '13:30',
+						end: '14:00',
+						topic_title: 'The Future of Angular',
+						speaker: 'Armen Vardanyan',
+						img: `${serverUri}/speakers/armen.png`,
+						videoUrl: 'https://youtu.be/W2LJkPh9n4I?si=p542Yx6Bblk1PsRu',
+					},
+					{
+						start: '14:00',
+						end: '14:10',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '14:10',
+						end: '14:40',
+						topic_title: 'Software design',
+						speaker: 'Vardges Musheghyan',
+						img: `${serverUri}/speakers/vardges.png`,
+						videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
+					},
+					{
+						start: '14:40',
+						end: '14:50',
+						topic_title: 'CLOSING',
+					},
+				],
+			},
+			{
+				name: '113W PAB',
+				talks: [
+					{
+						start: '11:00',
+						end: '11:10',
+						empty: true,
+					},
+					{
+						start: '11:10',
+						end: '11:40',
+						topic_title: 'JavaScript attack surface',
+						speaker: 'Davit Karapetyan',
+						img: `${serverUri}/speakers/davit.png`,
+						videoUrl: 'https://youtu.be/aFr8sadgTd4?si=PiojPgNJFEd9Eopx',
+					},
+					{
+						start: '11:40',
+						end: '11:50',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '11:50',
+						end: '12:20',
+						topic_title: 'ML/AI models in JavaScript environment',
+						speaker: 'Levon Khachatryan',
+						img: `${serverUri}/speakers/levon.png`,
+						videoUrl: 'https://youtu.be/PoC3qc5zcMI?si=4o3ZRZHl0Vi6rabp',
+					},
+					{
+						start: '12:20',
+						end: '12:30',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '12:30',
+						end: '13:00',
+						topic_title: 'Be prepared for production incidents',
+						speaker: 'Varik Matevosyan',
+						img: `${serverUri}/team/varik.png`,
+						videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
+					},
+					{
+						start: '13:00',
+						end: '13:30',
+						topic_title: 'BREAK',
+					},
+					{
+						start: '13:30',
+						end: '14:00',
+						topic_title: 'The Power of Mathematics in JavaScript',
+						speaker: 'Alen Abrahamyan',
+						img: `${serverUri}/speakers/alen.png`,
+						videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+					},
+					{
+						start: '14:00',
+						end: '14:10',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '14:10',
+						end: '14:40',
+						topic_title: 'Cracking the JavaScript Interviews',
+						speaker: 'Albert Hovhannisyan',
+						img: `${serverUri}/speakers/albert_.png`,
+						videoUrl: 'https://youtu.be/Nvtrjr6_PnQ?si=wKoBVjsL5CEBsQxW',
+					},
+					{
+						start: '14:40',
+						end: '14:50',
+						empty: true,
+					},
+				],
+			},
+			{
+				name: '112W PAB',
+				talks: [
+					{
+						start: '11:00',
+						end: '11:10',
+						empty: true,
+					},
+					{
+						start: '11:10',
+						end: '11:40',
+						topic_title:
+                            'From Denial to Acceptance: The Journey to Microservice Adoption',
+						speaker: 'Tigran Avetisyan',
+						img: `${serverUri}/speakers/tigran.png`,
+					},
+					{
+						start: '11:40',
+						end: '11:50',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '11:50',
+						end: '12:20',
+						topic_title: 'Building Fullstack applications on AWS',
+						speaker: 'Rudolf Gabrielyan',
+						img: `${serverUri}/speakers/rudolf.png`,
+						videoUrl: 'https://youtu.be/JOqV2Ll2fNY?si=6tD5XR4XKx6bFrEk',
+					},
+					{
+						start: '12:20',
+						end: '12:30',
+						// empty: true
+						topic_title: 'BREAK 10 MIN',
+					},
+					{
+						start: '12:30',
+						end: '13:00',
+						topic_title: 'Stop using Redux',
+						speaker: 'Ashot Hovhannisyan',
+						img: `${serverUri}/speakers/ashot.png`,
+						videoUrl: 'https://youtu.be/Mp0-ut5rDNA?si=F_8h6s0MBDtA92YK',
+					},
+					{
+						start: '13:00',
+						end: '13:30',
+						topic_title: 'BREAK',
+					},
+					{
+						start: '13:30',
+						end: '14:40',
+						topic_title:
+                            'Terminal session: From scratch to Production',
+						speaker: 'Vahe Mkrtchyan',
+						img: `${serverUri}/speakers/vahe.png`,
+					},
+				],
+			},
+			{
+				name: 'Faculty Lounge',
+				talks: [
+					{
+						start: '11:00',
+						end: '11:10',
+						empty: true,
+					},
+					{
+						start: '11:50',
+						end: '15:30',
+						topic_title: 'Adobe challenges',
+					},
+				],
+			},
+		],
+		teams: [
+			{
+				members: [
+					{
+						img: `${serverUri}/team/nairi.png`,
+						name: 'Nairi Harutyunyan',
+						position:
+                            'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
+					},
+					{
+						img: `${serverUri}/team/varik.png`,
+						name: 'Varik Matevosyan',
+						position:
+                            'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
+					},
+					{
+						img: `${serverUri}/team/gor.png`,
+						name: 'Gor Gharagyozyan',
+						position: 'Software Engineer at SoftConstruct',
+					},
+					{
+						img: `${serverUri}/team/vahagn.png`,
+						name: 'Vahagn Melkonyan',
+						position: 'AI/ML Engineer-Researcher at CAST',
+					},
+				],
+			},
+		],
+		timeline: [
+			'11:00',
+			'11:10',
+			'11:40',
+			'11:50',
+			'12:20',
+			'12:30',
+			'13:00',
+			'13:30',
+			'14:00',
+			'14:10',
+			'14:40',
+			'14:50',
+			'15:30',
+		],
+	}),
 };
 </script>
 
@@ -775,17 +792,41 @@ button {
                 height: 100%;
             }
 
+            &, a {
+                text-decoration: underline;
+            }
+
+            &:not(a) {
+                text-decoration: none;
+                user-select: none;
+            }
+
             &:not(:first-child:last-child) {
                 height: 50%;
                 border-bottom: 1px solid var(--schedule-item-divider);
                 margin-bottom: toRem(2);
             }
+            svg {
+                width: toRem(13);
+                height: toRem(13);
+
+                path {
+                    fill: var(--schedule-text);
+                }
+            }
 
             &-in {
+                display: block;
                 font-size: toRem(13);
+                line-height: toRem(16);
                 font-weight: 600;
                 color: var(--schedule-text);
                 text-align: center;
+
+                i {
+                    display: inline-block;
+                    vertical-align: top;
+                }
             }
         }
 
