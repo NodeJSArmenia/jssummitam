@@ -268,10 +268,7 @@ export default {
 					{
 						start: '11:10',
 						end: '11:40',
-						topic_title:
-                            'From Denial to Acceptance: The Journey to Microservice Adoption',
-						speaker: 'Tigran Avetisyan',
-						img: `${serverUri}/speakers/tigran.png`,
+						topic_title: '',
 					},
 					{
 						start: '11:40',
