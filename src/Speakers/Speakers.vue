@@ -2,6 +2,7 @@
 	<section class="Speakers" id="Speakers">
 		<div class="Container">
 			<h2 class="Title">Speakers</span></h2>
+			<!--
 			<Banner
 				:text="bannerData.BannerText"
 				:image-source="bannerData.imageSource"
@@ -9,6 +10,7 @@
 				:button-text="bannerData.buttonText"
 				:image-right="true"
 			></Banner>
+			-->
 		</div>
 	</section>
 </template>
