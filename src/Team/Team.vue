@@ -141,6 +141,16 @@ export default {
         margin-right: 0px;
     }
 
+    @media (max-width: 900px) {
+        .Member {
+            width: 30%%%;
+        }
+
+        .MemberCol {
+            justify-content: center;
+        }
+    }
+
     @media (max-width: 700px) {
         .Name {
             font-size: 20px;
@@ -161,7 +171,7 @@ export default {
         }
 
         .Member {
-            width: 100%;
+            width: 55%%;
             padding: 0 30px;
         }
 
