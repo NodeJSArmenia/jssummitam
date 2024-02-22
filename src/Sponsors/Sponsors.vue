@@ -13,6 +13,11 @@
 			</section>
 			<section class="Section">
 				<h3 class="Title SubTitle">Media partners</h3>
+				<div class="GoldPartners"
+							v-for="(partner, index) in goldPartners"
+							:key="index">
+						<div class="GoldPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+				</div>
 				<div class="MediaPartners"
 							v-for="(partner, index) in mediaPartners"
 							:key="index">
@@ -32,6 +37,14 @@ export default {
 		Banner,
 	},
 	data: () => ({
+		goldPartners: [
+			{
+				img: `${serverUri}/sponsors/lantern.png`,
+			},
+			{
+				img: `${serverUri}/sponsors/hydralab.png`,
+			},
+		],
 		mediaPartners: [
 			{
 				img: `${serverUri}/sponsors/how2b.png`,
@@ -71,13 +84,21 @@ export default {
 		font-size: 25px;
 	}
 
-	.MediaPartners {
+	.MediaPartners, .GoldPartners {
 		display: flex;
     justify-content: center;
 	}
 
 	.MediaPartner {
 		width: 150px;
+    height: 100px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+	}
+
+	.MediaPartner {
+		width: 200px;
     height: 100px;
     background-position: 50%;
     background-repeat: no-repeat;
