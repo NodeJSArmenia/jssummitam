@@ -12,12 +12,13 @@
 				></Banner>
 			</section>
 			<section class="Section">
-				<h3 class="Title SubTitle">Media partners</h3>
+				<h2 class="Title SubTitle">Gold partners</h3>
 				<div class="GoldPartners"
 							v-for="(partner, index) in goldPartners"
 							:key="index">
 						<div class="GoldPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
 				</div>
+				<h3 class="Title SubTitle">Media partners</h3>
 				<div class="MediaPartners"
 							v-for="(partner, index) in mediaPartners"
 							:key="index">
