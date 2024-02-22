@@ -12,7 +12,7 @@
 				></Banner>
 			</section>
 			<section class="Section">
-				<h2 class="Title SubTitle">Gold partners</h3>
+				<h3 class="Title SubTitle">Gold partners</h3>
 				<div class="GoldPartners">
 						<div 
 							v-for="(partner, index) in goldPartners"
