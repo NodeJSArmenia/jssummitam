@@ -171,7 +171,7 @@ export default {
         }
 
         .Member {
-            width: 55%;
+            width: 60%;
             padding: 0 30px;
         }
 
@@ -180,4 +180,10 @@ export default {
             padding: 0;
         }
     }
+
+        @media (max-width: 400px) {
+            .Member {
+                width: 100%;
+            }
+        }
 </style>

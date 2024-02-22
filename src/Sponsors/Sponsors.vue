@@ -90,6 +90,7 @@ export default {
 
 	.MediaPartners, .GoldPartners {
 		display: flex;
+		flex-wrap: wrap;
     justify-content: center;
 	}
 
@@ -107,5 +108,9 @@ export default {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+	}
+
+	.GoldPartners {
+    margin: 30px 0;
 	}
 </style>
