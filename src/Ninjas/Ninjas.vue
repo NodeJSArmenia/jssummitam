@@ -72,11 +72,6 @@ export default {
 						position: 'Lecturer & Video Creator',
 					},
                     {
-						img: `${serverUri}/speakers/albert.jpg`,
-						name: 'Albert Hovhannisian',
-						position: 'Co-Founder & CTO at SharpIdea',
-					},
-                    {
 						img: `${serverUri}/speakers/elmira.jpg`,
 						name: 'Elmira Avagyan',
 						position: 'Software Engineer at Acumen',
