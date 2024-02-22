@@ -90,16 +90,16 @@ export default {
 	}
 
 	.MediaPartner {
-		width: 200px;
-    height: 100px;
+		width: 300px;
+    height: 150px;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
 	}
 
-	.MediaPartner {
-		width: 300px;
-    height: 100px;
+	.GoldPartner {
+		width: 400px;
+    height: 200px;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;

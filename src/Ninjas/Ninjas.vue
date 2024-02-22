@@ -49,7 +49,7 @@ export default {
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Software Engineer at LanternDB',
+						position: 'Software Engineer at Lantern',
 					},
                     {
 						img: `${serverUri}/speakers/svetlana.jpg`,
