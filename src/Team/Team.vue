@@ -143,7 +143,7 @@ export default {
 
     @media (max-width: 900px) {
         .Member {
-            width: 30%%%;
+            width: 30%;
         }
 
         .MemberCol {
@@ -171,7 +171,7 @@ export default {
         }
 
         .Member {
-            width: 55%%;
+            width: 55%;
             padding: 0 30px;
         }
 
