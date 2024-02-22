@@ -90,7 +90,7 @@ export default {
 	}
 
 	.MediaPartner {
-		width: 150px;
+		width: 200px;
     height: 100px;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ export default {
 	}
 
 	.MediaPartner {
-		width: 200px;
+		width: 300px;
     height: 100px;
     background-position: 50%;
     background-repeat: no-repeat;
