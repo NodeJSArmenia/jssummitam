@@ -21,7 +21,7 @@
 							:style="{ backgroundImage: `url(${partner.img})` }">
 							</div>
 				</div>
-				<h3 class="Title SubTitle">Fintech sponsor</h3>
+				<h3 class="Title SubTitle">Fintech sponsors</h3>
 				<div class="FintechPartners"
 							v-for="(partner, index) in fintechPartners"
 							:key="index">
