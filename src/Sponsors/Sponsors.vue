@@ -122,11 +122,11 @@ export default {
 	}
 
 	.FintechPartner {
-		width: 350px;
 		height: 200px;
 		background-position: 50%;
 		background-repeat: no-repeat;
-		background-size: contain;
+    width: 300px;
+    background-size: cover;
 	}
 
 	.GoldPartners, .FintechPartners {
