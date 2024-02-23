@@ -12,7 +12,7 @@
 				></Banner>
 			</section>
 			<section class="Section">
-				<h3 class="Title SubTitle">Gold partners</h3>
+				<h3 class="Title SubTitle">Gold sponsors</h3>
 				<div class="GoldPartners">
 						<div 
 							v-for="(partner, index) in goldPartners"
@@ -20,6 +20,12 @@
 							class="GoldPartner Img"
 							:style="{ backgroundImage: `url(${partner.img})` }">
 							</div>
+				</div>
+				<h3 class="Title SubTitle">Fintech sponsor</h3>
+				<div class="FintechPartners"
+							v-for="(partner, index) in fintechPartners"
+							:key="index">
+						<div class="FintechPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
 				</div>
 				<h3 class="Title SubTitle">Media partners</h3>
 				<div class="MediaPartners"
@@ -47,6 +53,11 @@ export default {
 			},
 			{
 				img: `${serverUri}/sponsors/hydralab.png`,
+			},
+		],
+		fintechPartners: [
+			{
+				img: `${serverUri}/sponsors/ameriabank.png`,
 			},
 		],
 		mediaPartners: [
@@ -88,7 +99,7 @@ export default {
 		font-size: 25px;
 	}
 
-	.MediaPartners, .GoldPartners {
+	.MediaPartners, .GoldPartners, .FintechPartners {
 		display: flex;
 		flex-wrap: wrap;
     justify-content: center;
@@ -110,7 +121,15 @@ export default {
     background-size: contain;
 	}
 
-	.GoldPartners {
+	.FintechPartner {
+		width: 350px;
+		height: 200px;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.GoldPartners, .FintechPartners {
     margin: 30px 0;
 	}
 </style>
