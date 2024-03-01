@@ -27,6 +27,12 @@
 							:key="index">
 						<div class="FintechPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
 				</div>
+				<h3 class="Title SubTitle">Partners</h3>
+				<div class="Partners"
+							v-for="(partner, index) in partners"
+							:key="index">
+						<div class="Partner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+				</div>
 				<h3 class="Title SubTitle">Media partners</h3>
 				<div class="MediaPartners"
 							v-for="(partner, index) in mediaPartners"
@@ -65,6 +71,11 @@ export default {
 				img: `${serverUri}/sponsors/how2b.png`,
 			},
 		],
+		partners: [
+			{
+				img: `${serverUri}/sponsors/aua.png`,
+			},
+		],
 		bannerData: {
 			BannerText: 'Let\'s build up the JavaScript Armenian community together, giving everyone a chance to learn from skilled and excited engineers.',
 			imageSource: `${serverUri}/banners/sponsor.png`,
@@ -99,7 +110,7 @@ export default {
 		font-size: 25px;
 	}
 
-	.MediaPartners, .GoldPartners, .FintechPartners {
+	.MediaPartners, .GoldPartners, .FintechPartners, .Partners {
 		display: flex;
 		flex-wrap: wrap;
     justify-content: center;
@@ -121,7 +132,7 @@ export default {
     background-size: contain;
 	}
 
-	.FintechPartner {
+	.FintechPartner, .Partner {
 		height: 200px;
 		background-position: 50%;
 		background-repeat: no-repeat;
@@ -129,7 +140,7 @@ export default {
     background-size: cover;
 	}
 
-	.GoldPartners, .FintechPartners {
+	.GoldPartners {
     margin: 30px 0;
 	}
 </style>
