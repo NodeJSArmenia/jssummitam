@@ -79,7 +79,7 @@ export default {
                     {
 						img: `${serverUri}/speakers/arsen.jpg`,
 						name: 'Arsen Mazmanyan',
-						position: 'Game Developer at PoggiPlay',
+						position: 'Game Developer',
 					},
 				],
 			},
