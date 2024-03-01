@@ -10,7 +10,7 @@
                 <a class="Icon Icon-Telegram" href="https://t.me/jssummitam" target="_blank"></a>
             </span>
             <span class="SocialIcon">
-                <a class="Icon Icon-Facebook" href="https://www.facebook.com/groups/JavaScriptArmenia" target="_blank"></a>
+                <a class="Icon Icon-Facebook" href="https://www.facebook.com/JavaScriptArmenia" target="_blank"></a>
             </span>
             <!-- <span class="SocialIcon">
                 <a class="Icon Icon-Twitter" href="https://twitter.com/jssummitam" target="_blank"></a>
