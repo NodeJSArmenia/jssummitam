@@ -133,7 +133,7 @@ export default {
 	}
 
 	.FintechPartner, .Partner {
-		height: 200px;
+		height: 150px;
 		background-position: 50%;
 		background-repeat: no-repeat;
     width: 300px;
