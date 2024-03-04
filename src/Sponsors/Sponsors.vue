@@ -60,6 +60,9 @@ export default {
 			{
 				img: `${serverUri}/sponsors/hydralab.png`,
 			},
+			{
+				img: `${serverUri}/sponsors/easydmarc.png`,
+			},
 		],
 		fintechPartners: [
 			{
