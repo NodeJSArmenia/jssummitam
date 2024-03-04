@@ -128,8 +128,8 @@ export default {
 	}
 
 	.GoldPartner {
-		width: 400px;
-    height: 200px;
+    height: 280px;
+    width: 280px;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
