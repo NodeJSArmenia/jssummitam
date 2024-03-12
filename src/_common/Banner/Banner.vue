@@ -19,7 +19,7 @@
       }">
 			</div>
 		</div>
-  		
+
 		<div class="BannerText" v-bind:class="{ 'left': !imageRight, 'right': imageRight }" :style="{
         fontWeight: `${isBoldText ? 'bold' : ''}`}">
 			<div v-if="title" class="BannerTitle">

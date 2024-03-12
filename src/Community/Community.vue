@@ -22,7 +22,7 @@ import { serverUri } from '../variables';
 export default {
 	data: () => ({
 		communities: [
-            {
+			{
 				img: `${serverUri}/chats/8.jpg`,
 				name: 'JavaScript',
 				url: 'https://t.me/javascript',

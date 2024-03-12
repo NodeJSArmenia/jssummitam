@@ -31,7 +31,7 @@ export default {
 			BannerText: 'Share your experience, knowledge and skills with the Armenian JavaScript community. Join to the enthusiastic speakers team!',
 			imageSource: `${serverUri}/banners/speaker.png`,
 			buttonLink: 'https://forms.gle/kQBNAJ75o2Dh2yvM6',
-			buttonText: "Join now",
+			buttonText: 'Join now',
 		},
 	}),
 	methods: {
