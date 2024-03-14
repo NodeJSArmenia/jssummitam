@@ -12,6 +12,12 @@
 				></Banner>
 			</section>
 			<section class="Section">
+				<h3 class="Title SubTitle">Co-Organizers</h3>
+				<div class="Partners"
+							v-for="(partner, index) in organizers"
+							:key="index">
+						<div class="Partner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+				</div>
 				<h3 class="Title SubTitle">Gold sponsors</h3>
 				<div class="GoldPartners">
 						<div 
@@ -26,12 +32,6 @@
 							v-for="(partner, index) in fintechPartners"
 							:key="index">
 						<div class="FintechPartner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
-				</div>
-				<h3 class="Title SubTitle">Partners</h3>
-				<div class="Partners"
-							v-for="(partner, index) in partners"
-							:key="index">
-						<div class="Partner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
 				</div>
 				<h3 class="Title SubTitle">Media partners</h3>
 				<div class="MediaPartners"
@@ -74,7 +74,10 @@ export default {
 				img: `${serverUri}/sponsors/how2b.png`,
 			},
 		],
-		partners: [
+		organizers: [
+			{
+				img: `${serverUri}/sponsors/js_armenia.png`,
+			},
 			{
 				img: `${serverUri}/sponsors/aua.png`,
 			},
