@@ -13,10 +13,13 @@
 			</section>
 			<section class="Section">
 				<h3 class="Title SubTitle">Co-Organizers</h3>
-				<div class="Partners"
-							v-for="(partner, index) in organizers"
-							:key="index">
-						<div class="Partner Img" :style="{ backgroundImage: `url(${partner.img})` }"></div>
+				<div class="Partners">
+					<div
+						v-for="(partner, index) in organizers"
+						:key="index"
+						class="Partner Img"
+						:style="{ backgroundImage: `url(${partner.img})` }">
+					</div>
 				</div>
 				<h3 class="Title SubTitle">Gold sponsors</h3>
 				<div class="GoldPartners">
