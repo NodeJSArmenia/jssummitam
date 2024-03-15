@@ -4,8 +4,8 @@
 		<AppHeader/>
 		<Intro/>
 		<Speakers/>
-        <!-- <Schedule/> -->
 		<Ninjas />
+        <Schedule/>
 		<Sponsors/>
 		<Team/>
 		<Community/>
