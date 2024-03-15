@@ -27,7 +27,7 @@
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Registration</h6>
+                      <h6 class="schedule-item-title-in">REGISTRATION</h6>
                     </div>
                   </div>
                 </div>
@@ -56,7 +56,7 @@
                   class="schedule-item"
                   v-for="topic in room.talks"
                   :key="topic.topic_title + topic.end"
-                  :style="{ height: ((topic.speaker == 'Vahe Mkrtchyan' ? 3 : topic.topic_title == 'Networking area' ? 9 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
+                  :style="{ height: ((topic.speaker == 'Vahe Mkrtchyan' ? 3 : topic.topic_title == 'Networking area' ? 8 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
@@ -107,7 +107,7 @@ export default {
 					{
 						start: '14:30',
 						end: '14:45',
-						topic_title: 'Opening',
+						topic_title: 'OPENING',
 					},
 					{
 						start: '14:45',
@@ -565,6 +565,7 @@ button {
 }
 .Container {
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 @media (max-width: 600px) {
