@@ -1,16 +1,13 @@
 <template>
   <section class="Schedule" id="Schedule">
     <div class="Container">
-      <h2 class="Title">Summit <span>Schedule</span></h2>
+      <h2 class="Title"><span>Agenda</span></h2>
       <div class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
               <li>
                 <span>14:00</span>
-              </li>
-              <li>
-                <span>14:15</span>
               </li>
               <li>
                 <span>14:30</span>
@@ -20,13 +17,12 @@
           <div class="schedule-content">
             <div class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">Entry</h4>
               </div>
               <div class="schedule-body">
                 <div
                   class="schedule-item"
                   :style="{
-                    height: (eventDuration * quarterHour) / 16 + 'rem',
+                    height: (eventDuration * quarterHour) / 30 + 'rem',
                   }"
                 >
                   <div class="schedule-item-in">
@@ -199,6 +195,7 @@ export default {
 					{
 						start: '14:45',
 						end: '15:20',
+                        empty:true,
 					},
 					{
 						start: '15:20',
@@ -244,10 +241,12 @@ export default {
 					{
 						start: '17:50',
 						end: '18:20',
+                        empty: true,
 					},
 					{
 						start: '18:20',
 						end: '18:25',
+                        empty: true,
 					},
 				],
 			},
@@ -489,7 +488,13 @@ button {
 
 .Title {
     span {
-        text-shadow: 3px 3px 9px #91a6d0;
+        background: #fff;
+        color: #3d3c51;
+        font-family: Barlow;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: .2em;
+        text-align: center;
     }
 }
 
@@ -582,7 +587,7 @@ button {
     }
 }
 .schedule {
-    padding: 16px;
+    padding: 16px 16px 75px 16px;
     overflow: hidden;
     background-color: #fff;
     background-image: radial-gradient(rgba(140,130,255,0.5) 1px, rgba(140,130,255,0.5) 0);
@@ -607,7 +612,7 @@ button {
         position: sticky;
         top: 0;
         left: 0;
-        padding-top: toRem(100);
+        padding-top: toRem(60);
         // background-color: var(--timeline-bg);
         z-index: 2;
 
@@ -680,7 +685,7 @@ button {
     }
 
     &-header {
-        height: toRem(100);
+        height: toRem(60);
         padding: 2px 4px;
         display: flex;
         justify-content: center;
@@ -853,12 +858,8 @@ button {
 .Title {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 0.2em;
+    margin-bottom: 1.1em;
     text-align: center;
     color: $text-primary;
-
-    span {
-        color: $green-primary;
-    }
 }
 </style>
