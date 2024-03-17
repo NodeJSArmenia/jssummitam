@@ -638,7 +638,7 @@ button {
                     padding-right: toRem(6);
 
                     &:hover {
-                        color: var(--beginner);
+                        /*color: var(--beginner);*/
                     }
                 }
             }
@@ -648,7 +648,7 @@ button {
                     padding-right: toRem(12);
 
                     &:hover {
-                        color: var(--beginner);
+                        /*color: var(--beginner);*/
                     }
                 }
             }
