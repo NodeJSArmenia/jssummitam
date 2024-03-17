@@ -1,37 +1,33 @@
 <template>
   <section class="Schedule" id="Schedule">
     <div class="Container">
-      <h2 class="Title">Summit <span>Schedule</span></h2>
+      <h2 class="Title"><span>Agenda</span></h2>
       <div class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
               <li>
-                <span>10:00</span>
+                <span>14:00</span>
               </li>
               <li>
-                <span>10:30</span>
-              </li>
-              <li>
-                <span>11:00</span>
+                <span>14:30</span>
               </li>
             </ul>
           </div>
           <div class="schedule-content">
             <div class="schedule-column">
               <div class="schedule-header">
-                <h4 class="schedule-header-in">Entry</h4>
               </div>
               <div class="schedule-body">
                 <div
                   class="schedule-item"
                   :style="{
-                    height: (eventDuration * quarterHour) / 16 + 'rem',
+                    height: (eventDuration * quarterHour) / 30 + 'rem',
                   }"
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">Registration</h6>
+                      <h6 class="schedule-item-title-in">REGISTRATION</h6>
                     </div>
                   </div>
                 </div>
@@ -60,28 +56,36 @@
                   class="schedule-item"
                   v-for="topic in room.talks"
                   :key="topic.topic_title + topic.end"
-                  :style="{ height: ((topic.speaker == 'Vahe Mkrtchyan' ? 3 : topic.topic_title == 'Adobe challenges' ? 11 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
+                  :style="{ height: ((topic.speaker == 'Vahe Mkrtchyan' ? 3 : topic.topic_title == 'Networking area' ? 8 : 1) * quarterHour) / 16 + 'rem', visibility: topic.empty && 'hidden' }"
                 >
                   <div class="schedule-item-in">
                     <div class="schedule-item-title">
-                      <h6 class="schedule-item-title-in">{{topic.topic_title}}</h6>
+                        <a v-if="topic.videoUrl" class="schedule-item-title-in" :href="topic.videoUrl" target="_blank">
+                            <!-- <i class="icon-youtube"></i> -->
+                            {{topic.topic_title}}
+                        </a>
+                        <h6 v-else class="schedule-item-title-in">{{topic.topic_title}}</h6>
                     </div>
                     <div class="schedule-item-info" v-if="topic.speaker">
                       <div class="schedule-item-speaker">
+                        <img
+                            class="schedule-item-speaker-image"
+                            :src="topic.img"
+                        />
                         <span class="schedule-item-speaker-name"
                           >{{topic.speaker}}</span
                         >
-                        <img
-                          class="schedule-item-speaker-image"
-                          :src="topic.img"
-                        />
+                      </div>
+                      <div>
+                        <span class="schedule-item-speaker-name"
+                          >{{topic.spk_lang}}</span
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -98,205 +102,151 @@ export default {
 		eventDuration: 2,
 		rooms: [
 			{
-				name: 'Manoogian hall',
+				name: 'Main stage',
 				talks: [
 					{
-						start: '11:00',
-						end: '11:10',
-						topic_title: 'Opening',
+						start: '14:30',
+						end: '14:45',
+						topic_title: 'OPENING',
 					},
 					{
-						start: '11:10',
-						end: '11:40',
-						topic_title: "Let's make games with JavaScript",
+						start: '14:45',
+						end: '15:15',
+						topic_title: 'Running LLMs in the browser, without servers',
+						speaker: 'Tigran Bayburtsyan',
+						spk_lang: 'EN',
+						img: `${serverUri}/speakers/tigran.jpg`,
+						// videoUrl: 'https://youtu.be/7lUwN_wSeJ8?si=IvciOJujtMWRkeB1',
+					},
+					{
+						start: '15:20',
+						end: '15:50',
+						topic_title: 'Mastering the Web: Understanding JavaScript’s Influence on HTML Rendering',
+						speaker: 'Lilit Tadevosyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/lilit.jpg`,
+						// videoUrl: 'https://youtu.be/_qA1tmIyohA?si=uFY636FFL4tU4Fpa',
+					},
+					{
+						start: '15:55',
+						end: '16:25',
+						topic_title: 'Generative AI in Fintech: Secure, Efficient, Fast',
+						speaker: 'Gevorg Martirosyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/gevorg.jpg`,
+						// videoUrl: 'https://youtu.be/M4d8s2IKPl0?si=6eqP-JQLCTdMycON',
+					},
+					{
+						start: '16:25',
+						end: '16:55',
+						topic_title: 'BREAK 30 MIN',
+					},
+					{
+						start: '16:55',
+						end: '17:25',
+						topic_title: 'Postgres is all you need for your AI application',
+						speaker: 'Varik Matevosyan',
+						spk_lang: 'EN',
+						img: `${serverUri}/team/4.jpg`,
+						// videoUrl: 'https://youtu.be/W2LJkPh9n4I?si=p542Yx6Bblk1PsRu',
+					},
+					{
+						start: '17:30',
+						end: '18:00',
+						topic_title: 'Making your own game engine on JavaScript',
 						speaker: 'Arsen Mazmanyan',
-						img: `${serverUri}/speakers/arsen.png`,
+						spk_lang: 'EN',
+						img: `${serverUri}/speakers/arsen.jpg`,
+						// videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
 					},
 					{
-						start: '11:40',
-						end: '11:50',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
+						start: '18:05',
+						end: '18:35',
+						topic_title: 'Multithreading with JavaScript',
+						speaker: 'Nairi Harutyunyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/team/1.jpg`,
+						// videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
 					},
 					{
-						start: '11:50',
-						end: '12:20',
-						topic_title: 'React with Web3 and Smart contracts',
-						speaker: 'Anushavan Yeghiazaryan',
-						img: `${serverUri}/speakers/anushavan.png`,
+						start: '18:40',
+						end: '19:10',
+						topic_title: 'Winning CV + Interview appearance do’s and don’ts',
+						speaker: 'Svetlana Hovhannisyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/svetlana.jpg`,
+						// videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
 					},
 					{
-						start: '12:20',
-						end: '12:30',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
-					},
-					{
-						start: '12:30',
-						end: '13:00',
-						topic_title: 'The Journey to Microservice Adoption',
-						speaker: 'Tigran Avetisyan',
-						img: `${serverUri}/speakers/tigran.png`,
-					},
-					{
-						start: '13:00',
-						end: '13:30',
-						topic_title: 'BREAK',
-					},
-					{
-						start: '13:30',
-						end: '14:00',
-						topic_title: 'The Future of Angular',
-						speaker: 'Armen Vardanyan',
-						img: `${serverUri}/speakers/armen.png`,
-					},
-					{
-						start: '14:00',
-						end: '14:10',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
-					},
-					{
-						start: '14:10',
-						end: '14:40',
-						topic_title: 'Software design',
-						speaker: 'Vardges Musheghyan',
-						img: `${serverUri}/speakers/vardges.png`,
-					},
-					{
-						start: '14:40',
-						end: '14:50',
+						start: '19:10',
+						end: '19:25',
 						topic_title: 'CLOSING',
 					},
 				],
 			},
 			{
-				name: '113W PAB',
+				name: 'Manoogian',
 				talks: [
 					{
-						start: '11:00',
-						end: '11:10',
+						start: '14:30',
+						end: '14:45',
 						empty: true,
 					},
 					{
-						start: '11:10',
-						end: '11:40',
-						topic_title: 'JavaScript attack surface',
-						speaker: 'Davit Karapetyan',
-						img: `${serverUri}/speakers/davit.png`,
+						start: '14:45',
+						end: '15:15',
+                        empty:true,
 					},
 					{
-						start: '11:40',
-						end: '11:50',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
+						start: '15:20',
+						end: '15:50',
+						topic_title: 'Building the most performant web applications with Angular',
+						speaker: 'Armen Vardanyan',
+						spk_lang: 'EN',
+						img: `${serverUri}/speakers/armen.jpg`,
+						// videoUrl: 'https://youtu.be/aFr8sadgTd4?si=PiojPgNJFEd9Eopx',
 					},
 					{
-						start: '11:50',
-						end: '12:20',
-						topic_title: 'ML/AI models in JavaScript environment',
-						speaker: 'Levon Khachatryan',
-						img: `${serverUri}/speakers/levon.png`,
+						start: '15:55',
+						end: '16:25',
+						topic_title: 'When is it (not) good to ignore algorithms',
+						speaker: 'Tigran Hayrapteyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/tigran-2.jpg`,
+						// videoUrl: 'https://youtu.be/PoC3qc5zcMI?si=4o3ZRZHl0Vi6rabp',
 					},
 					{
-						start: '12:20',
-						end: '12:30',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
+						start: '16:10',
+						end: '16:40',
+						topic_title: 'BREAK 30 MIN',
 					},
 					{
-						start: '12:30',
-						end: '13:00',
-						topic_title: 'Be prepared for production incidents',
-						speaker: 'Varik Matevosyan',
-						img: `${serverUri}/team/varik.png`,
+						start: '16:55',
+						end: '17:25',
+						topic_title: 'Three.js with React: Strategies and Challenges',
+						speaker: 'Elmira Avagyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/elmira.jpg`,
+						// videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
 					},
 					{
-						start: '13:00',
-						end: '13:30',
-						topic_title: 'BREAK',
+						start: '17:30',
+						end: '18:00',
+						topic_title: 'Generative AI in your Startup',
+						speaker: 'Narek Hakobyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/narek.jpg`,
+						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
 					{
-						start: '13:30',
-						end: '14:00',
-						topic_title: 'The Power of Mathematics in JavaScript',
-						speaker: 'Alen Abrahamyan',
-						img: `${serverUri}/speakers/alen.png`,
+						start: '18:05',
+						end: '18:35',
+                        empty: true,
 					},
 					{
-						start: '14:00',
-						end: '14:10',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
-					},
-					{
-						start: '14:10',
-						end: '14:40',
-						topic_title: 'Cracking the JavaScript Interviews',
-						speaker: 'Albert Hovhannisyan',
-						img: `${serverUri}/speakers/albert_.png`,
-					},
-					{
-						start: '14:40',
-						end: '14:50',
-						empty: true,
-					},
-				],
-			},
-			{
-				name: '112W PAB',
-				talks: [
-					{
-						start: '11:00',
-						end: '11:10',
-						empty: true,
-					},
-					{
-						start: '11:10',
-						end: '11:40',
-						topic_title:
-                            'From Denial to Acceptance: The Journey to Microservice Adoption',
-						speaker: 'Tigran Avetisyan',
-						img: `${serverUri}/speakers/tigran.png`,
-					},
-					{
-						start: '11:40',
-						end: '11:50',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
-					},
-					{
-						start: '11:50',
-						end: '12:20',
-						topic_title: 'Building Fullstack applications on AWS',
-						speaker: 'Rudolf Gabrielyan',
-						img: `${serverUri}/speakers/rudolf.png`,
-					},
-					{
-						start: '12:20',
-						end: '12:30',
-						// empty: true
-						topic_title: 'BREAK 10 MIN',
-					},
-					{
-						start: '12:30',
-						end: '13:00',
-						topic_title: 'Stop using Redux',
-						speaker: 'Ashot Hovhannisyan',
-						img: `${serverUri}/speakers/ashot.png`,
-					},
-					{
-						start: '13:00',
-						end: '13:30',
-						topic_title: 'BREAK',
-					},
-					{
-						start: '13:30',
-						end: '14:40',
-						topic_title:
-                            'Terminal session: From scratch to Production',
-						speaker: 'Vahe Mkrtchyan',
-						img: `${serverUri}/speakers/vahe.png`,
+						start: '18:40',
+						end: '19:10',
+                        empty: true,
 					},
 				],
 			},
@@ -304,14 +254,14 @@ export default {
 				name: 'Faculty Lounge',
 				talks: [
 					{
-						start: '11:00',
-						end: '11:10',
+						start: '14:30',
+						end: '14:45',
 						empty: true,
 					},
 					{
-						start: '11:50',
-						end: '15:30',
-						topic_title: 'Adobe challenges',
+						start: '14:45',
+						end: '18:40',
+						topic_title: 'Networking area',
 					},
 				],
 			},
@@ -320,24 +270,24 @@ export default {
 			{
 				members: [
 					{
-						img: `${serverUri}/team/1.png`,
+						img: `${serverUri}/team/nairi.png`,
 						name: 'Nairi Harutyunyan',
 						position:
-                            'Sr. Backend Engineer at Screenful, Co-Founder at JavaScript Armenia',
+                            'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
 					},
 					{
-						img: `${serverUri}/team/4.png`,
+						img: `${serverUri}/team/varik.png`,
 						name: 'Varik Matevosyan',
 						position:
-                            'Software Engineer at Lantern, Co-Founder at JavaScript Armenia',
+                            'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
 					},
 					{
-						img: `${serverUri}/team/3.png`,
+						img: `${serverUri}/team/gor.png`,
 						name: 'Gor Gharagyozyan',
 						position: 'Software Engineer at SoftConstruct',
 					},
 					{
-						img: `${serverUri}/team/2.png`,
+						img: `${serverUri}/team/vahagn.png`,
 						name: 'Vahagn Melkonyan',
 						position: 'AI/ML Engineer-Researcher at CAST',
 					},
@@ -345,19 +295,16 @@ export default {
 			},
 		],
 		timeline: [
-			'11:00',
-			'11:10',
-			'11:40',
-			'11:50',
-			'12:20',
-			'12:30',
-			'13:00',
-			'13:30',
-			'14:00',
-			'14:10',
-			'14:40',
-			'14:50',
-			'15:30',
+			'14:30',
+			'14:45',
+			'15:20',
+			'15:55',
+			'16:25',
+			'16:55',
+			'17:30',
+			'18:05',
+			'18:40',
+			'19:10',
 		],
 	}),
 };
@@ -541,7 +488,13 @@ button {
 
 .Title {
     span {
-        text-shadow: 3px 3px 9px #91a6d0;
+        background: #fff;
+        color: #3d3c51;
+        font-family: Barlow;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: .2em;
+        text-align: center;
     }
 }
 
@@ -612,6 +565,7 @@ button {
 }
 .Container {
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 @media (max-width: 600px) {
@@ -634,11 +588,13 @@ button {
     }
 }
 .schedule {
-    padding: 16px;
+    padding: 16px 16px 75px 16px;
     overflow: hidden;
     background-color: #fff;
-    background-image: radial-gradient(#8C52FF 1px, #e6e6e6 0);
+    background-image: radial-gradient(rgba(140,130,255,0.5) 1px, rgba(140,130,255,0.5) 0);
     background-size: 75px 75px;
+    border-radius: 16px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 3px, rgba(14, 30, 37, 0.32) 0px 2px 16px 3px;
 
     &-in {
         position: relative;
@@ -657,7 +613,7 @@ button {
         position: sticky;
         top: 0;
         left: 0;
-        padding-top: toRem(100);
+        padding-top: toRem(60);
         // background-color: var(--timeline-bg);
         z-index: 2;
 
@@ -680,12 +636,20 @@ button {
             &:nth-child(odd) {
                 span {
                     padding-right: toRem(6);
+
+                    &:hover {
+                        /*color: var(--beginner);*/
+                    }
                 }
             }
 
             &:nth-child(even) {
                 span {
                     padding-right: toRem(12);
+
+                    &:hover {
+                        /*color: var(--beginner);*/
+                    }
                 }
             }
 
@@ -709,19 +673,6 @@ button {
     &-content {
         width: 100%;
         display: flex;
-        background-image: linear-gradient(
-                to bottom,
-                var(--grid-border) 0,
-                transparent 1px
-            ),
-            linear-gradient(
-                to right,
-                var(--grid-border) 0,
-                transparent 1px,
-                transparent calc(100% - 1px),
-                var(--grid-border) 100%
-            ),
-            linear-gradient(to top, var(--grid-border) 0, transparent 1px);
         background-position: center top, center center, center bottom;
         background-size: 100% toRem(100), 100% 100%, 100% toRem(100);
         background-repeat: repeat-y, no-repeat, no-repeat;
@@ -735,7 +686,7 @@ button {
     }
 
     &-header {
-        height: toRem(100);
+        height: toRem(60);
         padding: 2px 4px;
         display: flex;
         justify-content: center;
@@ -763,7 +714,8 @@ button {
             height: 100%;
             padding: 8px;
             background-color: var(--schedule-item-bg);
-            border-radius: 3px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 8px 0px;
+            border-radius: 12px;
         }
 
         &-title {
@@ -776,25 +728,54 @@ button {
                 height: 100%;
             }
 
+            &, a {
+                text-decoration: underline;
+            }
+
+            &, a:hover {
+                color: var(--beginner);
+            }
+
+            &:not(a) {
+                text-decoration: none;
+                user-select: none;
+            }
+
             &:not(:first-child:last-child) {
                 height: 50%;
-                border-bottom: 1px solid var(--schedule-item-divider);
                 margin-bottom: toRem(2);
+            }
+            svg {
+                width: toRem(13);
+                height: toRem(13);
+
+                path {
+                    fill: var(--schedule-text);
+                }
             }
 
             &-in {
+                display: block;
                 font-size: toRem(13);
+                line-height: toRem(16);
                 font-weight: 600;
                 color: var(--schedule-text);
                 text-align: center;
+
+                i {
+                    display: inline-block;
+                    vertical-align: top;
+                }
             }
         }
 
         &-info {
             height: 50%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            padding-left: toRem(30);
+            padding-right: toRem(30);
 
             &-in {
                 display: flex;
@@ -866,7 +847,7 @@ button {
             }
 
             &-name {
-                padding-right: toRem(4);
+                padding-left: toRem(6);
                 font-size: toRem(12);
                 font-weight: 500;
                 color: var(--schedule-text);
@@ -878,12 +859,8 @@ button {
 .Title {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 0.2em;
+    margin-bottom: 1.1em;
     text-align: center;
     color: $text-primary;
-
-    span {
-        color: $green-primary;
-    }
 }
 </style>

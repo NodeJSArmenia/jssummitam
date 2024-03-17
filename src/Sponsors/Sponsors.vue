@@ -23,7 +23,7 @@
 				</div>
 				<h3 class="Title SubTitle">Gold sponsors</h3>
 				<div class="GoldPartners">
-						<div 
+						<div
 							v-for="(partner, index) in goldPartners"
 							:key="index"
 							class="GoldPartner Img"
