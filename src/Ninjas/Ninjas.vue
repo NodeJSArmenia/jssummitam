@@ -81,6 +81,11 @@ export default {
 						name: 'Arsen Mazmanyan',
 						position: 'Game Developer',
 					},
+					{
+						img: `${serverUri}/speakers/ruben.png`,
+						name: 'Ruben Gabrielyan',
+						position: 'Front End Engineer',
+					},
 				],
 			},
 		],
