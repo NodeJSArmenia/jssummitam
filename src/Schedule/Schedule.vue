@@ -241,6 +241,15 @@ export default {
 					{
 						start: '18:05',
 						end: '18:35',
+						topic_title: 'Browser rendering process and optimization',
+						speaker: 'Ruben Gabrielyan',
+						spk_lang: 'AM',
+						img: `${serverUri}/speakers/ruben.png`,
+						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+					},
+					{
+						start: '18:05',
+						end: '18:35',
                         empty: true,
 					},
 					{
@@ -262,34 +271,6 @@ export default {
 						start: '14:45',
 						end: '18:40',
 						topic_title: 'Networking area',
-					},
-				],
-			},
-		],
-		teams: [
-			{
-				members: [
-					{
-						img: `${serverUri}/team/nairi.png`,
-						name: 'Nairi Harutyunyan',
-						position:
-                            'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/varik.png`,
-						name: 'Varik Matevosyan',
-						position:
-                            'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/gor.png`,
-						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/team/vahagn.png`,
-						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Engineer-Researcher at CAST',
 					},
 				],
 			},
