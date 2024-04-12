@@ -220,14 +220,14 @@ export default {
 						end: '16:40',
 						topic_title: 'BREAK 30 MIN',
 					},
-					{
-						start: '16:55',
-						end: '17:25',
-						topic_title: 'Three.js with React: Strategies and Challenges',
-						speaker: 'Elmira Avagyan',
+                    {
+						start: '18:05',
+						end: '18:35',
+						topic_title: 'Browser rendering process and optimization',
+						speaker: 'Ruben Gabrielyan',
 						spk_lang: 'AM',
-						img: `${serverUri}/speakers/elmira.jpg`,
-						// videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
+						img: `${serverUri}/speakers/ruben.png`,
+						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
 					{
 						start: '17:30',
@@ -238,14 +238,14 @@ export default {
 						img: `${serverUri}/speakers/narek.jpg`,
 						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
-					{
-						start: '18:05',
-						end: '18:35',
-						topic_title: 'Browser rendering process and optimization',
-						speaker: 'Ruben Gabrielyan',
+                    {
+						start: '16:55',
+						end: '17:25',
+						topic_title: 'Three.js with React: Strategies and Challenges',
+						speaker: 'Elmira Avagyan',
 						spk_lang: 'AM',
-						img: `${serverUri}/speakers/ruben.png`,
-						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+						img: `${serverUri}/speakers/elmira.jpg`,
+						// videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
 					},
 					{
 						start: '18:05',
