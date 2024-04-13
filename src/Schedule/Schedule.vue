@@ -7,7 +7,7 @@
           <div class="schedule-timeline">
             <ul>
               <li>
-                <span>14:00</span>
+                <span>13:30</span>
               </li>
               <li>
                 <span>14:30</span>
