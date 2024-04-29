@@ -72,14 +72,14 @@ export default {
 						position: 'Lecturer & Video Creator',
 					},
 					{
-						img: `${serverUri}/speakers/elmira.jpg`,
-						name: 'Elmira Avagyan',
-						position: 'Software Engineer at Acumen',
-					},
-					{
 						img: `${serverUri}/speakers/arsen.jpg`,
 						name: 'Arsen Mazmanyan',
 						position: 'Game Developer',
+					},
+					{
+						img: `${serverUri}/speakers/ruben.png`,
+						name: 'Ruben Gabrielyan',
+						position: 'Front End Engineer',
 					},
 				],
 			},
