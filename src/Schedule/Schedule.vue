@@ -238,10 +238,10 @@ export default {
 						img: `${serverUri}/speakers/narek.jpg`,
 						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
-                    {
+          {
 						start: '16:55',
 						end: '17:25',
-                        empty:true,
+            empty:true,
 					},
 					{
 						start: '18:05',
