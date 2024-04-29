@@ -238,14 +238,10 @@ export default {
 						img: `${serverUri}/speakers/narek.jpg`,
 						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
-                    {
+          {
 						start: '16:55',
 						end: '17:25',
-						topic_title: 'Three.js with React: Strategies and Challenges',
-						speaker: 'Elmira Avagyan',
-						spk_lang: 'AM',
-						img: `${serverUri}/speakers/elmira.jpg`,
-						// videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
+            empty:true,
 					},
 					{
 						start: '18:05',
