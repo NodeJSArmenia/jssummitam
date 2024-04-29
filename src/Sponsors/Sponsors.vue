@@ -79,7 +79,7 @@ export default {
 		],
 		organizers: [
 			{
-				img: `${serverUri}/sponsors/js_armenia.png`,
+				img: `${serverUri}/sponsors/js_armenia_logo.png`,
 			},
 			{
 				img: `${serverUri}/sponsors/aua.png`,

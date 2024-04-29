@@ -7,7 +7,7 @@
           <div class="schedule-timeline">
             <ul>
               <li>
-                <span>14:00</span>
+                <span>13:30</span>
               </li>
               <li>
                 <span>14:30</span>
@@ -220,14 +220,14 @@ export default {
 						end: '16:40',
 						topic_title: 'BREAK 30 MIN',
 					},
-					{
-						start: '16:55',
-						end: '17:25',
-						topic_title: 'Three.js with React: Strategies and Challenges',
-						speaker: 'Elmira Avagyan',
+                    {
+						start: '18:05',
+						end: '18:35',
+						topic_title: 'Browser rendering process and optimization',
+						speaker: 'Ruben Gabrielyan',
 						spk_lang: 'AM',
-						img: `${serverUri}/speakers/elmira.jpg`,
-						// videoUrl: 'https://youtu.be/uXPTeJ31ntM?si=qbjplCNsW1XGj-XL',
+						img: `${serverUri}/speakers/ruben.png`,
+						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
 					},
 					{
 						start: '17:30',
@@ -237,6 +237,11 @@ export default {
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/narek.jpg`,
 						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+					},
+                    {
+						start: '16:55',
+						end: '17:25',
+                        empty:true,
 					},
 					{
 						start: '18:05',
@@ -262,34 +267,6 @@ export default {
 						start: '14:45',
 						end: '18:40',
 						topic_title: 'Networking area',
-					},
-				],
-			},
-		],
-		teams: [
-			{
-				members: [
-					{
-						img: `${serverUri}/team/nairi.png`,
-						name: 'Nairi Harutyunyan',
-						position:
-                            'Sr. Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/varik.png`,
-						name: 'Varik Matevosyan',
-						position:
-                            'Sr. Software Engineer at CoinStats, Co-Founder at Node.js Armenia',
-					},
-					{
-						img: `${serverUri}/team/gor.png`,
-						name: 'Gor Gharagyozyan',
-						position: 'Software Engineer at SoftConstruct',
-					},
-					{
-						img: `${serverUri}/team/vahagn.png`,
-						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Engineer-Researcher at CAST',
 					},
 				],
 			},
