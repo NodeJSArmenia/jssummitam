@@ -116,7 +116,7 @@ export default {
 						speaker: 'Tigran Bayburtsyan',
 						spk_lang: 'EN',
 						img: `${serverUri}/speakers/tigran.jpg`,
-						// videoUrl: 'https://youtu.be/7lUwN_wSeJ8?si=IvciOJujtMWRkeB1',
+						videoUrl: 'https://youtu.be/71yN81p4KjE',
 					},
 					{
 						start: '15:20',
@@ -125,7 +125,7 @@ export default {
 						speaker: 'Lilit Tadevosyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/lilit.jpg`,
-						// videoUrl: 'https://youtu.be/_qA1tmIyohA?si=uFY636FFL4tU4Fpa',
+						videoUrl: 'https://youtu.be/QrP2VqscNvA',
 					},
 					{
 						start: '15:55',
@@ -134,7 +134,7 @@ export default {
 						speaker: 'Gevorg Martirosyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/gevorg.jpg`,
-						// videoUrl: 'https://youtu.be/M4d8s2IKPl0?si=6eqP-JQLCTdMycON',
+						videoUrl: 'https://youtu.be/2n49QfPS4hg',
 					},
 					{
 						start: '16:25',
@@ -148,7 +148,7 @@ export default {
 						speaker: 'Varik Matevosyan',
 						spk_lang: 'EN',
 						img: `${serverUri}/team/4.jpg`,
-						// videoUrl: 'https://youtu.be/W2LJkPh9n4I?si=p542Yx6Bblk1PsRu',
+						videoUrl: 'https://youtu.be/ec0NmBToIDY',
 					},
 					{
 						start: '17:30',
@@ -157,7 +157,7 @@ export default {
 						speaker: 'Arsen Mazmanyan',
 						spk_lang: 'EN',
 						img: `${serverUri}/speakers/arsen.jpg`,
-						// videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
+						videoUrl: 'https://youtu.be/THW4RvougCs',
 					},
 					{
 						start: '18:05',
@@ -204,7 +204,7 @@ export default {
 						speaker: 'Armen Vardanyan',
 						spk_lang: 'EN',
 						img: `${serverUri}/speakers/armen.jpg`,
-						// videoUrl: 'https://youtu.be/aFr8sadgTd4?si=PiojPgNJFEd9Eopx',
+						videoUrl: 'https://youtu.be/-DwnENU6cwI',
 					},
 					{
 						start: '15:55',
@@ -213,7 +213,7 @@ export default {
 						speaker: 'Tigran Hayrapteyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/tigran-2.jpg`,
-						// videoUrl: 'https://youtu.be/PoC3qc5zcMI?si=4o3ZRZHl0Vi6rabp',
+						videoUrl: 'https://youtu.be/i79WMLUjwMw',
 					},
 					{
 						start: '16:10',
@@ -227,7 +227,7 @@ export default {
 						speaker: 'Ruben Gabrielyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/ruben.png`,
-						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+						videoUrl: 'https://youtu.be/3TEY-TGrl2s',
 					},
 					{
 						start: '17:30',
@@ -236,7 +236,7 @@ export default {
 						speaker: 'Narek Hakobyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/speakers/narek.jpg`,
-						// videoUrl: 'https://youtu.be/ewJRCxp3R-E?si=GM2ju03RXH-g2T62',
+						videoUrl: 'https://youtu.be/jfKKS0BHBfM',
 					},
           {
 						start: '16:55',
