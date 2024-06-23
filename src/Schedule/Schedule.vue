@@ -166,7 +166,7 @@ export default {
 						speaker: 'Nairi Harutyunyan',
 						spk_lang: 'AM',
 						img: `${serverUri}/team/1.jpg`,
-						// videoUrl: 'https://youtu.be/50t7eSSih8A?si=WFg544GQh8x_KmqY',
+						videoUrl: 'https://youtu.be/-eG1DP7YxnA',
 					},
 					{
 						start: '18:40',
