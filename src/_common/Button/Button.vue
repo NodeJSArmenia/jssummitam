@@ -32,9 +32,9 @@ export default {
 		color: $text-white;
 		padding: 0 10px;
 		height: 41px;
-		background-color: #5d18b3;
-		border-bottom: 2px solid #5d18b3;
-		border-top: 2px solid #5d18b3;
+		background-color: #7a2afe;
+		border-bottom: 2px solid #7a2afe;
+		border-top: 2px solid #7a2afe;
 		-webkit-transition: background-color 200ms linear;
 		-ms-transition: background-color 200ms linear;
 		transition: background-color 200ms linear;

@@ -112,7 +112,7 @@ export default {
         // mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
 
         &:hover {
-            background-color: #5d18b3;
+            background-color: #7a2afe;
             cursor: pointer;
             -webkit-transition: background-color 200ms linear;
             -ms-transition: background-color 200ms linear;

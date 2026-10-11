@@ -125,7 +125,7 @@ export default {
 }
 
 .RequestInvite .Button {
-    color: #5d18b3 !important;
+    color: #7a2afe !important;
     background-color: #ffffff !important;
     margin-right: 10px !important;
     &:hover {

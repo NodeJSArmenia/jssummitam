@@ -162,7 +162,7 @@ export default {
 
     // background: url(https://topentol.sirv.com/jssummit/bg.jpg) $bg-primary repeat;
 
-    background-color: #e8a21c;
+    background-color: #fff;
     // Naruto x JS tile: shuriken, leaf-village spiral, code glyphs
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%232d0e4e' stroke='%232d0e4e' opacity='.16'%3E%3Cpath d='M170 40l-8 14 8 14' fill='none' stroke-width='3' stroke-linecap='round'/%3E%3Ctext x='100' y='60' font-family='monospace' font-size='20' font-weight='bold' stroke='none'%3E=%3E%3C/text%3E%3Ctext x='20' y='150' font-family='monospace' font-size='18' font-weight='bold' stroke='none'%3E%7B jutsu %7D%3C/text%3E%3Ctext x='95' y='110' font-family='monospace' font-size='16' stroke='none'%3E&lt;/&gt;%3C/text%3E%3C/g%3E%3C/svg%3E");
     background-size: 200px 200px;

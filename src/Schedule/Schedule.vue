@@ -310,7 +310,7 @@ export default {
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
     --schedule-text: rgb(45, 14, 78);
-    --grid-border: #5d18b3;
+    --grid-border: #7a2afe;
     --js-summit-yellow-rgb: 242, 107, 91;
 
     --am: lightcoral;

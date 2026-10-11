@@ -154,7 +154,7 @@ export default {
         transition: .2s ease all;
 
         &:hover {
-            color: #5d18b3;
+            color: #7a2afe;
             background-color: #fff;
         }
     }
