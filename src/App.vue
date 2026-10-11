@@ -63,7 +63,8 @@ export default {
 		const frame = (now) => {
 			const dt = Math.min((now - last) / 1000, 0.05);
 			last = now;
-			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			// ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.clearRect(0, 0, window.innerWidth, window.innerHeight); 
 			ctx.fillStyle = 'rgba(42, 22, 80, 0.16)';
 			ctx.strokeStyle = 'rgba(42, 22, 80, 0.16)';
 			ctx.lineWidth = 3;
