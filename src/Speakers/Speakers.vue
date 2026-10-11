@@ -1,7 +1,7 @@
 <template>
 	<section class="Speakers" id="Speakers">
 		<div class="Container">
-			<h2 class="Title">Speakers</span></h2>
+			<h2 class="Title">Speakers</h2>
 			<!--
 			<Banner
 				:text="bannerData.BannerText"

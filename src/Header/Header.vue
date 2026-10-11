@@ -12,6 +12,7 @@
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
                 <a class="Item" href="https://2023.jssummit.am/">2023</a>
+				<a class="Item" href="https://2024.jssummit.am/">2024</a>
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
                 <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
 				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
@@ -126,7 +127,7 @@ export default {
 .RequestInvite .Button {
     color: #5b2fd4 !important;
     background-color: #ffffff !important;
-
+    margin-right: 10px !important;
     &:hover {
         background-color: #ffffff !important;
         border-color: #fff !important;
@@ -173,8 +174,8 @@ export default {
 
         &.active,
         &:hover {
-            color: #2a1650;
-            font-weight: 700;
+            color: #e8a21c;
+            // font-weight: 700;
         }
     }
 
@@ -189,11 +190,13 @@ export default {
     display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     .Navigation {
         position: absolute;
         left: 0;
-        top: -500px;
+        top: -700px;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
         background: $bg-primary;
         display: flex;
         flex-direction: column;

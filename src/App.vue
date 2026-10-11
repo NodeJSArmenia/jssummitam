@@ -4,12 +4,12 @@
 		<Welcome/>
 		<AppHeader/>
 		<Intro/>
-		<Speakers/>
+		<!-- <Speakers/>
 		<Ninjas />
         <Schedule/>
 		<Sponsors/>
 		<Team/>
-		<Community/>
+		<Community/> -->
 		<!-- <Location/> -->
 		<!-- <Faq/> -->
 		<AppFooter/>
