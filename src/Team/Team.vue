@@ -47,13 +47,13 @@ export default {
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
-						name: 'Vahagn Melkonyan',
+						name: 'Vahagn Melkonyan, PhD',
 						position: 'Researcher / Lecturer',
 						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
-						name: 'Gor Gharagyozyan',
+						name: 'Gor Gharagyozyan, PhD',
 						position: 'Software Engineer',
 						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
@@ -119,7 +119,7 @@ export default {
         backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.45);
         border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+        box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
         transition: .3s ease all;
     }
 
@@ -148,13 +148,13 @@ export default {
         margin-top: 12px;
         border-radius: 50%;
         font-size: 18px;
-        color: #2a1650;
+        color: #2d0e4e;
         background-color: rgba(255, 255, 255, 0.45);
         transition: .2s ease all;
 
         &:hover {
             color: #fff;
-            background-color: #5b2fd4;
+            background-color: #5d18b3;
         }
     }
 
@@ -185,7 +185,7 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #2a1650;
+        color: #2d0e4e;
     }
 
     @media (max-width: 700px) {

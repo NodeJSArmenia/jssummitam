@@ -107,7 +107,7 @@ export default {
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
 		border-radius: 20px;
-		box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 	}
 
 	.Logo {
@@ -141,7 +141,7 @@ export default {
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
 		border-radius: 20px;
-		box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 	}
 
 	.SubTitle {

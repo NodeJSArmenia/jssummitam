@@ -2,7 +2,7 @@
   <section class="Schedule" id="Schedule">
     <div class="Container">
       <h2 class="Title"><span>Agenda</span></h2>
-      <p v-if="comingSoon" class="ComingSoon">Coming soon<span class="Dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <ComingSoon v-if="comingSoon" />
       <div v-else class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
@@ -96,8 +96,12 @@
 
 <script>
 import { serverUri } from '../variables';
+import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 
 export default {
+	components: {
+		ComingSoon,
+	},
 	data: () => ({
 		comingSoon: true, // set to false to show the agenda below
 		quarterHour: 100,
@@ -305,8 +309,8 @@ export default {
     --timeline-bg: rgb(var(--white-rgb));
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
-    --schedule-text: rgb(42, 22, 80);
-    --grid-border: #5b2fd4;
+    --schedule-text: rgb(45, 14, 78);
+    --grid-border: #5d18b3;
     --js-summit-yellow-rgb: 242, 107, 91;
 
     --am: lightcoral;
@@ -468,7 +472,7 @@ button {
 .Title {
     span {
         // background: #fff;
-        color: #2a1650;
+        color: #2d0e4e;
         font-family: Barlow;
         font-size: 40px;
         font-weight: 400;
@@ -534,7 +538,7 @@ button {
     line-height: 1.43;
     letter-spacing: 0.35px;
     text-align: center;
-    color: #2a1650;
+    color: #2d0e4e;
 }
 
 @media (max-width: 700px) {
@@ -570,7 +574,7 @@ button {
     padding: 16px 16px 75px 16px;
     overflow: hidden;
     background-color: #fff;
-    background-image: radial-gradient(rgba(140,130,255,0.5) 1px, rgba(140,130,255,0.5) 0);
+    background-image: radial-gradient(rgba(93, 24, 179, 0.4) 1px, rgba(93, 24, 179, 0.4) 0);
     background-size: 75px 75px;
     border-radius: 16px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 3px, rgba(14, 30, 37, 0.32) 0px 2px 16px 3px;
@@ -843,47 +847,4 @@ button {
     color: $text-primary;
 }
 
-.ComingSoon {
-    width: 100%;
-    max-width: 700px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #2a1650;
-    // same glass as the other cards
-    background-color: rgba(255, 255, 255, 0.22);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
-}
-
-// . -> .. -> ... -> . ; hidden dots keep their space so the text doesn't jump
-.Dots span {
-    opacity: 0;
-    animation: dot-in 1.5s infinite;
-
-    &:first-child {
-        opacity: 1;
-        animation: none;
-    }
-
-    &:nth-child(3) {
-        animation-name: dot-in-late;
-    }
-}
-
-@keyframes dot-in {
-    0%, 32% { opacity: 0; }
-    33%, 100% { opacity: 1; }
-}
-
-@keyframes dot-in-late {
-    0%, 65% { opacity: 0; }
-    66%, 100% { opacity: 1; }
-}
 </style>

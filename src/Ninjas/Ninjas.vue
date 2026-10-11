@@ -2,6 +2,8 @@
     <section class="Ninjas" id="Ninjas">
         <div class="Container">
             <h2 class="Title" id="Speakers">Our Ninjas</h2>
+            <ComingSoon v-if="comingSoon" />
+            <template v-else>
             <div v-for="(ninja, ninjaIndex) in ninjas"
                  :key="ninjaIndex">
                 <div class="MemberCol">
@@ -21,15 +23,21 @@
                     </div>
                 </div>
             </div>
+            </template>
         </div>
     </section>
 </template>
 
 <script>
 import { serverUri } from '../variables';
+import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 
 export default {
+	components: {
+		ComingSoon,
+	},
 	data: () => ({
+		comingSoon: true, // set to false to show the speaker cards
 		ninjas: [
 			{
 				members: [
@@ -153,7 +161,7 @@ export default {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+    box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
     transition: 0.3s ease all;
 }
 
@@ -166,13 +174,13 @@ export default {
     margin-top: 12px;
     border-radius: 50%;
     font-size: 18px;
-    color: #2a1650;
+    color: #2d0e4e;
     background-color: rgba(255, 255, 255, 0.45);
     transition: 0.2s ease all;
 
     &:hover {
         color: #fff;
-        background-color: #5b2fd4;
+        background-color: #5d18b3;
     }
 }
 
@@ -221,7 +229,7 @@ export default {
     line-height: 1.43;
     letter-spacing: 0.35px;
     text-align: center;
-    color: #2a1650;
+    color: #2d0e4e;
 }
 
 @media (max-width: 900px) {

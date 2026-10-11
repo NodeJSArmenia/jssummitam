@@ -82,8 +82,9 @@ export default {
         flex: 1 1 0;
         min-width: 130px;
         max-width: 180px;
+        display: flex;
+        flex-direction: column;
         margin: 0 8px 25px;
-        padding: 20px 10px;
         text-align: center;
         // glass card (same look as the speaker and team cards)
         background-color: rgba(255, 255, 255, 0.22);
@@ -91,7 +92,7 @@ export default {
         backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.45);
         border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+        box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
         transition: .3s ease all;
     }
 
@@ -121,12 +122,20 @@ export default {
         cursor: pointer;
     }
 
+    // link fills the card, and the title fills what the logo leaves: all cards in a row look equal
     .Name {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px; // padding on the link, not the card: the whole card is clickable
         font-family: Barlow;
-        color: #2a1650;
+        color: #2d0e4e;
 
         p {
-            display: inline-block;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 0;
             font-size: 18px;
             font-weight: 700;
@@ -138,7 +147,7 @@ export default {
 
     .Name:hover {
         text-decoration: none;
-        color: #5b2fd4;
+        color: #5d18b3;
     }
 
     .Position {
