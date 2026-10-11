@@ -9,12 +9,28 @@
 				<p class="Text">{{ text }}</p>
 				<Button title="Visit Krisp" :link="link"></Button>
 			</div>
+
+			<div class="PartnersCard">
+				<template v-for="group in groups">
+					<h3 class="Title SubTitle" :key="`${group.title}-title`">{{ group.title }}</h3>
+					<div class="Partners" :key="group.title">
+						<div
+							v-for="(partner, index) in group.partners"
+							:key="index"
+							class="Img"
+							:class="group.className"
+							:style="[{ backgroundImage: `url(${partner.img})` }, partner.style]">
+						</div>
+					</div>
+				</template>
+			</div>
 		</div>
 	</section>
 </template>
 
 <script>
 import Button from '../_common/Button/Button.vue';
+import { serverUri } from '../variables';
 import logo from './krisp.svg';
 
 export default {
@@ -25,6 +41,42 @@ export default {
 		name: 'Krisp',
 		link: 'https://krisp.ai',
 		logo,
+		groups: [
+			{
+				title: 'Co-Organizers',
+				className: 'Partner',
+				partners: [
+					{
+						img: `${serverUri}/sponsors/js_armenia_logo.png`,
+						style: { backgroundColor: 'rgb(1, 1, 1)', borderRadius: '50px' },
+					},
+					{ img: `${serverUri}/sponsors/aua.png` },
+				],
+			},
+			// {
+			// 	title: 'Gold sponsors',
+			// 	className: 'GoldPartner',
+			// 	partners: [
+			// 		{ img: `${serverUri}/sponsors/lantern.png` },
+			// 		{ img: `${serverUri}/sponsors/hydralab.png` },
+			// 		{ img: `${serverUri}/sponsors/easydmarc.png` },
+			// 	],
+			// },
+			// {
+			// 	title: 'Fintech sponsors',
+			// 	className: 'FintechPartner',
+			// 	partners: [
+			// 		{ img: `${serverUri}/sponsors/ameriabank.png` },
+			// 	],
+			// },
+			// {
+			// 	title: 'Media partners',
+			// 	className: 'MediaPartner',
+			// 	partners: [
+			// 		{ img: `${serverUri}/sponsors/how2b.png` },
+			// 	],
+			// },
+		],
 		text: 'We are proud to have Krisp as the General Sponsor of JavaScript Summit Armenia 2026. Thank you for supporting the Armenian developer community!',
 	}),
 };
@@ -71,9 +123,62 @@ export default {
 
 		img {
 			display: block;
-			width: 100%;
-			height: auto;
+			width: 90%;
+  			height: auto;
+  			margin: auto;		
 		}
+	}
+
+	.PartnersCard {
+		width: 100%;
+		max-width: 1000px;
+		box-sizing: border-box;
+		margin: 40px auto 0;
+		padding: 30px 40px;
+		// same glass as the card above
+		background-color: rgba(255, 255, 255, 0.22);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.45);
+		border-radius: 20px;
+		box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+	}
+
+	.SubTitle {
+		font-size: 25px;
+		margin: 20px 0 10px;
+	}
+
+	.Partners {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.Img {
+		max-width: 100%;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+
+	.Partner,
+	.FintechPartner {
+		width: 300px;
+		height: 150px;
+		background-size: cover;
+	}
+
+	.MediaPartner {
+		width: 300px;
+		height: 150px;
+		background-size: contain;
+	}
+
+	.GoldPartner {
+		width: 280px;
+		height: 280px;
+		background-size: contain;
 	}
 
 	.Text {
@@ -87,7 +192,8 @@ export default {
 			padding: 30px 15px;
 		}
 
-		.Card {
+		.Card,
+		.PartnersCard {
 			padding: 20px 16px;
 		}
 	}

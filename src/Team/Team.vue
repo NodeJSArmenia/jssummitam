@@ -37,31 +37,31 @@ export default {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Community Creator',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Software Engineer',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan',
 						position: 'AI/ML Researcher',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
 						name: 'Gor Gharagyozyan',
 						position: 'Software Engineer',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
 					{
 						img: `${serverUri}/team/5.jpg`,
 						name: 'Hrach Avagyan',
 						position: 'CEO at HydraLab',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
 			},
