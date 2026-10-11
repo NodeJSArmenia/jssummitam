@@ -4,12 +4,13 @@
 		<Welcome/>
 		<AppHeader/>
 		<Intro/>
-		<Speakers/>
+		<!-- <Speakers/> -->
 		<Ninjas />
-        <!-- <Schedule/>
-		<Sponsors/>
+        <!-- <Schedule/> -->
+		<!-- <Sponsors/> -->
+		<GeneralSponsor/>
 		<Team/>
-		<Community/> -->
+		<Community/>
 		<!-- <Location/> -->
 		<!-- <Faq/> -->
 		<AppFooter/>
@@ -64,7 +65,7 @@ export default {
 			const dt = Math.min((now - last) / 1000, 0.05);
 			last = now;
 			// ctx.clearRect(0, 0, canvas.width, canvas.height);
-			ctx.clearRect(0, 0, window.innerWidth, window.innerHeight); 
+			ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 			ctx.fillStyle = 'rgba(42, 22, 80, 0.16)';
 			ctx.strokeStyle = 'rgba(42, 22, 80, 0.16)';
 			ctx.lineWidth = 3;
@@ -133,6 +134,10 @@ export default {
 		}),
 		Ninjas: lazyLoadComponent({
 			componentFactory: () => import('./Ninjas/Ninjas.vue'),
+			loading: Dummy,
+		}),
+		GeneralSponsor: lazyLoadComponent({
+			componentFactory: () => import('./GeneralSponsor/GeneralSponsor.vue'),
 			loading: Dummy,
 		}),
 		Sponsors: lazyLoadComponent({

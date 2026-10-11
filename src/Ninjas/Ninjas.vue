@@ -1,6 +1,7 @@
 <template>
     <section class="Ninjas" id="Ninjas">
         <div class="Container">
+            <h2 class="Title" id="Speakers">Our Ninjas</h2>
             <div v-for="(ninja, ninjaIndex) in ninjas"
                  :key="ninjaIndex">
                 <div class="MemberCol">
