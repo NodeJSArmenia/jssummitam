@@ -2,8 +2,7 @@
     <section class="Team" id="Organizers">
         <div class="Container">
             <h2 class="Title">Organizers</h2>
-            <div class="row"
-                 v-for="(team, teamIndex) in teams"
+            <div v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
                 <div class="MemberCol">
                     <div class="Member"
@@ -12,6 +11,13 @@
                         <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
                         <h3 class="Name">{{member.name}}</h3>
                         <h5 class="Position">{{member.position}}</h5>
+                        <a class="Social"
+                           :href="linkedinUrl(member)"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           :aria-label="`${member.name} on LinkedIn`">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -31,31 +37,43 @@ export default {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Community Creator',
+						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Software Engineer',
+						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan',
 						position: 'AI/ML Researcher',
+						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
 						name: 'Gor Gharagyozyan',
 						position: 'Software Engineer',
+						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
 					},
 					{
 						img: `${serverUri}/team/5.jpg`,
 						name: 'Hrach Avagyan',
 						position: 'CEO at HydraLab',
+						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
 					},
 				],
 			},
 		],
 	}),
+	methods: {
+		// member.linkedin = profile URL; falls back to a LinkedIn people search by name
+		linkedinUrl(member) {
+			return member.linkedin
+				|| `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(member.name)}`;
+		},
+	},
 };
 </script>
 
@@ -74,9 +92,9 @@ export default {
 
     .MemberCol {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -85,15 +103,30 @@ export default {
     }
 
     .Member {
-        width: 18%;
+        // equal share of the row, 180-220px: all members fit on one line when there is room
+        flex: 1 1 0;
+        min-width: 180px;
+        max-width: 220px;
+        margin: 0 8px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        margin-bottom: 25px;
-        padding: 0 10px;
+        padding: 20px 10px;
+        // glass card (same look as the Intro banner)
+        background-color: rgba(255, 255, 255, 0.22);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+        transition: .3s ease all;
     }
 
     .Img {
         width: 100%;
-        padding-bottom: 100%;
+        max-width: 180px;
+        aspect-ratio: 1 / 1;
         margin-bottom: 10px;
         background-position: 50%;
         background-repeat: no-repeat;
@@ -106,14 +139,35 @@ export default {
         display: inline;
     }
 
+    .Social {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        margin-top: 12px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #2a1650;
+        background-color: rgba(255, 255, 255, 0.45);
+        transition: .2s ease all;
+
+        &:hover {
+            color: #fff;
+            background-color: #5b2fd4;
+        }
+    }
+
     .Member:hover {
+        background-color: rgba(255, 255, 255, 0.34);
+        transform: translateY(-4px);
+
         .Img {
             transform: scale(1.1);
         }
     }
 
     .Name {
-        background: white;
         font-family: Barlow;
         font-size: 16px;
         font-weight: bold;
@@ -124,7 +178,6 @@ export default {
     }
 
     .Position {
-        background: white;
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -135,22 +188,6 @@ export default {
         color: #2a1650;
     }
 
-
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    @media (max-width: 900px) {
-        .Member {
-            width: 30%;
-        }
-
-        .MemberCol {
-            justify-content: center;
-        }
-    }
-
     @media (max-width: 700px) {
         .Name {
             font-size: 20px;
@@ -158,10 +195,6 @@ export default {
     }
 
     @media (max-width: 600px) {
-        .MemberCol {
-            justify-content: center;
-        }
-
         .Name {
             font-size: 18px;
         }
@@ -171,19 +204,9 @@ export default {
         }
 
         .Member {
-            width: 60%;
-            padding: 0 30px;
-        }
-
-        .TeamTitle {
-            text-align: center;
-            padding: 0;
+            flex-basis: 100%;
+            max-width: none;
+            padding: 20px 30px;
         }
     }
-
-        @media (max-width: 400px) {
-            .Member {
-                width: 100%;
-            }
-        }
 </style>

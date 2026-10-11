@@ -14,9 +14,9 @@
                 <a class="Item" href="https://2023.jssummit.am/">2023</a>
 				<a class="Item" href="https://2024.jssummit.am/">2024</a>
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
-                <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
+                <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
-                <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
+                <a class="Item" href="#GeneralSponsor" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
 				<!-- <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a> -->
 				<a class="Item" href="#Organizers" v-smooth-scroll="navConfig" v-on:click="close">Organizers</a>
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
