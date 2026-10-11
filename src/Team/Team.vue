@@ -36,13 +36,13 @@ export default {
 					{
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
-						position: 'Community Creator',
+						position: 'Tech Lead, Community Creator',
 						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Software Engineer',
+						position: 'Security Researcher, Software Engineer',
 						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
@@ -60,7 +60,7 @@ export default {
 					{
 						img: `${serverUri}/team/5.jpg`,
 						name: 'Hrach Avagyan',
-						position: 'CEO at HydraLab',
+						position: 'Software Engineer',
 						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
@@ -86,7 +86,7 @@ export default {
 
     .Title {
 		span {
-			text-shadow: 3px 3px 9px #a8520f;
+			text-shadow: 3px 3px 9px #a91cff;
 		}
 	}
 

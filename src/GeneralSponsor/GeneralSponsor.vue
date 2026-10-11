@@ -131,6 +131,7 @@ export default {
 	}
 
 	.PartnersCard {
+		display: none;
 		width: 100%;
 		max-width: 1000px;
 		box-sizing: border-box;
@@ -200,12 +201,6 @@ export default {
 		.Card,
 		.PartnersCard {
 			padding: 20px 16px;
-		}
-	}
-
-	@media (max-width: 1000px) {
-		.Logo {
-			background-size: cover;
 		}
 	}
 </style>

@@ -101,6 +101,10 @@ export default {
         .ExclusiveSponsor {
             width: 18%;
         }
+
+        .Logo {
+            background-size: cover;
+        }
     }
 
     @media (max-width: 800px) {

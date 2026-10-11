@@ -11,8 +11,8 @@
 				<i class="fa" v-bind:class="{ 'fa-bars': !isOpen , 'fa-times': isOpen}" aria-hidden="true"></i>
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
-                <a class="Item" href="https://2023.jssummit.am/">2023</a>
-				<a class="Item" href="https://2024.jssummit.am/">2024</a>
+                <a class="Item" href="https://2023.jssummit.am/">#JSSummitAM2023</a>
+				<a class="Item" href="https://2024.jssummit.am/">#JSSummitAM2024</a>
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
                 <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>

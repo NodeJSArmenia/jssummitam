@@ -111,7 +111,7 @@ export default {
 
 	.Title {
 		span {
-			text-shadow: 3px 3px 9px #a8520f;
+			text-shadow: 3px 3px 9px #a91cff;
 		}
 	}
 

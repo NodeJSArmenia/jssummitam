@@ -94,10 +94,10 @@ export default {
 		letter-spacing: normal;
 		text-align: center;
 
-		text-shadow: 3px 3px 9px #a8520f;
+		text-shadow: 3px 3px 9px #a91cff;
 
 		span {
-			text-shadow: 3px 3px 9px #a8520f;
+			text-shadow: 3px 3px 9px #a91cff;
 		}
 	}
 

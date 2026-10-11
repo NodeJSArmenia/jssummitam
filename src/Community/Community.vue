@@ -1,7 +1,7 @@
 <template>
     <section class="Community" id="Community">
         <div class="Container">
-            <h2 class="Title">Telegram groups</h2>
+            <h2 class="Title">Telegram Groups</h2>
             <div class="CommunityItemCol">
                     <div class="CommunityItem"
                          v-for="(community, index) in communities"
@@ -24,7 +24,7 @@ export default {
 		communities: [
 			{
 				img: `${serverUri}/chats/8.jpg`,
-				name: 'JavaScript',
+				name: '@JavaScript',
 				url: 'https://t.me/javascript',
 			},
 			{
@@ -61,7 +61,7 @@ export default {
 
     .Title {
 		span {
-			text-shadow: 3px 3px 9px #a8520f;
+			text-shadow: 3px 3px 9px #a91cff;
 		}
 	}
 
