@@ -147,7 +147,6 @@ export default {
 
     .Name:hover {
         text-decoration: none;
-        color: #ffd166;
     }
 
     .Position {

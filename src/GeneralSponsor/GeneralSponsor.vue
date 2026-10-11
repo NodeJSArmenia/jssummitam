@@ -205,7 +205,7 @@ export default {
 
 	@media (max-width: 1000px) {
 		.Logo {
-			back: background-size: cover;
+			background-size: cover;
 		}
 	}
 </style>
