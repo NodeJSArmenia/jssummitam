@@ -2,7 +2,7 @@
     <section class="Community" id="Community">
         <div class="Container">
             <h2 class="Title">Telegram groups</h2>
-            <div class="CommunityItemCol row">
+            <div class="CommunityItemCol">
                     <div class="CommunityItem"
                          v-for="(community, index) in communities"
                          :key="index">
@@ -32,6 +32,21 @@ export default {
 				name: 'JavaScript Armenia',
 				url: 'https://t.me/javascriptarmenia',
 			},
+			{
+				img: `${serverUri}/chats/4.jpg`,
+				name: 'Node.js Armenia',
+				url: 'https://t.me/nodejsarmenia',
+			},
+			{
+				img: `${serverUri}/chats/3.jpg`,
+				name: 'React Armenia',
+				url: 'https://t.me/reactarmenia',
+			},
+			{
+				img: `${serverUri}/chats/2.jpg`,
+				name: 'Vue.js Armenia',
+				url: 'https://t.me/vuejsarmenia',
+			},
 		],
 	}),
 };
@@ -52,9 +67,9 @@ export default {
 
     .CommunityItemCol {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -63,10 +78,21 @@ export default {
     }
 
     .CommunityItem {
-        width: 15%;
+        // equal share of the row, 130-180px: fits one line when there is room, wraps otherwise
+        flex: 1 1 0;
+        min-width: 130px;
+        max-width: 180px;
+        margin: 0 8px 25px;
+        padding: 20px 10px;
         text-align: center;
-        margin-bottom: 25px;
-        padding: 0 10px;
+        // glass card (same look as the speaker and team cards)
+        background-color: rgba(255, 255, 255, 0.22);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+        transition: .3s ease all;
     }
 
     .Img {
@@ -85,6 +111,9 @@ export default {
     }
 
     .CommunityItem:hover {
+        background-color: rgba(255, 255, 255, 0.34);
+        transform: translateY(-4px);
+
         .Img {
             transform: scale(1.1);
         }
@@ -94,17 +123,22 @@ export default {
 
     .Name {
         font-family: Barlow;
-        font-weight: 400;
-        font-size: 14px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.25;
-        color: black;
-        background: white;
+        color: #2a1650;
+
+        p {
+            display: inline-block;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: 0.4px;
+            transition: .2s ease all;
+        }
     }
 
     .Name:hover {
         text-decoration: none;
+        color: #5b2fd4;
     }
 
     .Position {
@@ -118,22 +152,7 @@ export default {
         color: #e8e8e8;
     }
 
-    @media (max-width: 1000px) {
-        .CommunityItem {
-            width: 15%;
-        }
-    }
-
     @media (max-width: 600px) {
-        .CommunityItemCol {
-            justify-content: center;
-        }
-
-        .CommunityItem {
-            width: 80%;
-            padding: 0 30px;
-        }
-
         .Img {
             background-size: 100%;
         }

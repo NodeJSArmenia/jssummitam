@@ -65,7 +65,7 @@ export default {
 		],
 		imageSource: `${serverUri}/banners/polygons.png`,
 		buttonText: 'Register Now',
-		buttonLink: 'https://www.eventbrite.com/e/javascript-summit-2024-tickets-798904844897',
+		buttonLink: 'https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7',
 	}),
 };
 </script>

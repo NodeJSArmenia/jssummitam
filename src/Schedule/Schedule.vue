@@ -2,7 +2,8 @@
   <section class="Schedule" id="Schedule">
     <div class="Container">
       <h2 class="Title"><span>Agenda</span></h2>
-      <div class="schedule">
+      <p v-if="comingSoon" class="ComingSoon">Coming soon<span class="Dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <div v-else class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
@@ -98,6 +99,7 @@ import { serverUri } from '../variables';
 
 export default {
 	data: () => ({
+		comingSoon: true, // set to false to show the agenda below
 		quarterHour: 100,
 		eventDuration: 2,
 		rooms: [
@@ -839,5 +841,49 @@ button {
     margin-bottom: 1.1em;
     text-align: center;
     color: $text-primary;
+}
+
+.ComingSoon {
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2a1650;
+    // same glass as the other cards
+    background-color: rgba(255, 255, 255, 0.22);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(42, 22, 80, 0.18);
+}
+
+// . -> .. -> ... -> . ; hidden dots keep their space so the text doesn't jump
+.Dots span {
+    opacity: 0;
+    animation: dot-in 1.5s infinite;
+
+    &:first-child {
+        opacity: 1;
+        animation: none;
+    }
+
+    &:nth-child(3) {
+        animation-name: dot-in-late;
+    }
+}
+
+@keyframes dot-in {
+    0%, 32% { opacity: 0; }
+    33%, 100% { opacity: 1; }
+}
+
+@keyframes dot-in-late {
+    0%, 65% { opacity: 0; }
+    66%, 100% { opacity: 1; }
 }
 </style>

@@ -48,7 +48,7 @@ export default {
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Researcher',
+						position: 'Researcher / Lecturer',
 						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
