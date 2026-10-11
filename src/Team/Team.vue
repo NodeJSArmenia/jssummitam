@@ -114,7 +114,8 @@ export default {
         text-align: center;
         padding: 20px 10px;
         // glass card (same look as the Intro banner)
-        background-color: rgba(255, 255, 255, 0.22);
+        background-color: rgba(93, 24, 179, 0.55);
+        color: #fff;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.45);
@@ -148,18 +149,18 @@ export default {
         margin-top: 12px;
         border-radius: 50%;
         font-size: 18px;
-        color: #2d0e4e;
-        background-color: rgba(255, 255, 255, 0.45);
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
         transition: .2s ease all;
 
         &:hover {
-            color: #fff;
-            background-color: #5d18b3;
+            color: #5d18b3;
+            background-color: #fff;
         }
     }
 
     .Member:hover {
-        background-color: rgba(255, 255, 255, 0.34);
+        background-color: rgba(93, 24, 179, 0.7);
         transform: translateY(-4px);
 
         .Img {
@@ -185,7 +186,7 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #2d0e4e;
+        color: #fff;
     }
 
     @media (max-width: 700px) {

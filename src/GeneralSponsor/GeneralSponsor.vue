@@ -102,7 +102,8 @@ export default {
 		padding: 30px 40px;
 		text-align: center;
 		// same glass as the Intro banner
-		background-color: rgba(255, 255, 255, 0.22);
+		background-color: rgba(93, 24, 179, 0.55);
+		color: #fff;
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
@@ -122,6 +123,8 @@ export default {
 		}
 
 		img {
+			// the logo is dark navy: render it white on the purple glass
+			filter: brightness(0) invert(1);
 			display: block;
 			width: 90%;
   			height: auto;
@@ -136,12 +139,17 @@ export default {
 		margin: 40px auto 0;
 		padding: 30px 40px;
 		// same glass as the card above
-		background-color: rgba(255, 255, 255, 0.22);
+		background-color: rgba(93, 24, 179, 0.55);
+		color: #fff;
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
 		border-radius: 20px;
 		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
+	}
+
+	.PartnersCard .Title {
+		color: #fff;
 	}
 
 	.SubTitle {

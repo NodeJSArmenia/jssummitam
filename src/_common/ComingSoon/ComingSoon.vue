@@ -18,9 +18,9 @@ export default {
 	text-align: center;
 	font-size: 32px;
 	font-weight: bold;
-	color: #2d0e4e;
 	// same glass as the other cards
-	background-color: rgba(255, 255, 255, 0.22);
+	background-color: rgba(93, 24, 179, 0.55);
+	color: #fff;
 	-webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);
 	border: 1px solid rgba(255, 255, 255, 0.45);

@@ -87,7 +87,8 @@ export default {
         margin: 0 8px 25px;
         text-align: center;
         // glass card (same look as the speaker and team cards)
-        background-color: rgba(255, 255, 255, 0.22);
+        background-color: rgba(93, 24, 179, 0.55);
+        color: #fff;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.45);
@@ -112,7 +113,7 @@ export default {
     }
 
     .CommunityItem:hover {
-        background-color: rgba(255, 255, 255, 0.34);
+        background-color: rgba(93, 24, 179, 0.7);
         transform: translateY(-4px);
 
         .Img {
@@ -129,7 +130,7 @@ export default {
         flex-direction: column;
         padding: 20px 10px; // padding on the link, not the card: the whole card is clickable
         font-family: Barlow;
-        color: #2d0e4e;
+        color: #fff;
 
         p {
             flex: 1;
@@ -147,7 +148,7 @@ export default {
 
     .Name:hover {
         text-decoration: none;
-        color: #5d18b3;
+        color: #ffd166;
     }
 
     .Position {
