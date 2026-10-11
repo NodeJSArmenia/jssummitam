@@ -68,7 +68,7 @@ export default {
 
     .Title {
 		span {
-			text-shadow: 3px 3px 9px #91a6d0;
+			text-shadow: 3px 3px 9px #a8520f;
 		}
 	}
 
@@ -132,7 +132,7 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #3d3c51;
+        color: #2a1650;
     }
 
 

@@ -116,7 +116,7 @@ export default {
     }
 
     a {
-        color: #fddf59;
+        color: #f26b5b;
         font-weight: bold;
     }
 

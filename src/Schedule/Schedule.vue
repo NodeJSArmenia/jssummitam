@@ -303,9 +303,9 @@ export default {
     --timeline-bg: rgb(var(--white-rgb));
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
-    --schedule-text: rgb(70, 67, 106);
-    --grid-border: #8C52FF;
-    --js-summit-yellow-rgb: 253, 223, 89;
+    --schedule-text: rgb(42, 22, 80);
+    --grid-border: #5b2fd4;
+    --js-summit-yellow-rgb: 242, 107, 91;
 
     --am: lightcoral;
     --en: mediumseagreen;
@@ -465,8 +465,8 @@ button {
 
 .Title {
     span {
-        background: #fff;
-        color: #3d3c51;
+        // background: #fff;
+        color: #2a1650;
         font-family: Barlow;
         font-size: 40px;
         font-weight: 400;
@@ -532,7 +532,7 @@ button {
     line-height: 1.43;
     letter-spacing: 0.35px;
     text-align: center;
-    color: #3d3c51;
+    color: #2a1650;
 }
 
 @media (max-width: 700px) {
