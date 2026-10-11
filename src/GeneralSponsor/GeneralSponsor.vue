@@ -43,15 +43,14 @@ export default {
 		logo,
 		groups: [
 			{
-				title: 'Co-Organizers',
-				className: 'Partner',
-				partners: [
-					{
-						img: `${serverUri}/sponsors/js_armenia_logo.png`,
-						style: { backgroundColor: 'rgb(1, 1, 1)', borderRadius: '50px' },
-					},
-					{ img: `${serverUri}/sponsors/aua.png` },
-				],
+				// title: 'Co-Organizers',
+				// className: 'Partner',
+				// partners: [
+				// 	{
+				// 		img: `${serverUri}/sponsors/js_armenia_logo.png`,
+				// 		style: { backgroundColor: 'rgb(1, 1, 1)', borderRadius: '50px' },
+				// 	},
+				// ],
 			},
 			// {
 			// 	title: 'Gold sponsors',
@@ -107,7 +106,6 @@ export default {
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
-		border-radius: 20px;
 		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 	}
 
@@ -144,7 +142,6 @@ export default {
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
-		border-radius: 20px;
 		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 	}
 
@@ -203,6 +200,12 @@ export default {
 		.Card,
 		.PartnersCard {
 			padding: 20px 16px;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		.Logo {
+			back: background-size: cover;
 		}
 	}
 </style>

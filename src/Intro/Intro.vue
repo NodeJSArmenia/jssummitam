@@ -119,7 +119,6 @@ export default {
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.45);
-		border-radius: 20px;
 		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 
 		ul {
