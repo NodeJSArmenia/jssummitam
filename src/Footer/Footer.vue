@@ -29,7 +29,7 @@
         <p class="Credits">
             Coded in Vue.js by <a class="Links" href="https://github.com/vahmelk99" target="_blank">@vahmelk99</a>,
             <a class="Links" href="https://github.com/nairihar" target="_blank">@nairihar</a> and
-            <a class="Links" href="https://github.com/NodeJSArmenia/jssummitam-23/graphs/contributors"
+            <a class="Links" href="https://github.com/NodeJSArmenia/jssummitam/graphs/contributors?all=1"
                target="_blank">others</a>.
         </p>
     </div>
