@@ -19,7 +19,7 @@ export default {
 	font-size: 32px;
 	font-weight: bold;
 	// same glass as the other cards
-	background-color: rgba(93, 24, 179, 0.55);
+	background-color: rgb(122 42 254 / 58%)
 	color: #fff;
 	-webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);

@@ -1,7 +1,7 @@
 <template>
     <section class="Ninjas" id="Ninjas">
         <div class="Container">
-            <h2 class="Title" id="Speakers">Shinobies</h2>
+            <h2 class="Title" id="Speakers">Shinobies (Speakers)</h2>
             <ComingSoon v-if="comingSoon" />
             <template v-else>
             <div v-for="(ninja, ninjaIndex) in ninjas"
@@ -156,7 +156,7 @@ export default {
     text-align: center;
     padding: 20px 10px;
     // glass card (same look as the Intro banner)
-    background-color: rgba(93, 24, 179, 0.55);
+    background-color: rgb(122 42 254 / 58%)
     color: #fff;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);

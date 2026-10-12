@@ -1,7 +1,7 @@
 <template>
 	<section class="GeneralSponsor" id="GeneralSponsor">
 		<div class="Container">
-			<h2 class="Title">General Sponsor</h2>
+			<h2 class="Title">Exclusive Sponsor</h2>
 			<div class="Card">
 				<a class="Logo" :href="link" target="_blank" rel="noopener noreferrer" :aria-label="name">
 					<img :src="logo" :alt="`${name} logo`">
@@ -75,7 +75,7 @@ export default {
 			// 	],
 			// },
 		],
-		text: 'We are proud to have Krisp as the General Sponsor of JavaScript Summit Armenia 2026. Thank you for supporting the Armenian developer community!',
+		text: 'We are proud to have Krisp as the Exclusive Sponsor of JavaScript Summit Armenia 2026. Thank you for supporting the Armenian developer community!',
 	}),
 };
 </script>

@@ -93,7 +93,7 @@ export default {
         margin: 0 8px 25px;
         text-align: center;
         // glass card (same look as the speaker and team cards)
-        background-color: rgba(93, 24, 179, 0.55);
+        background-color: rgb(122 42 254 / 58%)
         color: #fff;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);

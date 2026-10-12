@@ -124,7 +124,7 @@ export default {
         text-align: center;
         padding: 20px 10px;
         // glass card (same look as the Intro banner)
-        background-color: rgba(93, 24, 179, 0.55);
+        background-color: rgb(122 42 254 / 58%)
         color: #fff;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
