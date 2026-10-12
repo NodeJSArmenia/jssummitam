@@ -20,7 +20,7 @@ export default {};
     .Title {
         margin-bottom: 50px;
 		span {
-			text-shadow: 3px 3px 9px #a91cff;
+			text-shadow: 3px 3px 9px #7a2afe;
 		}
     }
 
