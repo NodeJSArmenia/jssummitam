@@ -1,7 +1,7 @@
 <template>
     <section class="Community" id="Community">
         <div class="Container">
-            <h2 class="Title">Telegram Groups</h2>
+            <h2 class="Title">Hidden Villages</h2>
             <div class="CommunityItemCol">
                     <div class="CommunityItem"
                          v-for="(community, index) in communities"
@@ -9,6 +9,7 @@
                         <a :href="community.url" target="_blank" class="Name">
                             <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
                             <p>{{community.name}}</p>
+                            <p class="Village">{{ community.village }}</p>
                         </a>
                     </div>
                 </div>
@@ -25,27 +26,32 @@ export default {
 			{
 				img: `${serverUri}/chats/8.jpg`,
 				name: '@JavaScript',
-				url: 'https://t.me/javascript',
+                url: 'https://t.me/javascript',
+                village: 'Hidden Mist',
 			},
 			{
 				img: `${serverUri}/chats/7.jpg`,
 				name: 'JavaScript Armenia',
-				url: 'https://t.me/javascriptarmenia',
+                url: 'https://t.me/javascriptarmenia',
+                village: 'Hidden Leaf',
 			},
 			{
 				img: `${serverUri}/chats/4.jpg`,
 				name: 'Node.js Armenia',
-				url: 'https://t.me/nodejsarmenia',
+                url: 'https://t.me/nodejsarmenia',
+                village: 'Hidden Sand',
 			},
 			{
 				img: `${serverUri}/chats/3.jpg`,
 				name: 'React Armenia',
-				url: 'https://t.me/reactarmenia',
+                url: 'https://t.me/reactarmenia',
+                village: 'Hidden Stone',
 			},
 			{
 				img: `${serverUri}/chats/2.jpg`,
 				name: 'Vue.js Armenia',
-				url: 'https://t.me/vuejsarmenia',
+                url: 'https://t.me/vuejsarmenia',
+                village: 'Hidden Cloud',
 			},
 		],
 	}),
@@ -110,6 +116,17 @@ export default {
         max-width: 180px;
         width: 100%;
         transition: .3s ease all;
+    }
+
+    .Village{
+        font-size: 13px !important;
+        text-shadow: 0px 0px 5px #ffe05c;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.35px;
+        text-align: center;
     }
 
     .Position {

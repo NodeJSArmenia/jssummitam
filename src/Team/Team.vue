@@ -1,7 +1,7 @@
 <template>
     <section class="Team" id="Organizers">
         <div class="Container">
-            <h2 class="Title">Organizers</h2>
+            <h2 class="Title">Five Kage (Organizers)</h2>
             <div v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
                 <div class="MemberCol">
@@ -10,7 +10,8 @@
                          :key="index">
                         <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
                         <h3 class="Name">{{member.name}}</h3>
-                        <h5 class="Position">{{member.position}}</h5>
+                        <h4 class="Position">{{member.position}}</h4>
+                         <h4 class="Kage"><b>{{member.kage}}</b></h4>
                         <a class="Social"
                            :href="linkedinUrl(member)"
                            target="_blank"
@@ -37,30 +38,35 @@ export default {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead, Community Creator',
+						kage: 'Hokage',
 						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Security Researcher, Software Engineer',
+						kage: 'Kazekage',
 						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan, PhD',
-						position: 'Researcher / Lecturer',
+						position: 'UAV Researcher / Lecturer',
+                        kage: 'Raikage',
 						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
 						name: 'Gor Gharagyozyan, PhD',
 						position: 'Software Engineer',
+                        kage: 'Tsuchikage',
 						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
 					{
 						img: `${serverUri}/team/5.jpg`,
 						name: 'Hrach Avagyan',
 						position: 'Software Engineer',
+                        kage: 'Mizukage',
 						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
@@ -183,7 +189,7 @@ export default {
         letter-spacing: 0.5px;
     }
 
-    .Position {
+    .Position, .Kage {
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -193,6 +199,11 @@ export default {
         text-align: center;
         color: #fff;
     }
+
+    .Kage {
+        text-shadow: #ffe05c 0px 0px 5px;
+    }
+    
 
     @media (max-width: 700px) {
         .Name {
@@ -205,7 +216,7 @@ export default {
             font-size: 18px;
         }
 
-        .Position {
+        .Position, .Kage {
             font-size: 12px;
         }
 
