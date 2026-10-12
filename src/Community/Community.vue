@@ -94,11 +94,9 @@ export default {
         border: 1px solid rgba(255, 255, 255, 0.45);
         box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
         transition: .3s ease all;
-
-        transform: skew(-3deg);
         
         > * {
-            transform: skew(3deg);
+            transform: skew(-3deg);
         }
     }
 
