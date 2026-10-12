@@ -128,12 +128,12 @@ export default {
 }
 
 .RequestInvite .Button {
-    color: #7a2afe !important;
-    background-color: #ffffff !important;
+    color: white !important;
+    background-color: #7a2afe !important;
     margin-right: 10px !important;
     &:hover {
-        background-color: #ffffff !important;
-        border-color: #fff !important;
+        background-color: white !important;
+        border-color: #7a2afe !important;
     }
 }
 
@@ -154,7 +154,7 @@ export default {
         display: flex;
         align-items: center;
         padding: 0.5em 0.8em;
-        color: $text-white;
+        color: #7a2afe;
         margin: 0 0.1em;
         text-decoration: none;
         font-weight: 600;

@@ -101,14 +101,14 @@ export default {
     }
 
     .Img {
-        width: 100%;
-        padding-bottom: 100%;
-        margin-bottom: 10px;
-        background-position: center;
+        aspect-ratio: 1 / 1;
+        background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        transition: .3s ease all;
-        border-radius: 10px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        max-width: 180px;
+        width: 100%;
     }
 
     .Position {
@@ -118,7 +118,6 @@ export default {
     .CommunityItem:hover {
         background-color: rgba(93, 24, 179, 0.7);
         transform: translateY(-4px);
-        transform: skew(-3deg);
 
         .Img {
             transform: scale(1.1);
