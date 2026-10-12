@@ -11,8 +11,8 @@
 				<i class="fa" v-bind:class="{ 'fa-bars': !isOpen , 'fa-times': isOpen}" aria-hidden="true"></i>
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
-                <a class="Item" href="https://2023.jssummit.am/">#JSSummitAM2023</a>
-				<a class="Item" href="https://2024.jssummit.am/">#JSSummitAM2024</a>
+                <a class="Item" href="https://2024.jssummit.am/">#Summit24</a>
+				<a class="Item" href="https://2023.jssummit.am/">#Summit23</a>
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
                 <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
@@ -90,22 +90,25 @@ export default {
     top: -150px;
     left: 0;
     z-index: 100;
-    background: $bg-primary;
-    transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
+    color: #7a2afe;
+    background: white;
+    border-bottom: 2px #7a2afe solid;
+    // transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
 
     &.-sticked {
         display: flex;
         position: fixed;
         top: 0;
         min-height: 80px;
-        background: $bg-primary;
-        transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
+        background: white;
+        // transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
     }
 }
 
 .LogoContainer,
 .NavBtn {
     z-index: 999;
+    color: #7a2afe !important;
 }
 
 .HeaderContainer {
@@ -174,7 +177,8 @@ export default {
 
         &.active,
         &:hover {
-            color: #e8a21c;
+            color: #ffffff;
+            text-decoration: underline;
             // font-weight: 700;
         }
     }
@@ -229,7 +233,7 @@ export default {
         top: 0;
         position: absolute;
         right: 0;
-        color: #e6e6e6 !important;
+        color: #7a2afe !important;
         margin: 15px 25px;
         font-size: 30px;
     }

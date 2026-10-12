@@ -96,6 +96,11 @@ export default {
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
+        transform: skew(-3deg);
+        
+        > * {
+            transform: skew(3deg);
+        }
     }
 
     .Title {

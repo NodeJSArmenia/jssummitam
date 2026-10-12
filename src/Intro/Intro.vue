@@ -60,8 +60,8 @@ export default {
 		],
 		goal: 'Our aim is to create an environment where real experience, practical knowledge and valuable discussions come first, instead of theory you can already find on YouTube.',
 		videos: [
-			{ id: 'leb2NvCv7jw', label: '2023 Summit' },
-			{ id: 'KvF9fnGODYg', label: '2024 Summit' },
+			{ id: 'KvF9fnGODYg', label: '#JSSummitAM24' },
+			{ id: 'leb2NvCv7jw', label: 'JSSummitAM23' },
 		],
 		imageSource: `${serverUri}/banners/polygons.png`,
 		buttonText: 'Register Now',
