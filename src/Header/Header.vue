@@ -91,7 +91,6 @@ export default {
     left: 0;
     z-index: 100;
     color: #7a2afe;
-    background: white;
     border-bottom: 2px #7a2afe solid;
     // transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
 
@@ -150,6 +149,7 @@ export default {
     font-style: normal;
     line-height: 1.25;
     letter-spacing: 0.5px;
+    background: white;
 
     .Item {
         display: flex;
@@ -202,7 +202,7 @@ export default {
         top: -700px;
         max-height: calc(100vh - 50px);
         overflow-y: auto;
-        background: $bg-primary;
+        background: white
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -241,7 +241,7 @@ export default {
     }
 
     .Header.-open {
-        background: $bg-primary;
+        // background: $bg-primary;
     }
 }
 </style>
