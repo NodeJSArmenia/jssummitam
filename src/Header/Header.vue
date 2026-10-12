@@ -218,6 +218,7 @@ export default {
 
     .Navigation .Item {
         justify-content: center;
+        color: #7a2afe;
     }
 
     .NavigationButton {

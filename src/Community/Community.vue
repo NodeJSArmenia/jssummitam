@@ -118,6 +118,7 @@ export default {
     .CommunityItem:hover {
         background-color: rgba(93, 24, 179, 0.7);
         transform: translateY(-4px);
+        transform: skew(-3deg);
 
         .Img {
             transform: scale(1.1);
