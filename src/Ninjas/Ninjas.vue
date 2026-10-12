@@ -1,7 +1,7 @@
 <template>
     <section class="Ninjas" id="Ninjas">
         <div class="Container">
-            <h2 class="Title" id="Speakers">Shinobies</h2>
+            <h2 class="Title" id="Speakers">Shinobies (Speakers)</h2>
             <ComingSoon v-if="comingSoon" />
             <template v-else>
             <div v-for="(ninja, ninjaIndex) in ninjas"
