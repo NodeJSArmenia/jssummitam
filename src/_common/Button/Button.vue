@@ -33,17 +33,16 @@ export default {
 		padding: 0 10px;
 		height: 41px;
 		background-color: #7a2afe;
-		border-bottom: 2px solid #7a2afe;
-		border-top: 2px solid #7a2afe;
+		border: 2px solid #7a2afe;
 		-webkit-transition: background-color 200ms linear;
 		-ms-transition: background-color 200ms linear;
 		transition: background-color 200ms linear;
 
 		&:hover {
-			background-color: #f26b5b;
-			color: #2d0e4e;
-			border-bottom: 2px solid #f26b5b;
-			border-top: 2px solid #f26b5b;
+			background-color: #7a2afe;
+			color: white;
+			border-bottom: 2px solid #7a2afe;
+			border-top: 2px solid #7a2afe;
 			text-decoration: none;
 			-webkit-transition: background-color 200ms linear;
 			-ms-transition: background-color 200ms linear;

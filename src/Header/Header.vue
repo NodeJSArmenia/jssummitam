@@ -177,7 +177,7 @@ export default {
 
         &.active,
         &:hover {
-            color: #ffffff;
+            // color: #ffffff;
             text-decoration: underline;
             // font-weight: 700;
         }
