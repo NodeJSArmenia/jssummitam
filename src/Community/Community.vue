@@ -109,6 +109,7 @@ export default {
         margin-bottom: 10px;
         max-width: 180px;
         width: 100%;
+        transition: .3s ease all;
     }
 
     .Position {
@@ -117,7 +118,6 @@ export default {
 
     .CommunityItem:hover {
         background-color: rgba(93, 24, 179, 0.7);
-        transform: translateY(-4px);
 
         .Img {
             transform: scale(1.1);

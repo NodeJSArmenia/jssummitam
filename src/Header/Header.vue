@@ -23,7 +23,7 @@
 				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
 				<div class="RequestInvite">
-					<Button title="Register" link="https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7"></Button>
+					<Button title="Get Ticket" link="https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7"></Button>
 				</div>
 			</nav>
 		</div>
@@ -134,6 +134,7 @@ export default {
     &:hover {
         background-color: white !important;
         border-color: #7a2afe !important;
+        color: #7a2afe !important;
     }
 }
 

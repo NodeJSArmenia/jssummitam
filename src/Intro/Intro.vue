@@ -64,7 +64,7 @@ export default {
 			{ id: 'leb2NvCv7jw', label: 'JSSummitAM23' },
 		],
 		imageSource: `${serverUri}/banners/polygons.png`,
-		buttonText: 'Register Now',
+		buttonText: 'Get Ticket',
 		buttonLink: 'https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7',
 	}),
 };
