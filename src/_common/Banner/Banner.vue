@@ -76,7 +76,7 @@ export default {
 		box-sizing: border-box;
 		padding: 40px 50px 20px 50px;
 		// glass: translucent fill + blur of the gold/shuriken background behind it
-		background-color: rgb(122 42 254 / 58%);
+		background-color: rgba(122, 42, 254, 0.58);
 		color: #fff;
 		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(5px);

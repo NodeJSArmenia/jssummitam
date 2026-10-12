@@ -114,7 +114,7 @@ export default {
 		font-size: 20px;
 		line-height: 1.4;
 		// same glass as .Banner
-		background-color: rgb(122 42 254 / 58%);
+		background-color: rgba(122, 42, 254, 0.58);
 		color: #fff;
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);

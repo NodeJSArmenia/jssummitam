@@ -4,125 +4,135 @@
             <h2 class="Title" id="Speakers">Shinobies (Speakers)</h2>
             <ComingSoon v-if="comingSoon" />
             <template v-else>
-            <div v-for="(ninja, ninjaIndex) in ninjas"
-                 :key="ninjaIndex">
-                <div class="MemberCol">
-                    <div class="Member"
-                         v-for="(member, index) in ninja.members"
-                         :key="index">
-                        <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
-                        <h3 class="Name">{{member.name}}</h3>
-                        <h5 class="Position">{{member.position}}</h5>
-                        <a class="Social"
-                           :href="linkedinUrl(member)"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           :aria-label="`${member.name} on LinkedIn`">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
+                <div v-for="(ninja, ninjaIndex) in ninjas" :key="ninjaIndex">
+                    <div class="MemberCol">
+                        <div
+                            class="Member"
+                            v-for="(member, index) in ninja.members"
+                            :key="index"
+                        >
+                            <div
+                                class="Img"
+                                :style="{ backgroundImage: `url(${member.img})` }"
+                            ></div>
+                            <h3 class="Name">{{ member.name }}</h3>
+                            <h5 class="Position">{{ member.position }}</h5>
+                            <a
+                                class="Social"
+                                :href="linkedinUrl(member)"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                :aria-label="`${member.name} on LinkedIn`"
+                            >
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
             </template>
         </div>
     </section>
 </template>
 
 <script>
-import { serverUri } from '../variables';
-import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
+import { serverUri } from '../variables'
+import ComingSoon from '../_common/ComingSoon/ComingSoon.vue'
 
 export default {
-	components: {
-		ComingSoon,
-	},
-	data: () => ({
-		comingSoon: true, // set to false to show the speaker cards
-		ninjas: [
-			{
-				members: [
-					{
-						img: `${serverUri}/speakers/tigran.jpg`,
-						name: 'Tigran Bayburtsyan',
-						position: 'Founder & CTO at TreeScale',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/gevorg.jpg`,
-						name: 'Gevorg Martirosyan',
-						position: 'CTO at Blackmar (PhD, MBA)',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/narek.jpg`,
-						name: 'Narek Hakobyan',
-						position: 'Co-Founder & CTO of HR Drone',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/lilit.jpg`,
-						name: 'Lilit Tadevosyan',
-						position: 'Computer Scientist at Adobe',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/team/4.jpg`,
-						name: 'Varik Matevosyan',
-						position: 'Software Engineer at Lantern',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/svetlana.jpg`,
-						name: 'Svetlana Hovhannisyan',
-						position: 'Tech Sourcer at InConcept Labs',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/armen.jpg`,
-						name: 'Armen Vardanyan',
-						position: 'Google DevExpert for Angular',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/team/1.jpg`,
-						name: 'Nairi Harutyunyan',
-						position: 'Tech Writer, Podcaster',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/tigran-2.jpg`,
-						name: 'Tigran Hayrapteyan',
-						position: 'Lecturer & Video Creator',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/arsen.jpg`,
-						name: 'Arsen Mazmanyan',
-						position: 'Game Developer',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-					{
-						img: `${serverUri}/speakers/ruben.png`,
-						name: 'Ruben Gabrielyan',
-						position: 'Front End Engineer',
-						linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-					},
-				],
-			},
-		],
-	}),
-	methods: {
-		// member.linkedin = profile URL; falls back to a LinkedIn people search by name
-		linkedinUrl(member) {
-			return member.linkedin
-				|| `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(member.name)}`;
-		},
-	},
-};
+    components: {
+        ComingSoon,
+    },
+    data: () => ({
+        comingSoon: true, // set to false to show the speaker cards
+        ninjas: [
+            {
+                members: [
+                    {
+                        img: `${serverUri}/speakers/tigran.jpg`,
+                        name: 'Tigran Bayburtsyan',
+                        position: 'Founder & CTO at TreeScale',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/gevorg.jpg`,
+                        name: 'Gevorg Martirosyan',
+                        position: 'CTO at Blackmar (PhD, MBA)',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/narek.jpg`,
+                        name: 'Narek Hakobyan',
+                        position: 'Co-Founder & CTO of HR Drone',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/lilit.jpg`,
+                        name: 'Lilit Tadevosyan',
+                        position: 'Computer Scientist at Adobe',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/team/4.jpg`,
+                        name: 'Varik Matevosyan',
+                        position: 'Software Engineer at Lantern',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/svetlana.jpg`,
+                        name: 'Svetlana Hovhannisyan',
+                        position: 'Tech Sourcer at InConcept Labs',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/armen.jpg`,
+                        name: 'Armen Vardanyan',
+                        position: 'Google DevExpert for Angular',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/team/1.jpg`,
+                        name: 'Nairi Harutyunyan',
+                        position: 'Tech Writer, Podcaster',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/tigran-2.jpg`,
+                        name: 'Tigran Hayrapteyan',
+                        position: 'Lecturer & Video Creator',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/arsen.jpg`,
+                        name: 'Arsen Mazmanyan',
+                        position: 'Game Developer',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                    {
+                        img: `${serverUri}/speakers/ruben.png`,
+                        name: 'Ruben Gabrielyan',
+                        position: 'Front End Engineer',
+                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
+                    },
+                ],
+            },
+        ],
+    }),
+    methods: {
+        // member.linkedin = profile URL; falls back to a LinkedIn people search by name
+        linkedinUrl(member) {
+            return (
+                member.linkedin ||
+                `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(
+                    member.name
+                )}`
+            )
+        },
+    },
+}
 </script>
 
 <style scoped lang="scss">
-@import "./../_styles/colors";
+@import './../_styles/colors';
 
 .Ninjas {
     padding: 50px 0;
@@ -156,7 +166,7 @@ export default {
     text-align: center;
     padding: 20px 10px;
     // glass card (same look as the Intro banner)
-    background-color: rgb(122 42 254 / 58%);
+    background-color: rgba(122, 42, 254, 0.58);
     color: #fff;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
