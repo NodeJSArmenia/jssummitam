@@ -202,7 +202,7 @@ export default {
         top: -700px;
         max-height: calc(100vh - 50px);
         overflow-y: auto;
-        background: white
+        background: white;
         display: flex;
         flex-direction: column;
         width: 100%;
