@@ -39,8 +39,8 @@ export default {
 		transition: background-color 200ms linear;
 
 		&:hover {
-			background-color: #7a2afe;
-			color: white;
+			background-color: white !important;
+			color: #7a2afe !important;
 			border-bottom: 2px solid #7a2afe;
 			border-top: 2px solid #7a2afe;
 			text-decoration: none;

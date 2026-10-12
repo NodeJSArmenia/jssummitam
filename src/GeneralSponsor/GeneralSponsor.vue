@@ -7,7 +7,6 @@
 					<img :src="logo" :alt="`${name} logo`">
 				</a>
 				<p class="Text">{{ text }}</p>
-				<Button title="Visit Krisp" :link="link"></Button>
 			</div>
 
 			<div class="PartnersCard">
