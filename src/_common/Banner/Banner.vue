@@ -3,13 +3,16 @@
     flexDirection: `row${imageRight ? '-reverse' : ''}`,
   }">
 		<div v-if="iframe" id="iframe">
-			<iframe
-			src="https://www.youtube.com/embed/leb2NvCv7jw?si=xY1rNYmvz5RIrmRd&autoplay=1&mute=1&loop=1"
-			title="YouTube video player"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-			></iframe>
+			<figure v-for="video in videos" :key="video.id" class="BannerVideo">
+				<iframe
+				:src="`https://www.youtube.com/embed/${video.id}`"
+				:title="`${video.label} video`"
+				frameborder="0"
+				allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+				></iframe>
+				<figcaption>{{ video.label }}</figcaption>
+			</figure>
 		</div>
   		<div v-else class="Banner BannerImage">
 			<div
@@ -45,6 +48,10 @@ export default {
 		imageRight: Boolean,
 		imageSource: String,
 		iframe: Boolean,
+		videos: {
+			type: Array,
+			default: () => [],
+		},
 		title: String,
 		text: String,
 		buttonText: String,
@@ -63,6 +70,18 @@ export default {
 		align-content: center;
 		flex-wrap: wrap;
 		margin: 50px 0 0 0;
+		// explicit width: shrink-to-fit sizes the box from the iframe's 300px default, forcing the text to wrap
+		width: 100%;
+		max-width: 1000px;
+		box-sizing: border-box;
+		padding: 40px 50px 20px 50px;
+		// glass: translucent fill + blur of the gold/shuriken background behind it
+		background-color: rgba(122, 42, 254, 0.58);
+		color: #fff;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.45);
+		box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
 
 		.left {
 			text-align: left;
@@ -80,9 +99,27 @@ export default {
 			}
 		}
 
+		#iframe {
+			// 500px on desktop, shrinks on narrow screens (and then wraps above the text)
+			flex: 0 1 500px;
+			min-width: 0;
+			max-width: 100%;
+		}
+
 		iframe {
-			width: 500px;
-    		height: 281px;
+			display: block;
+			width: 100%;
+			aspect-ratio: 16 / 9;
+		}
+
+		.BannerVideo {
+			margin: 0 0 20px;
+
+			figcaption {
+				font-weight: bold;
+				text-align: center;
+				margin-top: 6px;
+			}
 		}
 	}
 
@@ -100,7 +137,7 @@ export default {
 	}
 
 	.BannerText {
-		background: white;
+		// background: white;
 		width: 282px;
 		font-weight: normal;
 		margin: 0 20px;
@@ -129,25 +166,32 @@ export default {
 		}
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 1024px) {
 		.BannerText {
-			width: 70%;
+			width: 100%;
+			margin: 10px 0 0;
 		}
+	}
+
+	@media (max-width: 700px) {
+		.Banner {
+			margin-top: 30px;
+			padding: 20px 16px;
+		}
+
+
+
 		.BannerImage {
 			width: 100%;
+			margin: 0;
 
 			.Img {
 				height: 200px;
 			}
 		}
-		.Banner iframe {
-			height: 281px;
-			width: 100vw;
-			margin: auto;
-			display: grid;
-		}
-		#iframe {
-			width: 100%;
+
+		.BannerButton {
+			justify-content: center;
 		}
 	}
 </style>

@@ -72,7 +72,7 @@ export default {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(https://topentol.sirv.com/jssummit/logo-big.png);
+        background-image: url(https://topentol.sirv.com/jssummit26/logo-big.png);
         transition: opacity 1s cubic-bezier(0.4, 0, 1, 1);
         opacity: 0;
     }
@@ -100,6 +100,10 @@ export default {
     @media (max-width: 1000px) {
         .ExclusiveSponsor {
             width: 18%;
+        }
+
+        .Logo {
+            background-size: cover;
         }
     }
 

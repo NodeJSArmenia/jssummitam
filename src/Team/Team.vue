@@ -1,9 +1,8 @@
 <template>
     <section class="Team" id="Organizers">
         <div class="Container">
-            <h2 class="Title">Organizers</h2>
-            <div class="row"
-                 v-for="(team, teamIndex) in teams"
+            <h2 class="Title">Five Kage (Organizers)</h2>
+            <div v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
                 <div class="MemberCol">
                     <div class="Member"
@@ -11,7 +10,15 @@
                          :key="index">
                         <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
                         <h3 class="Name">{{member.name}}</h3>
-                        <h5 class="Position">{{member.position}}</h5>
+                        <h4 class="Position">{{member.position}}</h4>
+                         <h4 class="Kage"><b>{{member.kage}}</b></h4>
+                        <a class="Social"
+                           :href="linkedinUrl(member)"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           :aria-label="`${member.name} on LinkedIn`">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -30,32 +37,49 @@ export default {
 					{
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
-						position: 'Community Creator',
+						position: 'Tech Lead, Community Creator',
+						kage: 'Hokage',
+						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Software Engineer',
+						position: 'Security Researcher, Software Engineer',
+						kage: 'Kazekage',
+						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
-						name: 'Vahagn Melkonyan',
-						position: 'AI/ML Researcher',
+						name: 'Vahagn Melkonyan, PhD',
+						position: 'UAV Researcher / Lecturer',
+                        kage: 'Raikage',
+						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
 						img: `${serverUri}/team/3.jpg`,
-						name: 'Gor Gharagyozyan',
+						name: 'Gor Gharagyozyan, PhD',
 						position: 'Software Engineer',
+                        kage: 'Tsuchikage',
+						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
 					{
 						img: `${serverUri}/team/5.jpg`,
 						name: 'Hrach Avagyan',
-						position: 'CEO at HydraLab',
+						position: 'Software Engineer',
+                        kage: 'Mizukage',
+						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
 			},
 		],
 	}),
+	methods: {
+		// member.linkedin = profile URL; falls back to a LinkedIn people search by name
+		linkedinUrl(member) {
+			return member.linkedin
+				|| `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(member.name)}`;
+		},
+	},
 };
 </script>
 
@@ -68,16 +92,20 @@ export default {
 
     .Title {
 		span {
-			text-shadow: 3px 3px 9px #91a6d0;
+			text-shadow: 3px 3px 9px #7a2afe;
 		}
 	}
 
     .MemberCol {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+        
+        > * {
+            transform: skew(-3deg);
+        }
     }
 
     .Title {
@@ -85,15 +113,30 @@ export default {
     }
 
     .Member {
-        width: 18%;
+        // equal share of the row, 180-220px: all members fit on one line when there is room
+        flex: 1 1 0;
+        min-width: 180px;
+        max-width: 220px;
+        margin: 0 8px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        margin-bottom: 25px;
-        padding: 0 10px;
+        padding: 20px 10px;
+        // glass card (same look as the Intro banner)
+        background-color: rgba(122, 42, 254, 0.58);
+        color: #fff;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
+        transition: .3s ease all;
     }
 
     .Img {
         width: 100%;
-        padding-bottom: 100%;
+        max-width: 180px;
+        aspect-ratio: 1 / 1;
         margin-bottom: 10px;
         background-position: 50%;
         background-repeat: no-repeat;
@@ -106,14 +149,37 @@ export default {
         display: inline;
     }
 
+    .Social {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        margin-top: 12px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: .2s ease all;
+
+        &:hover {
+            color: #7a2afe;
+            text-decoration: none;
+            background-color: #fff;
+        }
+    }
+
     .Member:hover {
+        background-color: rgba(93, 24, 179, 0.7);
+        transform: translateY(-4px);
+        transform: skew(-3deg);
+
         .Img {
             transform: scale(1.1);
         }
     }
 
     .Name {
-        background: white;
         font-family: Barlow;
         font-size: 16px;
         font-weight: bold;
@@ -123,8 +189,7 @@ export default {
         letter-spacing: 0.5px;
     }
 
-    .Position {
-        background: white;
+    .Position, .Kage {
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -132,24 +197,13 @@ export default {
         line-height: 1.43;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #3d3c51;
+        color: #fff;
     }
 
-
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;
+    .Kage {
+        text-shadow: #ffe05c 0px 0px 5px;
     }
-
-    @media (max-width: 900px) {
-        .Member {
-            width: 30%;
-        }
-
-        .MemberCol {
-            justify-content: center;
-        }
-    }
+    
 
     @media (max-width: 700px) {
         .Name {
@@ -158,32 +212,18 @@ export default {
     }
 
     @media (max-width: 600px) {
-        .MemberCol {
-            justify-content: center;
-        }
-
         .Name {
             font-size: 18px;
         }
 
-        .Position {
+        .Position, .Kage {
             font-size: 12px;
         }
 
         .Member {
-            width: 60%;
-            padding: 0 30px;
-        }
-
-        .TeamTitle {
-            text-align: center;
-            padding: 0;
+            flex-basis: 100%;
+            max-width: none;
+            padding: 20px 30px;
         }
     }
-
-        @media (max-width: 400px) {
-            .Member {
-                width: 100%;
-            }
-        }
 </style>

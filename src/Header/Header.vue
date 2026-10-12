@@ -11,18 +11,19 @@
 				<i class="fa" v-bind:class="{ 'fa-bars': !isOpen , 'fa-times': isOpen}" aria-hidden="true"></i>
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
-                <a class="Item" href="https://2023.jssummit.am/">2023</a>
+                <!-- <a class="Item" href="https://2024.jssummit.am/">#Summit24</a>
+				<a class="Item" href="https://2023.jssummit.am/">#Summit23</a> -->
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
-                <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
+                <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
 				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
-                <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
+                <a class="Item" href="#GeneralSponsor" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
 				<!-- <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a> -->
 				<a class="Item" href="#Organizers" v-smooth-scroll="navConfig" v-on:click="close">Organizers</a>
 				<a class="Item" href="#Community" v-smooth-scroll="navConfig" v-on:click="close">Community</a>
 				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
 				<div class="RequestInvite">
-					<Button title="Register" link="https://www.eventbrite.com/e/javascript-summit-2024-tickets-798904844897"></Button>
+					<Button title="Get Ticket" link="https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7"></Button>
 				</div>
 			</nav>
 		</div>
@@ -89,22 +90,24 @@ export default {
     top: -150px;
     left: 0;
     z-index: 100;
-    background: $bg-primary;
-    transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
+    color: #7a2afe;
+    border-bottom: 2px #7a2afe solid;
+    // transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
 
     &.-sticked {
         display: flex;
         position: fixed;
         top: 0;
         min-height: 80px;
-        background: $bg-primary;
-        transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
+        background: white;
+        // transition: top 0.3s cubic-bezier(0.02, 0.01, 1, 0.6);
     }
 }
 
 .LogoContainer,
 .NavBtn {
     z-index: 999;
+    color: #7a2afe !important;
 }
 
 .HeaderContainer {
@@ -124,12 +127,13 @@ export default {
 }
 
 .RequestInvite .Button {
-    color: #8c52ff !important;
-    background-color: #ffffff !important;
-
+    color: white !important;
+    background-color: #7a2afe !important;
+    margin-right: 10px !important;
     &:hover {
-        background-color: #ffffff !important;
-        border-color: #fff !important;
+        background-color: white !important;
+        border-color: #7a2afe !important;
+        color: #7a2afe !important;
     }
 }
 
@@ -145,12 +149,13 @@ export default {
     font-style: normal;
     line-height: 1.25;
     letter-spacing: 0.5px;
+    background: white;
 
     .Item {
         display: flex;
         align-items: center;
         padding: 0.5em 0.8em;
-        color: $text-white;
+        color: #7a2afe;
         margin: 0 0.1em;
         text-decoration: none;
         font-weight: 600;
@@ -173,8 +178,9 @@ export default {
 
         &.active,
         &:hover {
-            color: #1c1d34;
-            font-weight: 700;
+            // color: #ffffff;
+            text-decoration: underline;
+            // font-weight: 700;
         }
     }
 
@@ -189,12 +195,14 @@ export default {
     display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     .Navigation {
         position: absolute;
         left: 0;
-        top: -500px;
-        background: $bg-primary;
+        top: -700px;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+        background: white;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -211,6 +219,7 @@ export default {
 
     .Navigation .Item {
         justify-content: center;
+        color: #7a2afe;
     }
 
     .NavigationButton {
@@ -226,13 +235,13 @@ export default {
         top: 0;
         position: absolute;
         right: 0;
-        color: #e6e6e6 !important;
+        color: #7a2afe !important;
         margin: 15px 25px;
         font-size: 30px;
     }
 
     .Header.-open {
-        background: $bg-primary;
+        // background: $bg-primary;
     }
 }
 </style>

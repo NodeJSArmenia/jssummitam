@@ -1,7 +1,7 @@
 <template>
 	<section class="Speakers" id="Speakers">
 		<div class="Container">
-			<h2 class="Title">Speakers</span></h2>
+			<h2 class="Title">Speakers</h2>
 			<!--
 			<Banner
 				:text="bannerData.BannerText"
@@ -50,7 +50,7 @@ export default {
 
 	.Title {
 		span {
-			text-shadow: 3px 3px 9px #91a6d0;
+			text-shadow: 3px 3px 9px #7a2afe;
 		}
 	}
 </style>

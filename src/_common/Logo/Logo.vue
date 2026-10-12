@@ -28,7 +28,7 @@ export default {
     .LogoImg {
         padding-bottom: 50%;
         background-repeat: no-repeat;
-        background-image: url('https://topentol.sirv.com/jssummit/logo-big.png');
+        background-image: url('https://topentol.sirv.com/jssummit26/logo-big.png');
         background-size: contain;
         transition: all .3s ease;
 

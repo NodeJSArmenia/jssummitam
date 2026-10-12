@@ -2,7 +2,8 @@
   <section class="Schedule" id="Schedule">
     <div class="Container">
       <h2 class="Title"><span>Agenda</span></h2>
-      <div class="schedule">
+      <ComingSoon v-if="comingSoon" />
+      <div v-else class="schedule">
         <div class="schedule-in">
           <div class="schedule-timeline">
             <ul>
@@ -95,9 +96,14 @@
 
 <script>
 import { serverUri } from '../variables';
+import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 
 export default {
+	components: {
+		ComingSoon,
+	},
 	data: () => ({
+		comingSoon: true, // set to false to show the agenda below
 		quarterHour: 100,
 		eventDuration: 2,
 		rooms: [
@@ -303,9 +309,9 @@ export default {
     --timeline-bg: rgb(var(--white-rgb));
     --schedule-item-bg: rgba(var(--schedule-item-bg-rgb), 0.95);
     --schedule-item-divider: rgba(var(--black-rgb), 0.2);
-    --schedule-text: rgb(70, 67, 106);
-    --grid-border: #8C52FF;
-    --js-summit-yellow-rgb: 253, 223, 89;
+    --schedule-text: rgb(45, 14, 78);
+    --grid-border: #7a2afe;
+    --js-summit-yellow-rgb: 242, 107, 91;
 
     --am: lightcoral;
     --en: mediumseagreen;
@@ -465,8 +471,8 @@ button {
 
 .Title {
     span {
-        background: #fff;
-        color: #3d3c51;
+        // background: #fff;
+        color: #2d0e4e;
         font-family: Barlow;
         font-size: 40px;
         font-weight: 400;
@@ -532,7 +538,7 @@ button {
     line-height: 1.43;
     letter-spacing: 0.35px;
     text-align: center;
-    color: #3d3c51;
+    color: #2d0e4e;
 }
 
 @media (max-width: 700px) {
@@ -568,7 +574,7 @@ button {
     padding: 16px 16px 75px 16px;
     overflow: hidden;
     background-color: #fff;
-    background-image: radial-gradient(rgba(140,130,255,0.5) 1px, rgba(140,130,255,0.5) 0);
+    background-image: radial-gradient(rgba(93, 24, 179, 0.4) 1px, rgba(93, 24, 179, 0.4) 0);
     background-size: 75px 75px;
     border-radius: 16px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 3px, rgba(14, 30, 37, 0.32) 0px 2px 16px 3px;
@@ -840,4 +846,5 @@ button {
     text-align: center;
     color: $text-primary;
 }
+
 </style>

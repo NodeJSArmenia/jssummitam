@@ -27,9 +27,9 @@
             </span>
         </div>
         <p class="Credits">
-            Coded in Vue.js by <a class="Links" href="https://github.com/nairihar" target="_blank">@nairihar</a>,
-            <a class="Links" href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
-            <a class="Links" href="https://github.com/NodeJSArmenia/jssummitam-23/graphs/contributors"
+            Coded in Vue.js by <a class="Links" href="https://github.com/vahmelk99" target="_blank">@vahmelk99</a>,
+            <a class="Links" href="https://github.com/nairihar" target="_blank">@nairihar</a> and
+            <a class="Links" href="https://github.com/NodeJSArmenia/jssummitam/graphs/contributors?all=1"
                target="_blank">others</a>.
         </p>
     </div>
@@ -112,7 +112,7 @@ export default {
         // mask: url(https://topentol.sirv.com/jssummit/footer/polygon-green.svg) no-repeat 50% 50%;
 
         &:hover {
-            background-color: #8C52FF;
+            background-color: #7a2afe;
             cursor: pointer;
             -webkit-transition: background-color 200ms linear;
             -ms-transition: background-color 200ms linear;
@@ -131,7 +131,7 @@ export default {
         width: 32px;
         height: 32px;
         position: absolute;
-        background-color: #46436a;
+        background-color: #411075;
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
@@ -190,7 +190,7 @@ export default {
     }
 
     .Links {
-        color: #46436a;
+        color: #411075;
     }
 
     .Links:hover {
