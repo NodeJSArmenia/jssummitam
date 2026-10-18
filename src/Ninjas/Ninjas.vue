@@ -48,49 +48,49 @@ export default {
 			{
 				members: [
 					{
-						img: `${serverUri}/2026-speaker/hovo.jpg`,
+						img: `${serverUri}/2026-speaker/12.jpg`,
 						name: 'Hovo Dallakyan',
 						position: 'Lead Software Engineer @ EPAM Systems',
 						link: 'https://hovo.me',
 					},
                     {
-						img: `${serverUri}/2026-speaker/narek.jpg`,
+						img: `${serverUri}/2026-speaker/18.jpg`,
 						name: 'Narek Mamikonyan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
 					},
 					{
-						img: `${serverUri}/2026-speaker/satenik.jpg`,
+						img: `${serverUri}/2026-speaker/13.jpg`,
 						name: 'Satenik Matevosyan',
 						position: 'Software Engineer @ LeverageIT',
 						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
 					},
                     {
-						img: `${serverUri}/2026-speaker/varik.jpg`,
+						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead @ BrainRocket (Portugal)',
 						link: 'https://nairi.dev/',
 					},
 					{
-						img: `${serverUri}/2026-speaker/lilit.jpg`,
+						img: `${serverUri}/2026-speaker/15.jpg`,
 						name: 'Lilit Tadevosyan',
 						position: 'Engineering Manager @ Adobe',
 						link: 'https://www.linkedin.com/in/lilittadevosyan',
 					},
 					{
-						img: `${serverUri}/2026-speaker/dmitri.jpg`,
+						img: `${serverUri}/2026-speaker/14.jpg`,
 						name: 'Dmitri Eryomin',
 						position: 'Staff Software Engineer @ TradingView (Spain)',
 						link: 'https://www.linkedin.com/in/dmitri-eryomin',
 					},
                     {
-						img: `${serverUri}/2026-speaker/varik.jpg`,
+						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Sr. Software Engineer',
 						link: 'https://varik.dev/',
 					},
 					{
-						img: `${serverUri}/2026-speaker/ashot.jpg`,
+						img: `${serverUri}/2026-speaker/11.jpg`,
 						name: 'Ashot Hovhannisyan',
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
