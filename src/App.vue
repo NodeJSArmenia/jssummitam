@@ -6,9 +6,9 @@
 		<Intro/>
 		<!-- <Speakers/> -->
 		<Ninjas />
-        <Schedule/>
-		<!-- <Sponsors/> -->
+        <!-- <Schedule/> -->
 		<GeneralSponsor/>
+		<Sponsors/>
 		<Team/>
 		<Community/>
 		<!-- <Location/> -->

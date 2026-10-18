@@ -189,6 +189,11 @@ export default {
 	}
 
 	@media (max-width: 600px) {
+		// #app > section drops the section's top padding on mobile; keep the title clear of the sticky header
+		#Titles {
+			padding-top: 40px;
+		}
+
 		.Button {
 			padding: 0.7em 2em;
 		}
