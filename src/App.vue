@@ -7,8 +7,8 @@
 		<!-- <Speakers/> -->
 		<Ninjas />
         <Schedule/>
-		<!-- <Sponsors/> -->
 		<GeneralSponsor/>
+		<Sponsors/>
 		<Team/>
 		<Community/>
 		<!-- <Location/> -->

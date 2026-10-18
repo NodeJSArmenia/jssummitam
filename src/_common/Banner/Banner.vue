@@ -14,7 +14,7 @@
 				<figcaption>{{ video.label }}</figcaption>
 			</figure>
 		</div>
-  		<div v-else class="Banner BannerImage">
+  		<div v-else-if="imageSource" class="Banner BannerImage">
 			<div
 				class="Img"
 				:style="{

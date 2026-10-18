@@ -19,12 +19,12 @@
                             <h5 class="Position">{{ member.position }}</h5>
                             <a
                                 class="Social"
-                                :href="linkedinUrl(member)"
+                                :href="member.link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                :aria-label="`${member.name} on LinkedIn`"
+                                :aria-label="`${member.name} on ${isLinkedin(member) ? 'LinkedIn' : 'the web'}`"
                             >
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <i class="fa" :class="isLinkedin(member) ? 'fa-linkedin' : 'fa-globe'" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -35,100 +35,66 @@
 </template>
 
 <script>
-import { serverUri } from '../variables'
-import ComingSoon from '../_common/ComingSoon/ComingSoon.vue'
+import { serverUri } from '../variables';
+import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 
 export default {
-    components: {
-        ComingSoon,
-    },
-    data: () => ({
-        comingSoon: true, // set to false to show the speaker cards
-        ninjas: [
-            {
-                members: [
-                    {
-                        img: `${serverUri}/speakers/tigran.jpg`,
-                        name: 'Tigran Bayburtsyan',
-                        position: 'Founder & CTO at TreeScale',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/gevorg.jpg`,
-                        name: 'Gevorg Martirosyan',
-                        position: 'CTO at Blackmar (PhD, MBA)',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/narek.jpg`,
-                        name: 'Narek Hakobyan',
-                        position: 'Co-Founder & CTO of HR Drone',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/lilit.jpg`,
-                        name: 'Lilit Tadevosyan',
-                        position: 'Computer Scientist at Adobe',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/team/4.jpg`,
-                        name: 'Varik Matevosyan',
-                        position: 'Software Engineer at Lantern',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/svetlana.jpg`,
-                        name: 'Svetlana Hovhannisyan',
-                        position: 'Tech Sourcer at InConcept Labs',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/armen.jpg`,
-                        name: 'Armen Vardanyan',
-                        position: 'Google DevExpert for Angular',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/team/1.jpg`,
-                        name: 'Nairi Harutyunyan',
-                        position: 'Tech Writer, Podcaster',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/tigran-2.jpg`,
-                        name: 'Tigran Hayrapteyan',
-                        position: 'Lecturer & Video Creator',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/arsen.jpg`,
-                        name: 'Arsen Mazmanyan',
-                        position: 'Game Developer',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                    {
-                        img: `${serverUri}/speakers/ruben.png`,
-                        name: 'Ruben Gabrielyan',
-                        position: 'Front End Engineer',
-                        linkedin: 'https://www.linkedin.com/', // TODO: real profile URL
-                    },
-                ],
-            },
-        ],
-    }),
-    methods: {
-        // member.linkedin = profile URL; falls back to a LinkedIn people search by name
-        linkedinUrl(member) {
-            return (
-                member.linkedin ||
-                `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(
-                    member.name
-                )}`
-            )
-        },
-    },
-}
+	components: {
+		ComingSoon,
+	},
+	data: () => ({
+		comingSoon: false, // set to false to show the speaker cards
+		ninjas: [
+			{
+				members: [
+					// TODO: images are organizers' test photos; replace with the speakers' photos
+					{
+						img: `${serverUri}/team/1.jpg`,
+						name: 'Satenik Matevosyan',
+						position: 'Software Engineer @ LeverageIT',
+						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
+					},
+					{
+						img: `${serverUri}/team/4.jpg`,
+						name: 'Hovo Dallakyan',
+						position: 'Lead Software Engineer @ EPAM Systems',
+						link: 'https://hovo.me',
+					},
+					{
+						img: `${serverUri}/team/2.jpg`,
+						name: 'Lilit Tadevosyan',
+						position: 'Engineering Manager @ Adobe',
+						link: 'https://www.linkedin.com/in/lilittadevosyan',
+					},
+					{
+						img: `${serverUri}/team/3.jpg`,
+						name: 'Narek Mamikonyan',
+						position: 'Engineering Manager',
+						link: 'https://www.linkedin.com/in/mamikonyan',
+					},
+					{
+						img: `${serverUri}/team/5.jpg`,
+						name: 'Dmitri Eryomin',
+						position: 'Staff Software Engineer @ TradingView',
+						link: 'https://www.linkedin.com/in/dmitri-eryomin',
+					},
+					{
+						img: `${serverUri}/team/1.jpg`,
+						name: 'Ashot Hovhannisyan',
+						position: 'Senior Software Engineer @ Krisp',
+						link: 'https://www.linkedin.com/in/iamashot/',
+					},
+				],
+			},
+		],
+	}),
+	methods: {
+		// member.link = LinkedIn profile or personal website
+		isLinkedin(member) {
+			return member.link.includes('linkedin.com');
+		},
+	},
+};
 </script>
 
 <style scoped lang="scss">
@@ -173,6 +139,7 @@ export default {
     border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 0 8px 32px rgba(45, 14, 78, 0.18);
     transition: 0.3s ease all;
+    transform: skew(-3deg);
 }
 
 .Social {
@@ -213,7 +180,7 @@ export default {
 
 .Member:hover {
     background-color: rgba(93, 24, 179, 0.7);
-    transform: translateY(-4px);
+    transform: skew(-3deg);
 
     .Img {
         transform: scale(1.1);
