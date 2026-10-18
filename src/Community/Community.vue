@@ -86,7 +86,6 @@ export default {
     .CommunityItem {
         // equal share of the row, 130-180px: fits one line when there is room, wraps otherwise
         flex: 1 1 0;
-        min-width: 130px;
         max-width: 170px;
         display: flex;
         flex-direction: column;

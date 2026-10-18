@@ -19,12 +19,12 @@
                             <h5 class="Position">{{ member.position }}</h5>
                             <a
                                 class="Social"
-                                :href="member.link"
+                                :href="linkedinUrl(member)"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                :aria-label="`${member.name} on ${isLinkedin(member) ? 'LinkedIn' : 'the web'}`"
+                                :aria-label="`${member.name} on LinkedIn`"
                             >
-                                <i class="fa" :class="isLinkedin(member) ? 'fa-linkedin' : 'fa-globe'" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
