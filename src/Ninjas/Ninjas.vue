@@ -19,7 +19,7 @@
                             <h5 class="Position">{{ member.position }}</h5>
                             <a
                                 class="Social"
-                                :href="linkedinUrl(member)"
+                                :href="member.link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 :aria-label="`${member.name} on LinkedIn`"
