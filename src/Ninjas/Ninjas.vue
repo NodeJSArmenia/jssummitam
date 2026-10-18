@@ -47,41 +47,52 @@ export default {
 		ninjas: [
 			{
 				members: [
-					// TODO: images are organizers' test photos; replace with the speakers' photos
 					{
-						img: `${serverUri}/team/1.jpg`,
-						name: 'Satenik Matevosyan',
-						position: 'Software Engineer @ LeverageIT',
-						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
-					},
-					{
-						img: `${serverUri}/team/4.jpg`,
+						img: `${serverUri}/2026-speaker/hovo.jpg`,
 						name: 'Hovo Dallakyan',
 						position: 'Lead Software Engineer @ EPAM Systems',
 						link: 'https://hovo.me',
 					},
-					{
-						img: `${serverUri}/team/2.jpg`,
-						name: 'Lilit Tadevosyan',
-						position: 'Engineering Manager @ Adobe',
-						link: 'https://www.linkedin.com/in/lilittadevosyan',
-					},
-					{
-						img: `${serverUri}/team/3.jpg`,
+                    {
+						img: `${serverUri}/2026-speaker/narek.jpg`,
 						name: 'Narek Mamikonyan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
 					},
 					{
-						img: `${serverUri}/team/5.jpg`,
-						name: 'Dmitri Eryomin',
-						position: 'Staff Software Engineer @ TradingView',
-						link: 'https://www.linkedin.com/in/dmitri-eryomin',
+						img: `${serverUri}/2026-speaker/satenik.jpg`,
+						name: 'Satenik Matevosyan',
+						position: 'Software Engineer @ LeverageIT',
+						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
+					},
+                    {
+						img: `${serverUri}/2026-speaker/varik.jpg`,
+						name: 'Nairi Harutyunyan',
+						position: 'Tech Lead @ BrainRocket (Portugal)',
+						link: 'https://nairi.dev/',
 					},
 					{
-						img: `${serverUri}/team/1.jpg`,
+						img: `${serverUri}/2026-speaker/lilit.jpg`,
+						name: 'Lilit Tadevosyan',
+						position: 'Engineering Manager @ Adobe',
+						link: 'https://www.linkedin.com/in/lilittadevosyan',
+					},
+					{
+						img: `${serverUri}/2026-speaker/dmitri.jpg`,
+						name: 'Dmitri Eryomin',
+						position: 'Staff Software Engineer @ TradingView (Spain)',
+						link: 'https://www.linkedin.com/in/dmitri-eryomin',
+					},
+                    {
+						img: `${serverUri}/2026-speaker/varik.jpg`,
+						name: 'Varik Matevosyan',
+						position: 'Sr. Software Engineer',
+						link: 'https://varik.dev/',
+					},
+					{
+						img: `${serverUri}/2026-speaker/ashot.jpg`,
 						name: 'Ashot Hovhannisyan',
-						position: 'Senior Software Engineer @ Krisp',
+						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
 					},
 				],
