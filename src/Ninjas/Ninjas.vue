@@ -232,8 +232,8 @@ export default {
     }
 
     .Img {
-        margin: auto;
-        width: 200px;
+        margin: 0 auto 10px;
+        width: 140px;
     }
 
     .NinjaTitle {
