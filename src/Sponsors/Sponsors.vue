@@ -24,7 +24,7 @@ export default {
 	data: () => ({
 		bannerData: {
 			BannerText: 'Let\'s build up the JavaScript Armenian community together, giving everyone a chance to learn from skilled and excited engineers.',
-			buttonLink: 'https://forms.gle/dFq39Rx8aYfPU3Vu5',
+			buttonLink: 'https://forms.gle/n4xjEzSXJcqysjTQ6',
 			buttonText: 'Support us',
 		},
 	}),
