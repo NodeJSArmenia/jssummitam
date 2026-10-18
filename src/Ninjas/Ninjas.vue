@@ -174,7 +174,7 @@ export default {
 }
 
 .Img {
-    width: 180px;
+    width: 170px;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     margin-bottom: 10px;
@@ -183,7 +183,7 @@ export default {
     background-size: contain;
     transition: 0.3s ease all;
     border-radius: 50%;
-    filter: grayscale(0.5);
+    // filter: grayscale(0.5);
 }
 
 .Position {
