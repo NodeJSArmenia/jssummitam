@@ -66,6 +66,10 @@ export default {
 		max-width: 600px;
 		text-align: center;
 
+		font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
 		.BannerButton {
 			justify-content: center;
 		}
