@@ -22,9 +22,9 @@
                                 :href="member.link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                :aria-label="`${member.name} on LinkedIn`"
+                                :aria-label="`${member.name} on ${isLinkedin(member) ? 'LinkedIn' : 'the web'}`"
                             >
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <i class="fa" :class="isLinkedin(member) ? 'fa-linkedin' : 'fa-globe'" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
