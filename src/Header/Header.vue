@@ -15,7 +15,7 @@
 				<a class="Item" href="https://2023.jssummit.am/">#Summit23</a> -->
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
                 <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
-				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
+				<!-- <a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a> -->
                 <a class="Item" href="#GeneralSponsor" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
 				<!-- <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a> -->
 				<a class="Item" href="#Organizers" v-smooth-scroll="navConfig" v-on:click="close">Organizers</a>
