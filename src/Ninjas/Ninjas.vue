@@ -55,7 +55,7 @@ export default {
 					},
                     {
 						img: `${serverUri}/2026-speaker/18.jpg`,
-						name: 'Narek Mamikonyan',
+						name: 'Narek Mamikonyan @ ServiceTitan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
 					},
