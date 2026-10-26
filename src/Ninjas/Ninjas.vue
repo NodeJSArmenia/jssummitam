@@ -95,6 +95,18 @@ export default {
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
 					},
+                    {
+						img: `${serverUri}/2026-speaker/20.jpg`,
+						name: 'Armen Vardanyan',
+						position: 'Team Lead / AI Engineer @ Volo LLC',
+						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
+					},
+                    {
+						img: `${serverUri}/2026-speaker/19.jpg`,
+						name: 'Gnel Simonyan',
+						position: 'Sr. Software Engineer',
+						// link: 'https://www.linkedin.com/in/iamashot/',
+					},
 				],
 			},
 		],
