@@ -105,7 +105,7 @@ export default {
 						img: `${serverUri}/2026-speaker/19.jpg`,
 						name: 'Gnel Simonyan',
 						position: 'Sr. Software Engineer',
-						link: '#',
+						link: 'https://darth-bob.medium.com/',
 					},
 				],
 			},
