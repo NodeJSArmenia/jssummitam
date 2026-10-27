@@ -98,7 +98,7 @@ export default {
                     {
 						img: `${serverUri}/2026-speaker/20.jpg`,
 						name: 'Armen Vardanyan',
-						position: 'Team Lead / AI Engineer @ Volo LLC',
+						position: 'Author / Team Lead @ Volo',
 						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
 					},
                     {
