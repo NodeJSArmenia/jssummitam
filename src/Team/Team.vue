@@ -46,7 +46,7 @@ export default {
 						name: 'Varik Matevosyan',
 						position: 'Security Researcher',
 						kage: 'Kazekage',
-						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
+						linkedin: 'https://varik.dev/',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
