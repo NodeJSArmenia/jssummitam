@@ -86,7 +86,7 @@ export default {
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Security Researcher',
+						position: 'Software Engineer / Security Researcher',
 						link: 'https://varik.dev/',
 					},
 					{
