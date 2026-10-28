@@ -11,20 +11,17 @@
                             v-for="(member, index) in ninja.members"
                             :key="index"
                         >
-                            <div
-                                class="Img"
-                                :style="{ backgroundImage: `url(${member.img})` }"
-                            ></div>
+                            <FlipImage class="Img" :front="member.img" :back="member.narutoImg" />
                             <h3 class="Name">{{ member.name }}</h3>
                             <h5 class="Position">{{ member.position }}</h5>
                             <a
                                 class="Social"
-                                :href="linkedinUrl(member)"
+                                :href="member.link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                :aria-label="`${member.name} on LinkedIn`"
+                                :aria-label="`${member.name} on ${isLinkedin(member) ? 'LinkedIn' : 'the web'}`"
                             >
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <i class="fa" :class="isLinkedin(member) ? 'fa-linkedin' : 'fa-globe'" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -37,10 +34,14 @@
 <script>
 import { serverUri } from '../variables';
 import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
+import FlipImage from '../_common/FlipImage/FlipImage.vue';
+// TODO: same Naruto image for everyone for now; give each speaker their own
+import narutoImg from '../_assets/naruto/mizukage.jpg';
 
 export default {
 	components: {
 		ComingSoon,
+		FlipImage,
 	},
 	data: () => ({
 		comingSoon: false, // set to false to show the speaker cards
@@ -52,48 +53,56 @@ export default {
 						name: 'Hovo Dallakyan',
 						position: 'Lead Software Engineer @ EPAM Systems',
 						link: 'https://hovo.me',
+						narutoImg,
 					},
                     {
 						img: `${serverUri}/2026-speaker/18.jpg`,
 						name: 'Narek Mamikonyan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
+						narutoImg,
 					},
 					{
 						img: `${serverUri}/2026-speaker/13.jpg`,
 						name: 'Satenik Matevosyan',
 						position: 'Software Engineer @ LeverageIT',
 						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
+						narutoImg,
 					},
                     {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead @ BrainRocket (Portugal)',
 						link: 'https://nairi.dev/',
+						narutoImg,
 					},
 					{
 						img: `${serverUri}/2026-speaker/15.jpg`,
 						name: 'Lilit Tadevosyan',
 						position: 'Engineering Manager @ Adobe',
 						link: 'https://www.linkedin.com/in/lilittadevosyan',
+						narutoImg,
 					},
 					{
 						img: `${serverUri}/2026-speaker/14.jpg`,
 						name: 'Dmitri Eryomin',
 						position: 'Staff Software Engineer @ TradingView (Spain)',
 						link: 'https://www.linkedin.com/in/dmitri-eryomin',
+						narutoImg,
 					},
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Sr. Software Engineer',
 						link: 'https://varik.dev/',
+						narutoImg,
 					},
 					{
 						img: `${serverUri}/2026-speaker/11.jpg`,
 						name: 'Ashot Hovhannisyan',
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
+						narutoImg,
 					},
 				],
 			},
@@ -176,14 +185,7 @@ export default {
 .Img {
     width: 170px;
     max-width: 100%;
-    aspect-ratio: 1 / 1;
     margin-bottom: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: 0.3s ease all;
-    border-radius: 50%;
-    // filter: grayscale(0.5);
 }
 
 .Position {
@@ -194,10 +196,6 @@ export default {
     background-color: rgba(93, 24, 179, 0.7);
     transform: skew(-3deg);
 
-    .Img {
-        transform: scale(1.1);
-        filter: none;
-    }
 }
 
 .Name {
