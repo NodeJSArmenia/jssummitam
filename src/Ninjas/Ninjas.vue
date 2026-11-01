@@ -36,7 +36,7 @@ import { serverUri } from '../variables';
 import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 import FlipImage from '../_common/FlipImage/FlipImage.vue';
 // TODO: same Naruto image for everyone for now; give each speaker their own
-import narutoImg from '../_assets/naruto/mizukage.jpg';
+const narutoImg = '';
 
 export default {
 	components: {
