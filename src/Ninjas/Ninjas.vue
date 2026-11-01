@@ -57,7 +57,7 @@ export default {
 					},
                     {
 						img: `${serverUri}/2026-speaker/18.jpg`,
-						name: 'Narek Mamikonyan',
+						name: 'Narek Mamikonyan @ ServiceTitan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
 						narutoImg,
@@ -93,7 +93,7 @@ export default {
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Sr. Software Engineer',
+						position: 'Software Engineer / Security Researcher',
 						link: 'https://varik.dev/',
 						narutoImg,
 					},
@@ -102,6 +102,20 @@ export default {
 						name: 'Ashot Hovhannisyan',
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
+						narutoImg,
+					},
+                    {
+						img: `${serverUri}/2026-speaker/20.jpg`,
+						name: 'Armen Vardanyan',
+						position: 'Author / Team Lead @ Volo',
+						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
+						narutoImg,
+					},
+                    {
+						img: `${serverUri}/2026-speaker/19.jpg`,
+						name: 'Gnel Simonyan',
+						position: 'Sr. Software Engineer',
+						link: 'https://darth-bob.medium.com/',
 						narutoImg,
 					},
 				],

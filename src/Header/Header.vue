@@ -15,7 +15,7 @@
 				<a class="Item" href="https://2023.jssummit.am/">#Summit23</a> -->
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
                 <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a>
-				<a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a>
+				<!-- <a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Agenda</a> -->
                 <a class="Item" href="#GeneralSponsor" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
 				<!-- <a class="Item" href="#Ninjas" v-smooth-scroll="navConfig" v-on:click="close">Ninjas</a> -->
 				<a class="Item" href="#Organizers" v-smooth-scroll="navConfig" v-on:click="close">Organizers</a>
@@ -23,7 +23,7 @@
 				<!-- <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a> -->
 				<!-- <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a> -->
 				<div class="RequestInvite">
-					<Button title="Get Ticket" link="https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7"></Button>
+					<Button title="Get Ticket" link="https://venue.eventhub.am/event?id=NVlOT1dZZnBhRnZoWVZuUG5aa25vNmlBckVwSUxCd1N5NGc3bk9pTmwrMU5TWlJad3lNR2VYeThxTkVmVnI0Y3B2bEQrSXU0MHI2RHF3cFNHN0I3a0E9PQ&lang=am"></Button>
 				</div>
 			</nav>
 		</div>

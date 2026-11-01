@@ -65,7 +65,7 @@ export default {
 		],
 		imageSource: `${serverUri}/banners/polygons.png`,
 		buttonText: 'Get Ticket',
-		buttonLink: 'https://eventhub.am/am/intellectual/event/javascript-summit-armenia-2026-1d21f91d-f210-4510-b3ec-af465c026bb7',
+		buttonLink: 'https://venue.eventhub.am/event?id=NVlOT1dZZnBhRnZoWVZuUG5aa25vNmlBckVwSUxCd1N5NGc3bk9pTmwrMU5TWlJad3lNR2VYeThxTkVmVnI0Y3B2bEQrSXU0MHI2RHF3cFNHN0I3a0E9PQ&lang=am',
 	}),
 };
 </script>

@@ -51,7 +51,7 @@ export default {
 					{
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
-						position: 'Security Researcher, Software Engineer',
+						position: 'Software Engineer / Security Researcher',
 						kage: 'Kazekage',
 						narutoImg: `${serverUri}/team/naruto/28.png`,
 						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
