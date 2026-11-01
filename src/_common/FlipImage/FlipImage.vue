@@ -216,7 +216,7 @@ export default {
 	.FlipImage.-flip {
 		transform-style: preserve-3d;
 		transform: perspective(600px) rotateY(0);
-		transition: transform 0.8s ease;
+		transition: transform 0.6s ease;
 
 		&.-active {
 			transform: perspective(600px) rotateY(180deg) scale(1.1);
