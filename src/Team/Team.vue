@@ -45,7 +45,7 @@ export default {
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead, Community Creator',
 						kage: 'Hokage',
-						narutoImg,
+						narutoImg: `${serverUri}/team/3.jpg`,
 						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
@@ -53,7 +53,7 @@ export default {
 						name: 'Varik Matevosyan',
 						position: 'Security Researcher, Software Engineer',
 						kage: 'Kazekage',
-						narutoImg,
+						narutoImg: `${serverUri}/team/3.jpg`,
 						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
@@ -61,7 +61,7 @@ export default {
 						name: 'Vahagn Melkonyan, PhD',
 						position: 'UAV Researcher / Lecturer',
                         kage: 'Raikage',
-						narutoImg,
+						narutoImg: `${serverUri}/team/3.jpg`,
 						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
@@ -69,7 +69,7 @@ export default {
 						name: 'Gor Gharagyozyan, PhD',
 						position: 'Software Engineer',
                         kage: 'Tsuchikage',
-						narutoImg,
+						narutoImg: `${serverUri}/team/3.jpg`,
 						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
 					{
@@ -77,7 +77,7 @@ export default {
 						name: 'Hrach Avagyan',
 						position: 'Software Engineer',
                         kage: 'Mizukage',
-						narutoImg,
+						narutoImg: `${serverUri}/team/3.jpg`,
 						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
