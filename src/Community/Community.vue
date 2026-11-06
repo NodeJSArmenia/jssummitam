@@ -7,7 +7,7 @@
                          v-for="(community, index) in communities"
                          :key="index">
                         <a :href="community.url" target="_blank" class="Name">
-                            <div class="Img" :style="{ backgroundImage: `url(${community.img})` }"></div>
+                            <FlipImage class="Img" :front="community.img" :back="community.narutoImg" />
                             <p>{{community.name}}</p>
                             <p class="Village">{{ community.village }}</p>
                         </a>
@@ -19,8 +19,12 @@
 
 <script>
 import { serverUri } from '../variables';
+import FlipImage from '../_common/FlipImage/FlipImage.vue';
 
 export default {
+	components: {
+		FlipImage,
+	},
 	data: () => ({
 		communities: [
 			{
@@ -28,30 +32,35 @@ export default {
 				name: '@JavaScript',
                 url: 'https://t.me/javascript',
                 village: 'Hidden Mist',
+                narutoImg: `${serverUri}/chats/naruto/30.png`,
 			},
 			{
 				img: `${serverUri}/chats/7.jpg`,
 				name: 'JavaScript Armenia',
                 url: 'https://t.me/javascriptarmenia',
                 village: 'Hidden Leaf',
+                narutoImg: `${serverUri}/chats/naruto/31.png`,
 			},
 			{
 				img: `${serverUri}/chats/4.jpg`,
 				name: 'Node.js Armenia',
                 url: 'https://t.me/nodejsarmenia',
                 village: 'Hidden Sand',
+                narutoImg: `${serverUri}/chats/naruto/32.png`,
 			},
 			{
 				img: `${serverUri}/chats/3.jpg`,
 				name: 'React Armenia',
                 url: 'https://t.me/reactarmenia',
                 village: 'Hidden Stone',
+                narutoImg: `${serverUri}/chats/naruto/33.png`,
 			},
 			{
 				img: `${serverUri}/chats/2.jpg`,
 				name: 'Vue.js Armenia',
                 url: 'https://t.me/vuejsarmenia',
                 village: 'Hidden Cloud',
+                narutoImg: `${serverUri}/chats/naruto/29.png`,
 			},
 		],
 	}),
@@ -103,15 +112,9 @@ export default {
     }
 
     .Img {
-        aspect-ratio: 1 / 1;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 50%;
         margin-bottom: 10px;
         max-width: 180px;
         width: 100%;
-        transition: .3s ease all;
     }
 
     .Village{
@@ -131,10 +134,6 @@ export default {
 
     .CommunityItem:hover {
         background-color: rgba(93, 24, 179, 0.7);
-
-        .Img {
-            transform: scale(1.1);
-        }
 
         cursor: pointer;
     }
@@ -178,10 +177,6 @@ export default {
     }
 
     @media (max-width: 600px) {
-        .Img {
-            background-size: 100%;
-        }
-
         .CommunityTitle {
             text-align: center;
             padding: 0;

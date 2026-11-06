@@ -11,10 +11,7 @@
                             v-for="(member, index) in ninja.members"
                             :key="index"
                         >
-                            <div
-                                class="Img"
-                                :style="{ backgroundImage: `url(${member.img})` }"
-                            ></div>
+                            <FlipImage class="Img" :front="member.img" :back="member.narutoImg" />
                             <h3 class="Name">{{ member.name }}</h3>
                             <h5 class="Position">{{ member.position }}</h5>
                             <a
@@ -37,10 +34,14 @@
 <script>
 import { serverUri } from '../variables';
 import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
+import FlipImage from '../_common/FlipImage/FlipImage.vue';
+// TODO: same Naruto image for everyone for now; give each speaker their own
+const narutoImg = '';
 
 export default {
 	components: {
 		ComingSoon,
+		FlipImage,
 	},
 	data: () => ({
 		comingSoon: false, // set to false to show the speaker cards
@@ -52,60 +53,70 @@ export default {
 						name: 'Hovo Dallakyan',
 						position: 'Lead Software Engineer @ EPAM Systems',
 						link: 'https://hovo.me',
+						narutoImg: `${serverUri}/2026-speaker/naruto/34.png`,
 					},
                     {
 						img: `${serverUri}/2026-speaker/18.jpg`,
 						name: 'Narek Mamikonyan @ ServiceTitan',
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
+						narutoImg: `${serverUri}/2026-speaker/naruto/38.png`,
 					},
 					{
 						img: `${serverUri}/2026-speaker/13.jpg`,
 						name: 'Satenik Matevosyan',
 						position: 'Software Engineer @ LeverageIT',
 						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
+						narutoImg: `${serverUri}/2026-speaker/naruto/35.png`,
 					},
                     {
 						img: `${serverUri}/team/1.jpg`,
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead @ BrainRocket (Portugal)',
 						link: 'https://nairi.dev/',
+						narutoImg: `${serverUri}/team/naruto/27.png`,
 					},
 					{
 						img: `${serverUri}/2026-speaker/15.jpg`,
 						name: 'Lilit Tadevosyan',
 						position: 'Engineering Manager @ Adobe',
 						link: 'https://www.linkedin.com/in/lilittadevosyan',
+						narutoImg: `${serverUri}/2026-speaker/naruto/36.png`,
 					},
 					{
 						img: `${serverUri}/2026-speaker/14.jpg`,
 						name: 'Dmitri Eryomin',
 						position: 'Staff Software Engineer @ TradingView (Spain)',
 						link: 'https://www.linkedin.com/in/dmitri-eryomin',
+						narutoImg: `${serverUri}/2026-speaker/naruto/41.png`,
 					},
                     {
 						img: `${serverUri}/team/4.jpg`,
 						name: 'Varik Matevosyan',
 						position: 'Software Engineer / Security Researcher',
 						link: 'https://varik.dev/',
+						narutoImg: `${serverUri}/team/naruto/28.png`,
 					},
 					{
 						img: `${serverUri}/2026-speaker/11.jpg`,
 						name: 'Ashot Hovhannisyan',
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
+						narutoImg: `${serverUri}/2026-speaker/naruto/37.png`,
 					},
                     {
 						img: `${serverUri}/2026-speaker/20.jpg`,
 						name: 'Armen Vardanyan',
 						position: 'Author / Team Lead @ Volo',
 						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
+						narutoImg: `${serverUri}/2026-speaker/naruto/39.png`,
 					},
                     {
 						img: `${serverUri}/2026-speaker/19.jpg`,
 						name: 'Gnel Simonyan',
 						position: 'Sr. Software Engineer',
 						link: 'https://darth-bob.medium.com/',
+						narutoImg: `${serverUri}/2026-speaker/naruto/40.png`,
 					},
 				],
 			},
@@ -188,14 +199,7 @@ export default {
 .Img {
     width: 170px;
     max-width: 100%;
-    aspect-ratio: 1 / 1;
     margin-bottom: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: 0.3s ease all;
-    border-radius: 50%;
-    // filter: grayscale(0.5);
 }
 
 .Position {
@@ -206,10 +210,6 @@ export default {
     background-color: rgba(93, 24, 179, 0.7);
     transform: skew(-3deg);
 
-    .Img {
-        transform: scale(1.1);
-        filter: none;
-    }
 }
 
 .Name {

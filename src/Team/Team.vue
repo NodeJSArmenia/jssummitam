@@ -8,7 +8,7 @@
                     <div class="Member"
                          v-for="(member, index) in team.members"
                          :key="index">
-                        <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
+                        <FlipImage class="Img" :front="member.img" :back="member.narutoImg" />
                         <h3 class="Name">{{member.name}}</h3>
                         <h4 class="Position">{{member.position}}</h4>
                          <h4 class="Kage"><b>{{member.kage}}</b></h4>
@@ -28,8 +28,14 @@
 
 <script>
 import { serverUri } from '../variables';
+import FlipImage from '../_common/FlipImage/FlipImage.vue';
+// TODO: same Naruto image for everyone for now; give each member their own
+import narutoImg from '../_assets/naruto/mizukage.jpg';
 
 export default {
+	components: {
+		FlipImage,
+	},
 	data: () => ({
 		teams: [
 			{
@@ -39,6 +45,7 @@ export default {
 						name: 'Nairi Harutyunyan',
 						position: 'Tech Lead, Community Creator',
 						kage: 'Hokage',
+						narutoImg: `${serverUri}/team/naruto/27.png`,
 						linkedin: 'https://www.linkedin.com/in/nairihar/',
 					},
 					{
@@ -46,13 +53,15 @@ export default {
 						name: 'Varik Matevosyan',
 						position: 'Software Engineer / Security Researcher',
 						kage: 'Kazekage',
-						linkedin: 'https://varik.dev/',
+						narutoImg: `${serverUri}/team/naruto/28.png`,
+						linkedin: 'https://www.linkedin.com/in/varik-matevosyan-99200a108/',
 					},
 					{
 						img: `${serverUri}/team/2.jpg`,
 						name: 'Vahagn Melkonyan, PhD',
 						position: 'UAV Researcher / Lecturer',
                         kage: 'Raikage',
+						narutoImg: `${serverUri}/team/naruto/24.png`,
 						linkedin: 'https://www.linkedin.com/in/vahmelk/',
 					},
 					{
@@ -60,6 +69,7 @@ export default {
 						name: 'Gor Gharagyozyan, PhD',
 						position: 'Software Engineer',
                         kage: 'Tsuchikage',
+						narutoImg: `${serverUri}/team/naruto/26.png`,
 						linkedin: 'https://www.linkedin.com/in/gor-gharagyozyan/',
 					},
 					{
@@ -67,6 +77,7 @@ export default {
 						name: 'Hrach Avagyan',
 						position: 'Software Engineer',
                         kage: 'Mizukage',
+						narutoImg: `${serverUri}/team/naruto/25.png`,
 						linkedin: 'https://www.linkedin.com/in/hrach-avagyan/',
 					},
 				],
@@ -136,13 +147,7 @@ export default {
     .Img {
         width: 100%;
         max-width: 180px;
-        aspect-ratio: 1 / 1;
         margin-bottom: 10px;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 50%;
-        transition: .3s ease all;
     }
 
     .Position {
@@ -174,9 +179,6 @@ export default {
         transform: translateY(-4px);
         transform: skew(-3deg);
 
-        .Img {
-            transform: scale(1.1);
-        }
     }
 
     .Name {
