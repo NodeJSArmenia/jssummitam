@@ -14,6 +14,7 @@
                             <FlipImage class="Img" :front="member.img" :back="member.narutoImg" />
                             <h3 class="Name">{{ member.name }}</h3>
                             <h5 class="Position">{{ member.position }}</h5>
+                            <p class="NinjaType">{{ community.ninjaType }}</p>
                             <a
                                 class="Social"
                                 :href="member.link"
@@ -54,6 +55,7 @@ export default {
 						position: 'Lead Software Engineer @ EPAM Systems',
 						link: 'https://hovo.me',
 						narutoImg: `${serverUri}/2026-speaker/naruto/34.png`,
+                        ninjaType: 'Anbu, Leaf Village',
 					},
                     {
 						img: `${serverUri}/2026-speaker/18.jpg`,
@@ -61,6 +63,7 @@ export default {
 						position: 'Engineering Manager',
 						link: 'https://www.linkedin.com/in/mamikonyan',
 						narutoImg: `${serverUri}/2026-speaker/naruto/38.png`,
+                        ninjaType: 'Akatsuki, Sand Village',
 					},
 					{
 						img: `${serverUri}/2026-speaker/13.jpg`,
@@ -68,6 +71,7 @@ export default {
 						position: 'Software Engineer @ LeverageIT',
 						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
 						narutoImg: `${serverUri}/2026-speaker/naruto/35.png`,
+                        ninjaType: 'Chunin, Sand Village',
 					},
                     {
 						img: `${serverUri}/team/1.jpg`,
@@ -75,6 +79,7 @@ export default {
 						position: 'Tech Lead @ BrainRocket (Portugal)',
 						link: 'https://nairi.dev/',
 						narutoImg: `${serverUri}/team/naruto/27.png`,
+                        ninjaType: 'Hokage, Leaf Village',
 					},
 					{
 						img: `${serverUri}/2026-speaker/15.jpg`,
@@ -82,6 +87,7 @@ export default {
 						position: 'Engineering Manager @ Adobe',
 						link: 'https://www.linkedin.com/in/lilittadevosyan',
 						narutoImg: `${serverUri}/2026-speaker/naruto/36.png`,
+                        ninjaType: 'Akatsuki, Leaf Village',
 					},
 					{
 						img: `${serverUri}/2026-speaker/14.jpg`,
@@ -89,6 +95,7 @@ export default {
 						position: 'Staff Software Engineer @ TradingView (Spain)',
 						link: 'https://www.linkedin.com/in/dmitri-eryomin',
 						narutoImg: `${serverUri}/2026-speaker/naruto/41.png`,
+                        ninjaType: 'Jonin, Stone Village',
 					},
                     {
 						img: `${serverUri}/team/4.jpg`,
@@ -96,6 +103,7 @@ export default {
 						position: 'Software Engineer / Security Researcher',
 						link: 'https://varik.dev/',
 						narutoImg: `${serverUri}/team/naruto/28.png`,
+                        ninjaType: 'Kazekage, Sand Village',
 					},
 					{
 						img: `${serverUri}/2026-speaker/11.jpg`,
@@ -103,6 +111,7 @@ export default {
 						position: 'Sr. Software Engineer @ Krisp',
 						link: 'https://www.linkedin.com/in/iamashot/',
 						narutoImg: `${serverUri}/2026-speaker/naruto/37.png`,
+                        ninjaType: 'Chunin, Cloud Village',
 					},
                     {
 						img: `${serverUri}/2026-speaker/20.jpg`,
@@ -110,6 +119,7 @@ export default {
 						position: 'Author / Team Lead @ Volo',
 						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
 						narutoImg: `${serverUri}/2026-speaker/naruto/39.png`,
+                        ninjaType: 'Sanin, Leaf Village',
 					},
                     {
 						img: `${serverUri}/2026-speaker/19.jpg`,
@@ -117,6 +127,7 @@ export default {
 						position: 'Sr. Software Engineer',
 						link: 'https://darth-bob.medium.com/',
 						narutoImg: `${serverUri}/2026-speaker/naruto/40.png`,
+                        ninjaType: 'Chunin, Mist Village',
 					},
 				],
 			},
@@ -264,5 +275,16 @@ export default {
         text-align: center;
         padding: 0;
     }
+}
+
+.NinjaType{
+    font-size: 13px !important;
+    text-shadow: 0px 0px 5px #ffe05c;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.35px;
+    text-align: center;
 }
 </style>
