@@ -14,7 +14,7 @@
                             <FlipImage class="Img" :front="member.img" :back="member.narutoImg" />
                             <h3 class="Name">{{ member.name }}</h3>
                             <h5 class="Position">{{ member.position }}</h5>
-                            <p class="NinjaType">{{ community.ninjaType }}</p>
+                            <p class="NinjaType">{{ member.ninjaType }}</p>
                             <a
                                 class="Social"
                                 :href="member.link"
