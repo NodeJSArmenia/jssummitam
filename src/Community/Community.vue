@@ -20,8 +20,6 @@
 <script>
 import { serverUri } from '../variables';
 import FlipImage from '../_common/FlipImage/FlipImage.vue';
-// TODO: same Naruto image for every village for now; give each its own
-import narutoImg from '../_assets/naruto/mizukage.jpg';
 
 export default {
 	components: {
