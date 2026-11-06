@@ -29,8 +29,6 @@
 <script>
 import { serverUri } from '../variables';
 import FlipImage from '../_common/FlipImage/FlipImage.vue';
-// TODO: same Naruto image for everyone for now; give each member their own
-import narutoImg from '../_assets/naruto/mizukage.jpg';
 
 export default {
 	components: {
