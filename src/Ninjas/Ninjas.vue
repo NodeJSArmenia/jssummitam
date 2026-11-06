@@ -95,7 +95,7 @@ export default {
 						position: 'Staff Software Engineer @ TradingView (Spain)',
 						link: 'https://www.linkedin.com/in/dmitri-eryomin',
 						narutoImg: `${serverUri}/2026-speaker/naruto/41.png`,
-                        ninjaType: 'Jonin, Stone Village',
+                        ninjaType: 'Anbu, Stone Village',
 					},
                     {
 						img: `${serverUri}/team/4.jpg`,
