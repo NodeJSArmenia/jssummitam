@@ -33,11 +33,9 @@
 </template>
 
 <script>
-import { serverUri } from '../variables';
+import speakers from '../_services/speakers';
 import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 import FlipImage from '../_common/FlipImage/FlipImage.vue';
-// TODO: same Naruto image for everyone for now; give each speaker their own
-const narutoImg = '';
 
 export default {
 	components: {
@@ -48,88 +46,9 @@ export default {
 		comingSoon: false, // set to false to show the speaker cards
 		ninjas: [
 			{
-				members: [
-					{
-						img: `${serverUri}/2026-speaker/12.jpg`,
-						name: 'Hovo Dallakyan',
-						position: 'Lead Software Engineer @ EPAM Systems',
-						link: 'https://hovo.me',
-						narutoImg: `${serverUri}/2026-speaker/naruto/34.png`,
-                        ninjaType: 'Anbu, Leaf Village',
-					},
-                    {
-						img: `${serverUri}/2026-speaker/18.jpg`,
-						name: 'Narek Mamikonyan @ ServiceTitan',
-						position: 'Engineering Manager',
-						link: 'https://www.linkedin.com/in/mamikonyan',
-						narutoImg: `${serverUri}/2026-speaker/naruto/38.png`,
-                        ninjaType: 'Akatsuki, Sand Village',
-					},
-					{
-						img: `${serverUri}/2026-speaker/13.jpg`,
-						name: 'Satenik Matevosyan',
-						position: 'Software Engineer @ LeverageIT',
-						link: 'https://www.linkedin.com/in/satenik-matevosyan-6a6240190',
-						narutoImg: `${serverUri}/2026-speaker/naruto/35.png`,
-                        ninjaType: 'Chunin, Sand Village',
-					},
-                    {
-						img: `${serverUri}/team/1.jpg`,
-						name: 'Nairi Harutyunyan',
-						position: 'Tech Lead @ BrainRocket (Portugal)',
-						link: 'https://nairi.dev/',
-						narutoImg: `${serverUri}/team/naruto/27.png`,
-                        ninjaType: 'Hokage, Leaf Village',
-					},
-					{
-						img: `${serverUri}/2026-speaker/15.jpg`,
-						name: 'Lilit Tadevosyan',
-						position: 'Engineering Manager @ Adobe',
-						link: 'https://www.linkedin.com/in/lilittadevosyan',
-						narutoImg: `${serverUri}/2026-speaker/naruto/36.png`,
-                        ninjaType: 'Akatsuki, Leaf Village',
-					},
-					{
-						img: `${serverUri}/2026-speaker/14.jpg`,
-						name: 'Dmitri Eryomin',
-						position: 'Staff Software Engineer @ TradingView (Spain)',
-						link: 'https://www.linkedin.com/in/dmitri-eryomin',
-						narutoImg: `${serverUri}/2026-speaker/naruto/41.png`,
-                        ninjaType: 'Jonin, Stone Village',
-					},
-                    {
-						img: `${serverUri}/team/4.jpg`,
-						name: 'Varik Matevosyan',
-						position: 'Software Engineer / Security Researcher',
-						link: 'https://varik.dev/',
-						narutoImg: `${serverUri}/team/naruto/28.png`,
-                        ninjaType: 'Kazekage, Sand Village',
-					},
-					{
-						img: `${serverUri}/2026-speaker/11.jpg`,
-						name: 'Ashot Hovhannisyan',
-						position: 'Sr. Software Engineer @ Krisp',
-						link: 'https://www.linkedin.com/in/iamashot/',
-						narutoImg: `${serverUri}/2026-speaker/naruto/37.png`,
-                        ninjaType: 'Chunin, Cloud Village',
-					},
-                    {
-						img: `${serverUri}/2026-speaker/20.jpg`,
-						name: 'Armen Vardanyan',
-						position: 'Author / Team Lead @ Volo',
-						link: 'https://www.linkedin.com/in/armen-vardanyan-am/',
-						narutoImg: `${serverUri}/2026-speaker/naruto/39.png`,
-                        ninjaType: 'Sanin, Leaf Village',
-					},
-                    {
-						img: `${serverUri}/2026-speaker/19.jpg`,
-						name: 'Gnel Simonyan',
-						position: 'Sr. Software Engineer',
-						link: 'https://darth-bob.medium.com/',
-						narutoImg: `${serverUri}/2026-speaker/naruto/40.png`,
-                        ninjaType: 'Chunin, Mist Village',
-					},
-				],
+				// order on the page
+				members: ['hovo', 'narek', 'satenik', 'nairi', 'lilit', 'dmitri', 'varik', 'ashot', 'armen', 'gnel']
+					.map(id => speakers[id]),
 			},
 		],
 	}),
