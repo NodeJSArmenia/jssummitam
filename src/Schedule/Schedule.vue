@@ -49,37 +49,34 @@ export default {
 	data: () => ({
 		comingSoon: false, // set to true to hide the agenda
 		agenda: [
-			{
-				start: '09:00', end: '10:15', type: 'event', title: 'Doors open & registration',
-			},
-			{
-				start: '10:15', end: '10:30', type: 'event', title: 'Opening ceremony',
-			},
-			talk('10:30', '10:55', 'hovo', 'How I Became an AI Engineer After 10 Years of JavaScript'),
-			talk('11:00', '11:25', 'narek', 'To Be Announced (AI)'),
-			talk('11:30', '11:55', 'satenik', 'New project. Zero context. Now what?'),
-			{
-				start: '11:55', end: '12:15', type: 'break', title: '☕ Coffee & networking',
-			},
-			talk('12:15', '12:40', 'varik', 'To Be Announced (Cybersecurity)'),
-			talk('12:45', '13:10', 'ashot', 'Local-First: Bring Your Data Home', 'A local-first look at data, money and identity'),
-			{
-				start: '13:10', end: '13:50', type: 'break', title: '🍽️ Lunch & networking',
-			},
-			talk('13:50', '14:15', 'lilit', 'What makes a great engineer today?', 'The evolving expectations of software engineers in a world shaped by AI'),
-			talk('14:20', '14:45', 'dmitri', 'The new Full-Stack Developer'),
-			talk('14:50', '15:15', 'gnel', 'Write the Spec, Not the Prompt: Taming AI Output with Spec-Driven Development'),
-			{
-				start: '15:15', end: '15:30', type: 'break', title: '☕ Coffee break',
-			},
-			talk('15:30', '15:55', 'armen', 'Agents and Graphs', 'Building knowledge Graphs for agentic applications'),
-			talk('16:00', '16:25', 'nairi', 'Production Incidents'),
-			{
-				start: '16:25', end: '16:35', type: 'event', title: 'Closing ceremony & group photo',
-			},
-			{
-				start: '16:35', end: '17:00', type: 'break', title: 'Networking & speaker photos',
-			},
+            {
+                start: '09:00', end: '10:15', type: 'event', title: 'Doors open & registration',
+            },
+            {
+                start: '10:15', end: '10:30', type: 'event', title: 'Opening ceremony',
+            },
+            talk('10:30', '10:55', 'narek', 'To Be Announced (AI)'),
+            talk('11:00', '11:25', 'armen', 'Agents and Graphs', 'Building Knowledge Graphs for Agentic Applications'),
+            talk('11:30', '11:55', 'satenik', 'New project. Zero context. Now what?'),
+            {
+                start: '11:55', end: '12:10', type: 'break', title: '☕ Coffee & networking (15 Min)',
+            },
+            talk('12:10', '12:35', 'varik', 'To Be Announced (Cybersecurity)'),
+            talk('12:40', '13:05', 'ashot', 'Local-First: Bring Your Data Home', 'A local-first look at data, money and identity'),
+            {
+                start: '13:05', end: '13:25', type: 'break', title: '🍽️ Lunch & networking (20 Min)',
+            },
+            talk('13:25', '13:50', 'lilit', 'What makes a great engineer today?', 'The evolving expectations of software engineers in a world shaped by AI'),
+            talk('13:55', '14:20', 'dmitri', 'The new Full-Stack Developer'),
+            talk('14:25', '14:50', 'gnel', 'Write the Spec, Not the Prompt', 'Taming AI Output with Spec-Driven Development'),
+            {
+                start: '14:50', end: '15:05', type: 'break', title: '☕ Coffee break (15 Min)',
+            },
+            talk('15:05', '15:30', 'hovo', 'How I Became an AI Engineer After 10 Years of JavaScript'),
+            talk('15:35', '16:00', 'nairi', 'Production Incidents'),
+            {
+                start: '16:00', end: '16:10', type: 'event', title: 'Closing ceremony & group photo',
+            },
 		],
 	}),
 };
@@ -97,7 +94,6 @@ export default {
     font-size: 40px;
     margin-bottom: 1.1em;
     text-align: center;
-    color: $text-primary;
 }
 
 .schedule {
@@ -197,7 +193,7 @@ export default {
 
 .-break .schedule-item {
     padding-block: 8px;
-    background-color: rgba(255, 224, 92, 0.35);
+    background-color: #fff;
 
     .schedule-item-title {
         font-weight: 600;
