@@ -195,9 +195,9 @@ export default {
     text-align: center;
     color: $text-primary;
 
-    span {
-        color: $green-primary;
-    }
+    // span {
+    //     color: $green-primary;
+    // }
 }
 
 .Subtitle {
