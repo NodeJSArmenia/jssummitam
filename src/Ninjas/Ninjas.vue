@@ -33,11 +33,9 @@
 </template>
 
 <script>
-import { serverUri } from '../variables';
+import speakers from '../_services/speakers';
 import ComingSoon from '../_common/ComingSoon/ComingSoon.vue';
 import FlipImage from '../_common/FlipImage/FlipImage.vue';
-// TODO: same Naruto image for everyone for now; give each speaker their own
-const narutoImg = '';
 
 export default {
 	components: {
@@ -130,6 +128,9 @@ export default {
                         ninjaType: 'Chunin, Mist Village',
 					},
 				],
+				// order on the page
+				members: ['hovo', 'narek', 'satenik', 'nairi', 'lilit', 'dmitri', 'varik', 'ashot', 'armen', 'gnel']
+					.map(id => speakers[id]),
 			},
 		],
 	}),

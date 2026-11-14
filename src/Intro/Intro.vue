@@ -49,10 +49,10 @@ export default {
 				title: 'AI and programming',
 				text: "How artificial intelligence is changing developers' daily work, the software development process and the future of the tech industry.",
 			},
-			{
-				title: 'Panel discussions',
-				text: 'Open, interactive discussions with experienced professionals about current challenges, new opportunities and the future of programming.',
-			},
+			// {
+			// 	title: 'Panel discussions',
+			// 	text: 'Open, interactive discussions with experienced professionals about current challenges, new opportunities and the future of programming.',
+			// },
 			{
 				title: 'Networking',
 				text: 'A great chance to meet like-minded people, exchange ideas and grow your professional network.',
