@@ -66,7 +66,7 @@ export default {
             {
                 start: '13:05', end: '13:25', type: 'break', title: '🍽️ Lunch & networking (20 Min)',
             },
-            talk('13:25', '13:50', 'dmitri', 'The new Full-Stack Developer'),
+            talk('13:25', '13:50', 'dmitri', 'The new Full-Stack Developer', 'What if Full-Stack meant more than Frontend and Backend? Let’s explore a new kind of developer who combines engineering expertise with Product Thinking and UX knowledge to build better products, not just better software.'),
             talk('13:55', '14:20', 'gnel', 'Write the Spec, Not the Prompt', 'AI writes code faster than any team can review it, and without a shared source of truth, the result is sloppy, drifting code that nobody fully understands, built from prompts that start from scratch every time. This talk is about spec-driven development: how a living spec, written in a language both product and developers speak, keeps the domain in sync, and how organizing prompts and memory around it helps AI agents build what the team actually meant.'),
             talk('14:25', '14:50', 'satenik', 'New project. Zero context. Now what?', "Joining a new software project has always meant navigating unfamiliar code, understanding its architecture, discovering business logic and figuring out how everything fits together. In this talk, let's explore what has changed in the AI era and how developers can approach getting familiar with a new project today."),
             {
