@@ -61,8 +61,8 @@ export default {
             {
                 start: '11:55', end: '12:10', type: 'break', title: '☕ Coffee & networking (15 Min)',
             },
-            talk('12:10', '12:35', 'varik', 'Browsers Have Their Own Insecurities', "Even browsers have insecurities: JavaScriptCore and WebCore are full of memory bugs that a single web page can turn against the person viewing it. We’ll go through the most common bug classes, then follow one use-after-free all the way from a crash to code execution in Safari."),
-            talk('12:40', '13:05', 'ashot', 'Local-First: Bring Your Data Home', "Your data shouldn't need a server's permission to exist. This talk is about local-first web apps: what changes when the device comes first, and how to own your identity without anyone’s login server."),
+            talk('12:10', '12:35', 'varik', 'Browsers Have Their Own Insecurities', "Even browsers have insecurities: JavaScriptCore and WebCore are full of memory bugs that a single web page can turn against the person viewing it. We'll go through the most common bug classes, then follow one use-after-free all the way from a crash to code execution in Safari."),
+            talk('12:40', '13:05', 'ashot', 'Local-First: Bring Your Data Home', "Your data shouldn't need a server's permission to exist. This talk is about local-first web apps: what changes when the device comes first, and how to own your identity without anyone's login server."),
             {
                 start: '13:05', end: '13:25', type: 'break', title: '🍽️ Lunch & networking (20 Min)',
             },
@@ -72,7 +72,7 @@ export default {
             {
                 start: '14:50', end: '15:05', type: 'break', title: '☕ Coffee break (15 Min)',
             },
-            talk('15:05', '15:30', 'hovo', 'How I Became an AI Engineer After 10 Years of JavaScript'),
+            talk('15:05', '15:30', 'hovo', "How I Became an AI Engineer After 10 Years of JavaScript", "After many years of working with JavaScript, I started exploring AI by building my own AI SaaS projects with the goal of generating passive income. What began as personal experimentation eventually led me to work on AI solutions in enterprise environments. In this talk, I'll share my journey, the lessons I learned along the way, and how I transitioned into AI engineering."),
             talk('15:35', '16:00', 'nairi', 'Production Incidents', "€500,000 in financial losses, 6-hour overnight debugging sessions, 3 a.m. meetings, sleepless nights, burnout, and even hospital visits. This talk is about the harsh reality of production incidents, lessons learned under pressure, and what it takes to keep critical systems running when everything goes wrong."),
             {
                 start: '16:00', end: '16:10', type: 'event', title: 'Closing ceremony & group photo',
